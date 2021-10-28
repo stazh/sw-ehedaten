@@ -1,0 +1,39 @@
+http://fuseki.nie-ine.ch/edbzh-rw/query
+
+Alle Vornamen der Frauen:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
+prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
+SELECT * WHERE {
+  ?sub a edbzh-po:Marriage .
+  ?sub edbzh-po:vornameFrau ?vornameFrau 
+} ORDER BY (?vornameFrau)
+
+Alle Annas:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
+prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT * WHERE {
+  ?sub a edbzh-po:Marriage .
+  ?sub edbzh-po:vornameFrau ?vornameFrau .
+  ?sub edbzh-po:entstehungszeitraum ?datum .
+  FILTER (?vornameFrau = "Anna") .
+  BIND (xsd:integer(STRBEFORE( ?datum, "." )) AS ?jahr )
+} ORDER BY (?jahr)
+
+
+Zählen der Einträge und nach Grösse ordnen:
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
+prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
+SELECT * WHERE{
+SELECT ?vornameFrau (COUNT(?vornameFrau) as ?anzahl) WHERE {
+  	?sub a edbzh-po:Marriage .
+    ?sub edbzh-po:zusatzinformationAllgemeinMannFrau ?vornameFrau .
+	} GROUP BY ?vornameFrau
+} ORDER BY DESC (?anzahl)
+
