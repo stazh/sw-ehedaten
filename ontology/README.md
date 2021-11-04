@@ -2,7 +2,7 @@
 
 Hier wird die Ontologie zum Projekt "Semantic Web der Zürcher Ehedaten 16. - 18. Jahrhundert" vorgestellt. Die Ontologie definiert je nach Perspektive auf die Daten unterschiedliche Konzepte: 
 
-## Archiving
+## [Archiving](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving)
 
 <div align="center"><img src="/images/Perspektive_Archivdaten.jpg" width="400"></div>
 
