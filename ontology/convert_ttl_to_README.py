@@ -31,11 +31,26 @@ for line in content:
         line = line.split(' ',1)
         if line[0].startswith('a'):
             line[0] = line[0].replace('a','rdf:type')
-        prop = line[0].split(':')
+        pred = line[0].split(':')
+        #Wenn Objekt = Link
         if line[1].find('"') == -1 and line[1].find('<') == -1:
-            obj = line[1].split(':')
-            obj = '[' + line[1][:-1] +']('+prefixdict[obj[0]] +obj[1][:-1]+')' + line[1][len(line[1])-1:]
+            #Wenn mehrere Subklassen
+            if line[0] == 'rdfs:subClassOf' and ', ' in line[1]:
+                line[1] = line[1][:-1]
+                objects = line[1].split(', ')
+                multiObj = ""
+                for ob in objects:
+                    obj = ob.split(':')
+                    obj = '[' + ob +']('+prefixdict[obj[0]] +obj[1]+')'
+                    multiObj = multiObj + obj + ", "
+                readme.write('| [' +line[0] +']('+prefixdict[pred[0]] +pred[1] +') | ' + multiObj[:-2] + '. |\n')
+            else:
+                obj = line[1].split(':')
+                obj = '[' + line[1][:-1] +']('+prefixdict[obj[0]] +obj[1][:-1]+')' + line[1][len(line[1])-1:]
+                readme.write('| [' +line[0] +']('+prefixdict[pred[0]] +pred[1] +') | ' + obj + ' |\n')
+
+        #Wenn Objekt = String
         else:
             obj = line[1]
-        readme.write('| [' +line[0] +']('+prefixdict[prop[0]] +prop[1] +') | ' +obj + ' |\n')
+            readme.write('| [' +line[0] +']('+prefixdict[pred[0]] +pred[1] +') | ' + obj + ' |\n')
 
