@@ -25,8 +25,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "agent"@en, "Akteur"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Something, someone, ... performing in an action."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [agent:Agent](https://e-editiones.ch/ontology/agent#Agen) |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Agent.](https://www.ica.org/standards/RiC/ontology#Agent) |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [agent:Agent](https://e-editiones.ch/ontology/agent#Agent), [rico:Agent](https://www.ica.org/standards/RiC/ontology#Agent). |
 ## Record
 | Predicate | Object |
 |:-------- |:-------- |
@@ -58,8 +57,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "manifestation"@en, "Ausprägung"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Carrier of information created by an agent with role provencance. The physical archived thing to which the record or the record part refers. A record or record part can refer to no manifestation, because it is lost or a record or record part can refer to more than one manifestation (f.e. if there exists a digital representation)."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Instantiation](https://www.ica.org/standards/RiC/ontology#Instantiatio) |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [information-carrier:Carrier.](https://e-editiones.ch/ontology/information-carrier#Carrier) |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Instantiation](https://www.ica.org/standards/RiC/ontology#Instantiation), [information-carrier:Carrier](https://e-editiones.ch/ontology/information-carrier#Carrier). |
 ## Volume
 | Predicate | Object |
 |:-------- |:-------- |
@@ -67,8 +65,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "volume"@en, "Band"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestatio) |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [information-carrier:Volume.](https://e-editiones.ch/ontology/information-carrier#Volume) |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation), [information-carrier:Volume](https://e-editiones.ch/ontology/information-carrier#Volume). |
 ## AdditionalContent
 | Predicate | Object |
 |:-------- |:-------- |
