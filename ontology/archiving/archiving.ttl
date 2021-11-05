@@ -120,16 +120,6 @@ archiving:RecordPartReference
 # PROPERTIES
 #
 
-#TODO: RecordPartHasDate
-
-archiving:recordHasRecordPart
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a owl:ObjectProperty;
-	rdfs:label "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheitteil";
-	rdfs:comment """Relating a record part to the record of which it is part of."""@en;
-	rdfs:domain archiving:Record;
-	rdfs:range archiving:RecordPart;
-	rdfs:subPropertyOf rico:hasOrHadPart.
 
 archiving:recordHasRecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -160,7 +150,7 @@ archiving:recordPartHasManifestation
 
 archiving:recordHasTitle
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record has title"@en, "Archivverzeichniseinheit hat Titel"@de;
 	rdfs:comment """Relating a title to a record."""@en;
 	rdfs:domain archiving:Record;
@@ -169,7 +159,7 @@ archiving:recordHasTitle
 
 archiving:recordPartHasTitle
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record part has title"@en, "Archivverzeichniseinheitteil hat Titel"@de;
 	rdfs:comment """Relating a title to a record part."""@en;
 	rdfs:domain archiving:RecordPart;
@@ -186,7 +176,7 @@ archiving:titleHasLiteral
 
 archiving:recordHasDateOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record has date of origin"@en, "Archivverzeichniseinheit hat Entstehungszeitraum"@de;
 	rdfs:comment """Relating a date of origin to a record."""@en;
 	rdfs:domain archiving:Record;
@@ -194,7 +184,7 @@ archiving:recordHasDateOfOrigin
 
 archiving:recordPartHasDateOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record part has dat of origin"@en, "Archivverzeichniseinheitteil hat Entstehungszeitraum"@de;
 	rdfs:comment """Relating a date of origin to a record part."""@en;
 	rdfs:domain archiving:RecordPart;
@@ -213,7 +203,7 @@ archiving:dateOfOriginHasLiteral
 #Scope-ID
 archiving:recordIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record is identified by identifier"@en, "Archivverzeichniseinheit wird identifiziert mit Identifikator."@de;
 	rdfs:comment """Relating a record to its identifier."""@en;
 	rdfs:domain archiving:Record;
@@ -222,7 +212,7 @@ archiving:recordIsIdentifiedByIdentifier
 #Scope-ID
 archiving:recordPartIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "record part is identified by identifier"@en, "Archivverzeichniseinheiteil wird identifiziert mit Identifikator."@de;
 	rdfs:comment """Relating the record part to its identifier."""@en;
 	rdfs:domain archiving:RecordPart;
@@ -231,10 +221,10 @@ archiving:recordPartIsIdentifiedByIdentifier
 #Signatur
 archiving:manifestationIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
-	a rdfs:Class;
+	a owl:ObjectProperty;
 	rdfs:label "manifestation is identified by identifier"@en, "Ausprägung wird identifiziert mit Identifikator."@de;
 	rdfs:comment """Relating the manifestation to its identifier."""@en;
-	rdfs:domain archiving:manifestation;
+	rdfs:domain archiving:Manifestation;
 	rdfs:range archiving:Identifier.
 
 archiving:identifierHasLiteral

@@ -1,0 +1,197 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving.> .
+@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#> .
+
+<https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving>
+	a owl:Ontology;
+	dct:license <http://creativecommons.org/licenses/by/3.0/>;
+	dct:title "An ontology about archiving"@en;
+	dct:description """Formal description of a record, general subclasses, related classes and properties."""@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:contributor "Hans Cools, MD, knowledge engineer, ontologist, software developer, University of Basel, Switzerland"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-05"^^xsd:date.
+
+
+
+
+#
+# CLASSES
+#
+archiving:Archive
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "archive"@en, "Archiv"@de;
+	rdfs:comment """Organization having a role of systematic collection, preservation, care and making accessible documents, objects etc. which hold information of the past. There are state archives which document the activities of the administration of the state, or there are archives that collect documents on specific topics - f.e. Social Archive or Women's Archive."""@en.
+
+archiving:Agent
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "agent"@en, "Akteur"@de;
+	rdfs:comment """Something, someone, ... performing in an action."""@en.
+
+archiving:Record
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "record"@en, "Archivverzeichniseinheit"@de;
+	rdfs:comment """A record as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record. A record is abstract."""@en.
+
+archiving:RecordPart
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "record part"@en, "Teil einer Archivverzeichniseinheit"@de;
+	rdfs:comment """A record part as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record part."""@en.
+
+
+archiving:Title
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "title"@en, "Titel"@de;
+	rdfs:comment """The title of the record or the record part."""@en.
+
+
+archiving:Manifestation
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "manifestation"@en, "Ausprägung"@de;
+	rdfs:comment """Carrier of information created by an agent with role provencance. The physical archived thing to which the record or the record part refers. A record or record part can refer to no manifestation, because it is lost or a record or record part can refer to more than one manifestation (f.e. if there exists a digital representation)."""@en.
+
+
+archiving:Volume
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "volume"@en, "Band"@de;
+	rdfs:comment """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en.
+
+archiving:AdditionalContent
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "additional content"@en, "Zusatzinformation"@de;
+	rdfs:comment """Some further information about a record or record part. Can be of any kind."""@en.
+
+
+archiving:Identifier
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "identifier"@en, "Identifikator"@de;
+	rdfs:comment """The identifying mark with which a record or an record part or manifestation of it can be clearly identified and referenced. In the context of an archive information system, this is usually the signature."""@en.
+
+archiving:DateOfOrigin
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "date of origin"@en, "Entstehungszeitraum"@de;
+	rdfs:comment """The date when the archived thing was originally created."""@en.
+
+archiving:Webpage
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "webpage"@en, "Webseite"@de;
+	rdfs:comment """Webpage of the record or record part in an archive information system."""@en.
+
+
+
+#
+# PROPERTIES
+#
+
+archiving:recordHasRecordPart
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheitteil";
+	rdfs:comment """Relating a record part to the record of which it is part of."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:RecordPart.
+
+archiving:recordHasManifestation
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has manifestation"@en, "Archivverzeichniseinheit hat Ausprägung";
+	rdfs:comment """Relating a record to its manifestation."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Manifestation.
+
+
+archiving:recordHasTitle
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has title"@en, "Archivverzeichniseinheit hat Titel"@de;
+	rdfs:comment """Relating a title to a record."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Title.
+
+
+
+archiving:recordHasDateOfOrigin
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has date of origin"@en, "Archivverzeichniseinheit hat Entstehungszeitraum"@de;
+	rdfs:comment """Relating a date of origin to a record."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:DateOfOrigin.
+
+
+
+#Scope-ID
+archiving:recordIsIdentifiedByIdentifier 
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record is identified by identifier"@en, "Archivverzeichniseinheit wird identifiziert mit Identifikator."@de;
+	rdfs:comment """Relating a record to its identifier."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Identifier.
+
+
+#Signatur
+archiving:manifestationIsIdentifiedByIdentifier 
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "manifestation is identified by identifier"@en, "Ausprägung wird identifiziert mit Identifikator."@de;
+	rdfs:comment """Relating the manifestation to its identifier."""@en;
+	rdfs:domain archiving:Manifestation;
+	rdfs:range archiving:Identifier.
+
+
+archiving:recordIsheldbyArchive
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record is held by archive"@en, "Archivverzeichniseinheit ist verzeichnet in Archiv";
+	rdfs:comment """Relating a record to its archive in which it is recorded and most commonly also in which the manifestation of the record is stored."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Archive.
+
+
+
+archiving:recordHasProvenance
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has provenance"@en, "Archivverzeichniseinheit hat Provenienz";
+	rdfs:comment """Relating a record to the agent which holds the role provenance for it. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Agent.
+
+
+
+archiving:recordHasWebpage
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has webpage"@en, "Archivverzeichniseinheit hat Webseite";
+	rdfs:comment """Relating a record to the webpage of the entry in an archive information system."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:Webpage.
+
+
+
+archiving:recordHasAdditionalContent
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has additional content"@en, "Archivverzeichniseinheit hat Zusatzinformation";
+	rdfs:comment """Relating a record to the some further information about it, which can be of any kind."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:AdditionalContent.
+
+
