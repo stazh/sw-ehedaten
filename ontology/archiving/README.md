@@ -1,6 +1,6 @@
 # Ontology archiving
 
-<div align="center"><img src="archiving.png" width="1500"></div>
+<div align="center"><img src="archiving.jpg" width="600"></div>
 
 
 | Predicate | Object |
