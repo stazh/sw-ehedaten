@@ -2,7 +2,6 @@
 
 <div align="center"><img src="archiving.jpg" width="600"></div>
 
-
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
@@ -12,9 +11,7 @@
 | [dct:creator](http://purl.org/dc/terms/creator) | "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en; |
 | [dct:contributor](http://purl.org/dc/terms/contributor) | "Hans Cools, MD, knowledge engineer, ontologist, software developer, University of Basel, Switzerland"@en; |
 | [dct:publisher](http://purl.org/dc/terms/publisher) | "States Archive canton of Zürich"@en; |
-| [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-05"^^xsd:date. |  
-
-
+| [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-05"^^xsd:date. |
 # CLASSES
 ## Archive
 | Predicate | Object |
@@ -38,7 +35,7 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record"@en, "Archivverzeichniseinheit"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A record as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record. A record is abstract."""@en; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A record as an entry in an Archive Information System with metadata, which describe physical archived things. A record is abstract."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Record](https://www.ica.org/standards/RiC/ontology#Record). |
 ## RecordPart
 | Predicate | Object |
@@ -46,7 +43,7 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part"@en, "Teil einer Archivverzeichniseinheit"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A record part as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record part."""@en; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A record part as an entry in an Archive Information System with metadata, which describe parts of physicals archived things. A record part is abstract."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:RecordPart](https://www.ica.org/standards/RiC/ontology#RecordPart). |
 ## Title
 | Predicate | Object |
@@ -55,7 +52,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "title"@en, "Titel"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The title of the record or the record part."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Tilte](https://www.ica.org/standards/RiC/ontology#Tilte). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Title](https://www.ica.org/standards/RiC/ontology#Title). |
 ## Manifestation
 | Predicate | Object |
 |:-------- |:-------- |
@@ -78,8 +75,7 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "additional content"@en, "Zusatzinformation"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Some further information about a record or record part. Can be of any kind."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:scopeAndContent](https://www.ica.org/standards/RiC/ontology#scopeAndContent). |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Some further information about a record or record part. Can be of any kind."""@en. |
 ## Identifier
 | Predicate | Object |
 |:-------- |:-------- |

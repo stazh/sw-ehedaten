@@ -47,14 +47,14 @@ archiving:Record
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
 	rdfs:label "record"@en, "Archivverzeichniseinheit"@de;
-	rdfs:comment """A record as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record. A record is abstract."""@en;
+	rdfs:comment """A record as an entry in an Archive Information System with metadata, which describe physical archived things. A record is abstract."""@en;
 	rdfs:subClassOf rico:Record.
 
 archiving:RecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
 	rdfs:label "record part"@en, "Teil einer Archivverzeichniseinheit"@de;
-	rdfs:comment """A record part as an entry in an Archive Information System with metadata, which describe one or more manifestation of the record part."""@en;
+	rdfs:comment """A record part as an entry in an Archive Information System with metadata, which describe parts of physicals archived things. A record part is abstract."""@en;
 	rdfs:subClassOf rico:RecordPart.
 
 archiving:Title
@@ -62,7 +62,7 @@ archiving:Title
 	a rdfs:Class;
 	rdfs:label "title"@en, "Titel"@de;
 	rdfs:comment """The title of the record or the record part."""@en;
-	rdfs:subClassOf rico:Tilte.
+	rdfs:subClassOf rico:Title.
 
 
 archiving:Manifestation
@@ -83,8 +83,7 @@ archiving:AdditionalContent
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
 	rdfs:label "additional content"@en, "Zusatzinformation"@de;
-	rdfs:comment """Some further information about a record or record part. Can be of any kind."""@en;
-	rdfs:subClassOf rico:scopeAndContent.
+	rdfs:comment """Some further information about a record or record part. Can be of any kind."""@en.
 
 
 archiving:Identifier
