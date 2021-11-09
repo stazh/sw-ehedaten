@@ -2,6 +2,7 @@ import csv
 from datetime import datetime
 from datetime import date
 import sys
+
 inFile = sys.argv[1]
 input_file = csv.DictReader(open(inFile), delimiter=';')
 data_archiving = "https://github.com/stazh/sw-ehedaten/data/archiving#"
@@ -19,68 +20,31 @@ kirchgemeinden_counter = 0
 Kirchgemeinden = {}
 band_sigantur_counter = 0
 Band_Signaturen = {}
+
+def insert_item_in_dict(item, dictionary,item_counter,placeHolder):
+	item = item.replace(' ?','')
+	item = item.replace(' (?)','')
+	item = item.replace('?','')
+	if not item == "" and not item in dictionary:
+		item_counter += 1
+		item_counter_str = str(item_counter)
+		while len(item_counter_str) < 5:
+  			item_counter_str = '0' + item_counter_str
+		dictionary[item] = data_archiving + placeHolder + item_counter_str
+	return dictionary, item_counter
+
 for row in input_file_list:
-	# convert it from an OrderedDict to a regular dict
 	row = dict(row)
-
-	if not row['Herkunft_Mann'] == "" and not row['Herkunft_Mann'] in Herkunftsorte:
-		herkunfst_ort_counter += 1
-		herkunfst_ort_counter_str = str(herkunfst_ort_counter)
-		while len(herkunfst_ort_counter_str) < 5:
-  			herkunfst_ort_counter_str = '0' + herkunfst_ort_counter_str
-		Herkunftsorte[row['Herkunft_Mann']] = data_archiving + 'PlaceName_' + herkunfst_ort_counter_str
-	
-	if not row['Herkunft_Frau'] == "" and not row['Herkunft_Frau'] in Herkunftsorte:
-		herkunfst_ort_counter += 1
-		herkunfst_ort_counter_str = str(herkunfst_ort_counter)
-		while len(herkunfst_ort_counter_str) < 5:
-  			herkunfst_ort_counter_str = '0' + herkunfst_ort_counter_str
-		Herkunftsorte[row['Herkunft_Frau']] = data_archiving + 'PlaceName_' + herkunfst_ort_counter_str
-
-	if not row['Nachname_Mann'] == "" and not row['Nachname_Mann'] in Nachnamen:
-		nachnamen_counter += 1
-		nachnamen_counter_str = str(nachnamen_counter)
-		while len(nachnamen_counter_str) < 5:
-  			nachnamen_counter_str = '0' + nachnamen_counter_str
-		Nachnamen[row['Nachname_Mann']] = data_archiving + 'FamilyName_' + nachnamen_counter_str
-
-	if not row['Nachname_Frau'] == "" and not row['Nachname_Frau'] in Nachnamen:
-		nachnamen_counter += 1
-		nachnamen_counter_str = str(nachnamen_counter)
-		while len(nachnamen_counter_str) < 5:
-  			nachnamen_counter_str = '0' + nachnamen_counter_str
-		Nachnamen[row['Nachname_Frau']] = data_archiving + 'FamilyName_' + nachnamen_counter_str
-		
-	if not row['Vorname_Frau'] == "" and not row['Vorname_Frau'] in Frauenvornamen:
-		frauenvornamen_counter += 1
-		frauenvornamen_counter_str = str(frauenvornamen_counter)
-		while len(frauenvornamen_counter_str) < 5:
-  			frauenvornamen_counter_str= '0' + frauenvornamen_counter_str
-		Frauenvornamen[row['Vorname_Frau']] = data_archiving + 'FirstNameWoman_' + frauenvornamen_counter_str
-	
-	if not row['Vorname_Mann'] == "" and not row['Vorname_Mann'] in Maennervornamen:
-		maennervornamen_counter += 1
-		maennervornamen_counter_str = str(maennervornamen_counter)
-		while len(maennervornamen_counter_str) < 5:
-  			maennervornamen_counter_str = '0' + maennervornamen_counter_str
-		Maennervornamen[row['Vorname_Mann']] = data_archiving + 'FirstNameMan_' + maennervornamen_counter_str
-	
-	if not row['Kirchgemeinde'] == "" and not row['Kirchgemeinde'] in Kirchgemeinden:
-		kirchgemeinden_counter += 1
-		kirchgemeinden_counter_str = str(kirchgemeinden_counter)
-		while len(kirchgemeinden_counter_str) < 5:
-  			kirchgemeinden_counter_str = '0' + kirchgemeinden_counter_str
-		Kirchgemeinden[row['Kirchgemeinde']] = data_archiving + 'Parish_' + kirchgemeinden_counter_str
-
+	Herkunftsorte, herkunfts_ort_counter = insert_item_in_dict(row['Herkunft_Mann'], Herkunftsorte, herkunfst_ort_counter, 'PlaceName_')
+	Herkunftsorte, herkunfts_ort_counter = insert_item_in_dict(row['Herkunft_Frau'], Herkunftsorte, herkunfst_ort_counter, 'PlaceName_')
+	Nachnamen, nachnamen_counter = insert_item_in_dict(row['Nachname_Mann'], Nachnamen, nachnamen_counter, 'FamilyName_')
+	Nachnamen, nachnamen_counter = insert_item_in_dict(row['Nachname_Frau'], Nachnamen, nachnamen_counter, 'FamilyName_')
+	Frauenvornamen, frauenvornamen_counter = insert_item_in_dict(row['Vorname_Frau'], Frauenvornamen, frauenvornamen_counter, 'FirstNameWoman_')
+	Maennervornamen, maennervornamen_counter = insert_item_in_dict(row['Vorname_Mann'], Maennervornamen, maennervornamen_counter, 'FirstNameMan_')	
+	Kirchgemeinden, kirchgemeinden_counter = insert_item_in_dict(row['Kirchgemeinde'], Kirchgemeinden, kirchgemeinden_counter, 'Parish_')	
 	k = row['Signatur'].rfind(",")
 	bandSignaturString = row['Signatur'][:k]
-	if  not bandSignaturString in Band_Signaturen:
-		band_sigantur_counter += 1
-		band_sigantur_counter_str = str(band_sigantur_counter)
-		while len(band_sigantur_counter_str) < 5:
-  			band_sigantur_counter_str = '0' + band_sigantur_counter_str
-		Band_Signaturen[bandSignaturString] = data_archiving + 'VolumeIdentifier_' + band_sigantur_counter_str
-
+	Band_Signaturen, band_sigantur_counter = insert_item_in_dict(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'VolumeIdentifier_')	
 	
 with open('kirchgemeinden.csv', 'w', newline='') as fk:
     writerk = csv.writer(fk)

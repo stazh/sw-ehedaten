@@ -11,25 +11,15 @@ input_file = csv.DictReader(open(inFile), delimiter=';')
 ontology_archiving = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#")
 data_archiving = Namespace("https://github.com/stazh/sw-ehedaten/data/archiving#")
 
+kirchgemeinden = csv.DictReader(open('kirchgemeinden.csv'), delimiter=',')
+kirchgemeinden_dict = {}
+for row in kirchgemeinden:
+    kirchgemeinden_dict[row['Kirchgemeinde']] = row['URI']
 
-agent_counter = 0
-agent_dict = {}
-band_dict = {}
-
-all_Data = csv.DictReader(open('/Users/rebekkapluss/Documents/Studium/Masterarbeit/OGD_Datensatz/01-EDB_16_18_Jh_Stand_2021_07_14 (csv).csv'), delimiter=';')
-
-input_file_list = list(all_Data)
-bandSignaturen = {}
-bandSignaturString = ""
-for row in input_file_list:
-	# convert it from an OrderedDict to a regular dict
-	row = dict(row)
-	k = row['Signatur'].rfind(",")
-	bandSignaturString = row['Signatur'][:k]
-	if  bandSignaturString in bandSignaturen:
-		bandSignaturen[bandSignaturString] +=1
-	else:
-		bandSignaturen[bandSignaturString] = 1
+band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
+band_signaturen_dict = {}
+for row in band_signaturen:
+    band_signaturen_dict[row['Bandsignatur']] = row['URI']
 
 output_graph = Graph()
 output_graph.bind('archiving', ontology_archiving)
