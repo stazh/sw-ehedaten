@@ -1,4 +1,5 @@
 # Ontology archiving
+TODO: Fehler scopeAndContent korrigieren (in RiC-O = Property)
 
 <div align="center"><img src="archiving.jpg" width="600"></div>
 
