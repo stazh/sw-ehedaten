@@ -176,7 +176,7 @@ archiving:recordPartHasTitleLiteral
 	a owl:ObjectProperty;
 	rdfs:label "record part has title literal"@en, "Archivverzeichniseinheit-Teil hat Titelliteral"@de;
 	rdfs:comment """Relating a record part to its title literal."""@en;
-	rdfs:domain archiving:Record;
+	rdfs:domain archiving:RecordPart;
 	rdfs:range rdfs:Literal;
 	rdfs:subPropertyOf rico:title.
 
@@ -213,7 +213,7 @@ archiving:dateOfOriginHasLiteral
 	rdfs:comment """Relating a date of origin to its literal."""@en;
 	rdfs:domain archiving:Title;
 	rdfs:range rdfs:Literal;
-	rdfs:subPropertyOf rico:beginningDate.
+	rdfs:subPropertyOf rico:creationDate.
 
 archiving:recordHasdateOfOriginLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -222,16 +222,16 @@ archiving:recordHasdateOfOriginLiteral
 	rdfs:comment """Relating a record to the date of origin literal."""@en;
 	rdfs:domain archiving:Record;
 	rdfs:range rdfs:Literal;
-	rdfs:subPropertyOf rico:beginningDate.
+	rdfs:subPropertyOf rico:creationDate.
 
 archiving:recordPartHasdateOfOriginLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
 	rdfs:label "record part has date of origin literal"@en, "Archivverzeichniseinheit-Teil hat Entstehungszeitraum-Literal";
 	rdfs:comment """Relating a record part to the date of origin literal."""@en;
-	rdfs:domain archiving:Record;
+	rdfs:domain archiving:RecordPart;
 	rdfs:range rdfs:Literal;
-	rdfs:subPropertyOf rico:beginningDate.
+	rdfs:subPropertyOf rico:creationDate.
 
 #HIER WEITER mit direktem LITERAL
 
