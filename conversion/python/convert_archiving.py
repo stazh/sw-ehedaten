@@ -24,7 +24,20 @@ for row in band_signaturen:
 output_graph = Graph()
 output_graph.bind('archiving', ontology_archiving)
 output_graph.bind('archiving-data', data_archiving)
-output_graph.add((data_archiving.stazh, RDF.type, ontology_archiving.Archive))
+counter = 0
+for entry in band_signaturen_dict:
+	counter+=1
+	counter_str = str(counter)
+	while len(counter_str) < 5:
+  		counter_str  = '0' + counter_str 
+	recordURI = "https://github.com/stazh/sw-ehedaten/data/archiving#Record_" + counter_str
+	volumeURI = "https://github.com/stazh/sw-ehedaten/data/archiving#Volume_" + counter_str
+	output_graph.add((URIRef(recordURI), RDF.type, ontology_archiving.Record))	
+	output_graph.add((URIRef(volumeURI), RDF.type, ontology_archiving.Volume))
+	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasManifestation, URIRef(volumeURI)))
+	output_graph.add((URIRef(band_signaturen_dict[entry]), RDF.type, ontology_archiving.Identifier))
+	output_graph.add((URIRef(volumeURI), ontology_archiving.manifestationIsIdentifiedByIdentifier, URIRef(band_signaturen_dict[entry])))				
+	output_graph.add((URIRef(band_signaturen_dict[entry]), ontology_archiving.identifierHasLiteral, Literal(entry)))
 output_graph.add((data_archiving.stazh, ontology_archiving.archiveHasNameLiteral, Literal("Staatsarchiv des Kantons Zürich")))
 
 output_graph_kirchgemeinden = Graph()
@@ -37,8 +50,8 @@ for row in input_file:
 	row = dict(row)
 	#print(row)
 	rowCounter += 1
-	output_graph.bind('archiving', ontology_archiving)
-	output_graph.bind('archiving-data', data_archiving)
+	#output_graph.bind('archiving', ontology_archiving)
+	#output_graph.bind('archiving-data', data_archiving)
 
 	output_graph_kirchgemeinden.bind('archiving', ontology_archiving)
 	output_graph_kirchgemeinden.bind('archiving-data', data_archiving)
@@ -64,7 +77,9 @@ for row in input_file:
 		output_graph.add((URIRef(ManifestationURI), RDF.type, ontology_archiving.Manifestation))
 		output_graph.add((URIRef(RecordPartURI),ontology_archiving.recordPartHasManifestation, URIRef(ManifestationOfRecordPartURI)))
 		output_graph.add((URIRef(SignaturURI), RDF.type, ontology_archiving.Identifier))
-		output_graph.add((URIRef(SignaturURI), ontology_archiving.manifestationIsIdentifiedByIdentifier, Literal(row['Signatur'])) ) 
+		output_graph.add((URIRef(ManifestationOfRecordPartURI), ontology_archiving.manifestationIsIdentifiedByIdentifier, URIRef(SignaturURI)) ) 
+
+		#Literal(row['Signatur'])
 		output_graph.add((URIRef(TitleURI), RDF.type, ontology_archiving.Title))
 		output_graph.add((URIRef(AdditionalContentURI), RDF.type, ontology_archiving.AdditionalContent)) 
 		output_graph.add((URIRef(DateOfOriginURI), RDF.type, ontology_archiving.DateOfOrigin))	

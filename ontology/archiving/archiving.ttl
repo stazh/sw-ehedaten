@@ -24,8 +24,6 @@
 	owl:versionInfo "2021-11-05"^^xsd:date.
 
 
-
-
 #
 # CLASSES
 #
@@ -53,7 +51,7 @@ archiving:Record
 archiving:RecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
-	rdfs:label "record part"@en, "Teil einer Archivverzeichniseinheit"@de;
+	rdfs:label "record part"@en, "Archivverzeichniseinheit-Teil"@de;
 	rdfs:comment """A record part as an entry in an Archive Information System with metadata, which describe parts of physicals archived things. A record part is abstract."""@en;
 	rdfs:subClassOf rico:RecordPart.
 
@@ -63,7 +61,6 @@ archiving:Title
 	rdfs:label "title"@en, "Titel"@de;
 	rdfs:comment """The title of the record or the record part."""@en;
 	rdfs:subClassOf rico:Title.
-
 
 archiving:Manifestation
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -110,7 +107,7 @@ archiving:Webpage
 archiving:RecordPartReference
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
-	rdfs:label "record part reference"@en, "Archivverzeichniseinheitteil-Referenz"@de;
+	rdfs:label "record part reference"@en, "Archivverzeichniseinheit-Teil-Referenz"@de;
 	rdfs:comment """A reference to a part of the manifestation of a record. This reference is described in the record part of a record. F.e. a record part has as manifestation a textline in a volume. And this volume is the manifestation of the record, of which the record part is part of. So in this example the record part reference is an information in the record part, which says, on which page of the volume the textline can be found."""@en;
 	rdfs:subClassOf document:ContentStructureReference.
 
@@ -123,7 +120,7 @@ archiving:RecordPartReference
 archiving:recordHasRecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
-	rdfs:label "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheitteil";
+	rdfs:label "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheit-Teil";
 	rdfs:comment """Relating a record part to the record of which it is part of."""@en;
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:RecordPart;
@@ -141,7 +138,7 @@ archiving:recordHasManifestation
 archiving:recordPartHasManifestation
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
-	rdfs:label "record part has manifestation"@en, "Archivverzeichniseinheitteil hat Ausprägung";
+	rdfs:label "record part has manifestation"@en, "Archivverzeichniseinheit-Teil hat Ausprägung";
 	rdfs:comment """Relating a record part to its manifestation."""@en;
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Manifestation;
@@ -151,19 +148,37 @@ archiving:recordHasTitle
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
 	rdfs:label "record has title"@en, "Archivverzeichniseinheit hat Titel"@de;
-	rdfs:comment """Relating a title to a record."""@en;
+	rdfs:comment """Relating a record to its title."""@en;
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:Title;
 	rdfs:subPropertyOf rico:hasOrHadTitle.
 
+archiving:recordHasTitleLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has title literal"@en, "Archivverzeichniseinheit hat Titelliteral"@de;
+	rdfs:comment """Relating a record to its title literal."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:title.
+
 archiving:recordPartHasTitle
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
-	rdfs:label "record part has title"@en, "Archivverzeichniseinheitteil hat Titel"@de;
-	rdfs:comment """Relating a title to a record part."""@en;
+	rdfs:label "record part has title"@en, "Archivverzeichniseinheit-Teil hat Titel"@de;
+	rdfs:comment """Relating a record part to its title."""@en;
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Title;
 	rdfs:subPropertyOf rico:hasOrHadTitle. 
+
+archiving:recordPartHasTitleLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has title literal"@en, "Archivverzeichniseinheit-Teil hat Titelliteral"@de;
+	rdfs:comment """Relating a record part to its title literal."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:title.
 
 archiving:titleHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -179,7 +194,8 @@ archiving:recordHasDateOfOrigin
 	rdfs:label "record has date of origin"@en, "Archivverzeichniseinheit hat Entstehungszeitraum"@de;
 	rdfs:comment """Relating a date of origin to a record."""@en;
 	rdfs:domain archiving:Record;
-	rdfs:range archiving:DateOfOrigin.
+	rdfs:range archiving:DateOfOrigin;
+	rdfs:subPropertyOf rico:hasBeginningDate.
 
 archiving:recordPartHasDateOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -187,7 +203,8 @@ archiving:recordPartHasDateOfOrigin
 	rdfs:label "record part has dat of origin"@en, "Archivverzeichniseinheitteil hat Entstehungszeitraum"@de;
 	rdfs:comment """Relating a date of origin to a record part."""@en;
 	rdfs:domain archiving:RecordPart;
-	rdfs:range archiving:DateOfOrigin.
+	rdfs:range archiving:DateOfOrigin;
+	rdfs:subPropertyOf rico:hasBeginningDate.
 
 archiving:dateOfOriginHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -195,9 +212,28 @@ archiving:dateOfOriginHasLiteral
 	rdfs:label "date of origin has literal"@en, "Entstehungszeitraum hat Literal";
 	rdfs:comment """Relating a date of origin to its literal."""@en;
 	rdfs:domain archiving:Title;
-	rdfs:range rdfs:Literal.
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:beginningDate.
 
+archiving:recordHasdateOfOriginLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has date of origin literal"@en, "Archivverzeichniseinheit hat Entstehungszeitraum-Literal";
+	rdfs:comment """Relating a record to the date of origin literal."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:beginningDate.
 
+archiving:recordPartHasdateOfOriginLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has date of origin literal"@en, "Archivverzeichniseinheit-Teil hat Entstehungszeitraum-Literal";
+	rdfs:comment """Relating a record part to the date of origin literal."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:beginningDate.
+
+#HIER WEITER mit direktem LITERAL
 
 #Scope-ID
 archiving:recordIsIdentifiedByIdentifier 
@@ -249,7 +285,6 @@ archiving:archiveHasNameLiteral
 	rdfs:comment """Relating an archive to its name literal."""@en;
 	rdfs:domain archiving:Archive;
 	rdfs:range rdfs:Literal.
-
 
 archiving:recordHasProvenance
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;

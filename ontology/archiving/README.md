@@ -42,7 +42,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part"@en, "Teil einer Archivverzeichniseinheit"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part"@en, "Archivverzeichniseinheit-Teil"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A record part as an entry in an Archive Information System with metadata, which describe parts of physicals archived things. A record part is abstract."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:RecordPart](https://www.ica.org/standards/RiC/ontology#RecordPart). |
 ## Title
@@ -105,7 +105,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part reference"@en, "Archivverzeichniseinheitteil-Referenz"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part reference"@en, "Archivverzeichniseinheit-Teil-Referenz"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A reference to a part of the manifestation of a record. This reference is described in the record part of a record. F.e. a record part has as manifestation a textline in a volume. And this volume is the manifestation of the record, of which the record part is part of. So in this example the record part reference is an information in the record part, which says, on which page of the volume the textline can be found."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [document:ContentStructureReference](https://e-editiones.ch/ontology/document#ContentStructureReference). |
 # PROPERTIES
@@ -114,7 +114,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheitteil"; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheit-Teil"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the record of which it is part of."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
@@ -134,7 +134,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has manifestation"@en, "Archivverzeichniseinheitteil hat Ausprägung"; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has manifestation"@en, "Archivverzeichniseinheit-Teil hat Ausprägung"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to its manifestation."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation); |
@@ -145,20 +145,40 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has title"@en, "Archivverzeichniseinheit hat Titel"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a title to a record."""@en; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record to its title."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Title](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Title); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasOrHadTitle](https://www.ica.org/standards/RiC/ontology#hasOrHadTitle). |
+## recordHasTitleLiteral
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has title literal"@en, "Archivverzeichniseinheit hat Titelliteral"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record to its title literal."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:title](https://www.ica.org/standards/RiC/ontology#title). |
 ## recordPartHasTitle
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has title"@en, "Archivverzeichniseinheitteil hat Titel"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a title to a record part."""@en; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has title"@en, "Archivverzeichniseinheit-Teil hat Titel"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to its title."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Title](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Title); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasOrHadTitle.](https://www.ica.org/standards/RiC/ontology#hasOrHadTitle.)  |
+## recordPartHasTitleLiteral
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has title literal"@en, "Archivverzeichniseinheit-Teil hat Titelliteral"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to its title literal."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:title](https://www.ica.org/standards/RiC/ontology#title). |
 ## titleHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -176,7 +196,8 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has date of origin"@en, "Archivverzeichniseinheit hat Entstehungszeitraum"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a date of origin to a record."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:DateOfOrigin](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:DateOfOrigin](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasBeginningDate](https://www.ica.org/standards/RiC/ontology#hasBeginningDate). |
 ## recordPartHasDateOfOrigin
 | Predicate | Object |
 |:-------- |:-------- |
@@ -185,7 +206,8 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has dat of origin"@en, "Archivverzeichniseinheitteil hat Entstehungszeitraum"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a date of origin to a record part."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:DateOfOrigin](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:DateOfOrigin](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasBeginningDate](https://www.ica.org/standards/RiC/ontology#hasBeginningDate). |
 ## dateOfOriginHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -194,7 +216,28 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date of origin has literal"@en, "Entstehungszeitraum hat Literal"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a date of origin to its literal."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Title](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Title); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:beginningDate](https://www.ica.org/standards/RiC/ontology#beginningDate). |
+## recordHasdateOfOriginLiteral
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has date of origin literal"@en, "Archivverzeichniseinheit hat Entstehungszeitraum-Literal"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record to the date of origin literal."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:beginningDate](https://www.ica.org/standards/RiC/ontology#beginningDate). |
+## recordPartHasdateOfOriginLiteral
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has date of origin literal"@en, "Archivverzeichniseinheit-Teil hat Entstehungszeitraum-Literal"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the date of origin literal."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:beginningDate](https://www.ica.org/standards/RiC/ontology#beginningDate). |
 ## recordIsIdentifiedByIdentifier 
 | Predicate | Object |
 |:-------- |:-------- |
