@@ -244,6 +244,15 @@ archiving:recordIsIdentifiedByIdentifier
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:Identifier.
 
+archiving:recordIsIdentifiedByIdentifierLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record is identified by identifier literal"@en, "Archivverzeichniseinheit wird identifiziert mit Identifikator-Literal."@de;
+	rdfs:comment """Relating a record to its identifier literal."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:identifier.
+
 #Scope-ID
 archiving:recordPartIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -253,6 +262,15 @@ archiving:recordPartIsIdentifiedByIdentifier
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Identifier.
 
+archiving:recordPartIsIdentifiedByIdentifierLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part is identified by identifier literal"@en, "Archivverzeichniseinheit-Teil wird identifiziert mit Identifikator-Literal."@de;
+	rdfs:comment """Relating a record part to its identifier literal."""@en;
+	rdfs:domain archiving:RecordPart;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:identifier.
+
 #Signatur
 archiving:manifestationIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -261,6 +279,15 @@ archiving:manifestationIsIdentifiedByIdentifier
 	rdfs:comment """Relating the manifestation to its identifier."""@en;
 	rdfs:domain archiving:Manifestation;
 	rdfs:range archiving:Identifier.
+
+archiving:manifestationIsIdentifiedByIdentifierLiteral 
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "manifestation is identified by identifier literal"@en, "Ausprägung wird identifiziert mit Identifikator-Literal."@de;
+	rdfs:comment """Relating the manifestation to its identifier literal."""@en;
+	rdfs:domain archiving:Manifestation;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:identifier.
 
 archiving:identifierHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -295,14 +322,30 @@ archiving:recordHasProvenance
 	rdfs:range archiving:Agent;
 	rdfs:subPropertyOf rico:hasProvenance.
 
+archiving:recordHasProvenanceLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has provenance literal"@en, "Archivverzeichniseinheit hat Provenienz-Literal";
+	rdfs:comment """Relating a record to the literal of the agent which holds the role provenance for it. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal.
+
 archiving:recordPartHasProvenance
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
-	rdfs:label "record part has provenance"@en, "Archivverzeichniseinheitteil hat Provenienz";
+	rdfs:label "record part has provenance"@en, "Archivverzeichniseinheit-Teil hat Provenienz";
 	rdfs:comment """Relating a record part to the agent which holds the role provenance for it. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record part originally for its own purposes."""@en;
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Agent;
 	rdfs:subPropertyOf rico:hasProvenance.
+
+archiving:recordPartHasProvenanceLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has provenance literal"@en, "Archivverzeichniseinheit-Teil hat Provenienz-Literal";
+	rdfs:comment """Relating a record part to the literal of the agent which holds the role provenance for it. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record part originally for its own purposes."""@en;
+	rdfs:domain archiving:RecordPart;
+	rdfs:range rdfs:Literal.
 
 archiving:agentHasNameLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -328,6 +371,14 @@ archiving:recordHasWebpage
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:Webpage.
 
+archiving:recordHasWebpageURI
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has webpage URI"@en, "Archivverzeichniseinheit hat Webseite-URI";
+	rdfs:comment """Relating a record to the webpage uri of the entry in an archive information system."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range xsd:anyURI.
+
 archiving:recordPartHasWebpage
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
@@ -335,6 +386,14 @@ archiving:recordPartHasWebpage
 	rdfs:comment """Relating a record part to the webpage of the entry in an archive information system."""@en;
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Webpage.
+
+archiving:recordPartHasWebpageURI
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has webpage URI"@en, "Archivverzeichniseinheit-Teil hat Webseite-URI";
+	rdfs:comment """Relating a record part to the webpage uri of the entry in an archive information system."""@en;
+	rdfs:domain archiving:RecordPart;
+	rdfs:range xsd:anyURI.
 
 archiving:webpageHasURL
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -353,6 +412,15 @@ archiving:recordHasAdditionalContent
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:AdditionalContent.
 
+archiving:recordHasAdditionalContentLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has additional content literal"@en, "Archivverzeichniseinheit hat Zusatzinformation-Literal";
+	rdfs:comment """Relating a record to the literal of some further information about it, which can be of any kind."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:scopeAndContent.
+
 archiving:recordPartHasAdditionalContent
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
@@ -360,6 +428,15 @@ archiving:recordPartHasAdditionalContent
 	rdfs:comment """Relating a record part to the some further information about it, which can be of any kind."""@en;
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:AdditionalContent.
+
+archiving:recordPartHasAdditionalContentLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has additional content literal"@en, "Archivverzeichniseinheit-Teil hat Zusatzinformation-Literal";
+	rdfs:comment """Relating a record part to the literal of some further information about it, which can be of any kind."""@en;
+	rdfs:domain archiving:RecordPart;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf rico:scopeAndContent.
 
 archiving:additionalContentHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
