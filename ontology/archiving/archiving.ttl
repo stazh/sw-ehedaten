@@ -116,7 +116,6 @@ archiving:RecordPartReference
 # PROPERTIES
 #
 
-
 archiving:recordHasRecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
