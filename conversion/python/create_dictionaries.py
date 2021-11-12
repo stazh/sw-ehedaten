@@ -44,7 +44,7 @@ for row in input_file_list:
 	Kirchgemeinden, kirchgemeinden_counter = insert_item_in_dict(row['Kirchgemeinde'], Kirchgemeinden, kirchgemeinden_counter, 'Parish_')	
 	k = row['Signatur'].rfind(",")
 	bandSignaturString = row['Signatur'][:k]
-	Band_Signaturen, band_sigantur_counter = insert_item_in_dict(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'VolumeIdentifier_')	
+	Band_Signaturen, band_sigantur_counter = insert_item_in_dict(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'Volume_')	
 	
 with open('kirchgemeinden.csv', 'w', newline='') as fk:
     writerk = csv.writer(fk)

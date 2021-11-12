@@ -115,6 +115,13 @@ archiving:RecordPartReference
 #
 # PROPERTIES
 #
+archiving:agentHasNameLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "agent has name literal"@en, "Akteur hat Namenliteral"@de;
+	rdfs:comment """Relating an agent to its name literal"""@en;
+	rdfs:domain archiving:Agent;
+	rdfs:range rdfs:Literal.
 
 archiving:recordHasRecordPart
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
