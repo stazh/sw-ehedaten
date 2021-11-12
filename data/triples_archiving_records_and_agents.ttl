@@ -1,0 +1,2679 @@
+@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#> .
+@prefix archiving-data: <https://github.com/stazh/sw-ehedaten/data/archiving#> .
+
+archiving-data:Parish_00001 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Winterthur" .
+
+archiving-data:Parish_00002 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Aawangen" .
+
+archiving-data:Parish_00003 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Aadorf" .
+
+archiving-data:Parish_00004 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bäretswil" .
+
+archiving-data:Parish_00005 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rüti" .
+
+archiving-data:Parish_00006 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Russikon" .
+
+archiving-data:Parish_00007 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schlatt" .
+
+archiving-data:Parish_00008 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schlieren" .
+
+archiving-data:Parish_00009 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bassersdorf" .
+
+archiving-data:Parish_00010 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Seegräben" .
+
+archiving-data:Parish_00011 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Stadel" .
+
+archiving-data:Parish_00012 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Stäfa" .
+
+archiving-data:Parish_00013 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Stallikon" .
+
+archiving-data:Parish_00014 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Stammheim" .
+
+archiving-data:Parish_00015 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Steinmaur" .
+
+archiving-data:Parish_00016 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bauma" .
+
+archiving-data:Parish_00017 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Thalheim an der Thur" .
+
+archiving-data:Parish_00018 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Thalwil" .
+
+archiving-data:Parish_00019 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Trüllikon" .
+
+archiving-data:Parish_00020 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Turbenthal" .
+
+archiving-data:Parish_00021 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Uesslingen" .
+
+archiving-data:Parish_00022 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Uetikon am See" .
+
+archiving-data:Parish_00023 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Urdorf-Dietikon" .
+
+archiving-data:Parish_00024 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Uster" .
+
+archiving-data:Parish_00025 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Benken" .
+
+archiving-data:Parish_00026 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Volketswil" .
+
+archiving-data:Parish_00027 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wädenswil" .
+
+archiving-data:Parish_00028 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wald" .
+
+archiving-data:Parish_00029 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wangen" .
+
+archiving-data:Parish_00030 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Weiach" .
+
+archiving-data:Parish_00031 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Weiningen" .
+
+archiving-data:Parish_00032 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Weisslingen" .
+
+archiving-data:Parish_00033 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wetzikon" .
+
+archiving-data:Parish_00034 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bichelsee" .
+
+archiving-data:Parish_00035 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Berg am Irchel" .
+
+archiving-data:Parish_00036 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wiesendangen" .
+
+archiving-data:Parish_00037 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wil" .
+
+archiving-data:Parish_00038 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wila" .
+
+archiving-data:Parish_00039 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wildberg" .
+
+archiving-data:Parish_00040 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Zell" .
+
+archiving-data:Parish_00041 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Zollikon" .
+
+archiving-data:Parish_00042 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Birmensdorf" .
+
+archiving-data:Parish_00043 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Zumikon" .
+
+archiving-data:Parish_00044 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bonstetten" .
+
+archiving-data:Parish_00045 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Brütten" .
+
+archiving-data:Parish_00046 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bubikon" .
+
+archiving-data:Parish_00047 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Buch am Irchel" .
+
+archiving-data:Parish_00048 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Aeugst am Albis" .
+
+archiving-data:Parish_00049 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Buchs" .
+
+archiving-data:Parish_00050 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bülach" .
+
+archiving-data:Parish_00051 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dägerlen" .
+
+archiving-data:Parish_00052 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dällikon" .
+
+archiving-data:Parish_00053 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dättlikon" .
+
+archiving-data:Parish_00054 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dietlikon" .
+
+archiving-data:Parish_00055 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dinhard" .
+
+archiving-data:Parish_00056 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dorf" .
+
+archiving-data:Parish_00057 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Affoltern am Albis" .
+
+archiving-data:Parish_00058 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dürnten" .
+
+archiving-data:Parish_00059 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Egg" .
+
+archiving-data:Parish_00060 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Eglisau" .
+
+archiving-data:Parish_00061 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Elgg" .
+
+archiving-data:Parish_00062 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Ellikon an der Thur" .
+
+archiving-data:Parish_00063 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Elsau" .
+
+archiving-data:Parish_00064 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Embrach" .
+
+archiving-data:Parish_00065 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Erlenbach" .
+
+archiving-data:Parish_00066 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Fällanden" .
+
+archiving-data:Parish_00067 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Fehraltorf" .
+
+archiving-data:Parish_00068 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Feuerthalen" .
+
+archiving-data:Parish_00069 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Fischenthal" .
+
+archiving-data:Parish_00070 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Gachnang" .
+
+archiving-data:Parish_00071 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Flaach" .
+
+archiving-data:Parish_00072 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Glattfelden" .
+
+archiving-data:Parish_00073 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Gossau" .
+
+archiving-data:Parish_00074 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Greifensee" .
+
+archiving-data:Parish_00075 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Grüningen" .
+
+archiving-data:Parish_00076 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hausen am Albis" .
+
+archiving-data:Parish_00077 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Henggart" .
+
+archiving-data:Parish_00078 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Herrliberg" .
+
+archiving-data:Parish_00079 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hettlingen" .
+
+archiving-data:Parish_00080 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hinwil" .
+
+archiving-data:Parish_00081 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hirzel" .
+
+archiving-data:Parish_00082 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hombrechtikon" .
+
+archiving-data:Parish_00083 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Uitikon" .
+
+archiving-data:Parish_00084 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hedingen" .
+
+archiving-data:Parish_00085 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Horgen" .
+
+archiving-data:Parish_00086 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Altikon" .
+
+archiving-data:Parish_00087 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Illnau" .
+
+archiving-data:Parish_00088 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Kappel am Albis" .
+
+archiving-data:Parish_00089 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Kilchberg" .
+
+archiving-data:Parish_00090 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Kloten" .
+
+archiving-data:Parish_00091 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Knonau" .
+
+archiving-data:Parish_00092 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Küsnacht" .
+
+archiving-data:Parish_00093 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Laufen" .
+
+archiving-data:Parish_00094 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Lindau" .
+
+archiving-data:Parish_00095 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Lufingen" .
+
+archiving-data:Parish_00096 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Männedorf" .
+
+archiving-data:Parish_00097 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Marthalen" .
+
+archiving-data:Parish_00098 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Maschwanden" .
+
+archiving-data:Parish_00099 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Meilen" .
+
+archiving-data:Parish_00100 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Mettmenstetten" .
+
+archiving-data:Parish_00101 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Mönchaltorf" .
+
+archiving-data:Parish_00102 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Neftenbach" .
+
+archiving-data:Parish_00103 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Niederhasli" .
+
+archiving-data:Parish_00104 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Andelfingen" .
+
+archiving-data:Parish_00105 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Niederweningen" .
+
+archiving-data:Parish_00106 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Oberglatt" .
+
+archiving-data:Parish_00107 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Oetwil am See" .
+
+archiving-data:Parish_00108 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Ossingen" .
+
+archiving-data:Parish_00109 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Otelfingen" .
+
+archiving-data:Parish_00110 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Ottenbach" .
+
+archiving-data:Parish_00111 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Pfäffikon" .
+
+archiving-data:Parish_00112 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Pfungen" .
+
+archiving-data:Parish_00113 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rafz" .
+
+archiving-data:Parish_00114 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Regensberg" .
+
+archiving-data:Parish_00115 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Regensdorf" .
+
+archiving-data:Parish_00116 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Richterswil" .
+
+archiving-data:Parish_00117 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rickenbach" .
+
+archiving-data:Parish_00118 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rifferswil" .
+
+archiving-data:Parish_00119 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rorbas" .
+
+archiving-data:Parish_00120 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rümlang" .
+
+archiving-data:Parish_00121 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Oberwinterthur" .
+
+archiving-data:Parish_00122 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Seen" .
+
+archiving-data:Parish_00123 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Töss" .
+
+archiving-data:Parish_00124 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Grossmünster" .
+
+archiving-data:Parish_00125 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Fraumünster" .
+
+archiving-data:Parish_00126 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Affoltern" .
+
+archiving-data:Parish_00127 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Albisrieden" .
+
+archiving-data:Parish_00128 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Altstetten" .
+
+archiving-data:Parish_00129 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Höngg" .
+
+archiving-data:Parish_00130 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Seebach" .
+
+archiving-data:Parish_00131 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Witikon" .
+
+archiving-data:Parish_00132 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde St. Peter" .
+
+archiving-data:Parish_00133 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Predigern" .
+
+archiving-data:Parish_00134 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wipkingen" .
+
+archiving-data:Parish_00135 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Veltheim" .
+
+archiving-data:Parish_00136 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wülflingen" .
+
+archiving-data:Parish_00137 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Bachs" .
+
+archiving-data:Parish_00138 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dielsdorf" .
+
+archiving-data:Parish_00139 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Dübendorf" .
+
+archiving-data:Parish_00140 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hittnau" .
+
+archiving-data:Parish_00141 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Maur" .
+
+archiving-data:Parish_00142 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Oberrieden" .
+
+archiving-data:Parish_00143 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Rüschlikon" .
+
+archiving-data:Parish_00144 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schöfflisdorf" .
+
+archiving-data:Parish_00145 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schönenberg" .
+
+archiving-data:Parish_00146 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schwerzenbach" .
+
+archiving-data:Parish_00147 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Seuzach" .
+
+archiving-data:Parish_00148 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Hütten" .
+
+archiving-data:Parish_00149 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Kyburg" .
+
+archiving-data:Parish_00150 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Langnau am Albis" .
+
+archiving-data:Parish_00151 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Spitalpfarramt" .
+
+archiving-data:Parish_00152 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wollishofen" .
+
+archiving-data:Parish_00153 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Schwamendingen-Oerlikon" .
+
+archiving-data:Parish_00154 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Neunforn" .
+
+archiving-data:Parish_00155 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Sternenberg" .
+
+archiving-data:Parish_00156 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Zürich" .
+
+archiving-data:Parish_00157 a archiving:Agent ;
+    archiving:agentHasNameLiteral "Kirchgemeinde Wallisellen" .
+
+archiving-data:Record_00001 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00001 .
+
+archiving-data:Record_00002 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00002 .
+
+archiving-data:Record_00003 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00003 .
+
+archiving-data:Record_00004 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00004 .
+
+archiving-data:Record_00005 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00005 .
+
+archiving-data:Record_00006 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00006 .
+
+archiving-data:Record_00007 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00007 .
+
+archiving-data:Record_00008 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00008 .
+
+archiving-data:Record_00009 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00009 .
+
+archiving-data:Record_00010 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00010 .
+
+archiving-data:Record_00011 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00011 .
+
+archiving-data:Record_00012 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00012 .
+
+archiving-data:Record_00013 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00013 .
+
+archiving-data:Record_00014 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00014 .
+
+archiving-data:Record_00015 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00015 .
+
+archiving-data:Record_00016 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00016 .
+
+archiving-data:Record_00017 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00017 .
+
+archiving-data:Record_00018 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00018 .
+
+archiving-data:Record_00019 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00019 .
+
+archiving-data:Record_00020 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00020 .
+
+archiving-data:Record_00021 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00021 .
+
+archiving-data:Record_00022 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00022 .
+
+archiving-data:Record_00023 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00023 .
+
+archiving-data:Record_00024 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00024 .
+
+archiving-data:Record_00025 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00025 .
+
+archiving-data:Record_00026 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00026 .
+
+archiving-data:Record_00027 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00027 .
+
+archiving-data:Record_00028 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00028 .
+
+archiving-data:Record_00029 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00029 .
+
+archiving-data:Record_00030 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00030 .
+
+archiving-data:Record_00031 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00031 .
+
+archiving-data:Record_00032 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00032 .
+
+archiving-data:Record_00033 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00033 .
+
+archiving-data:Record_00034 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00034 .
+
+archiving-data:Record_00035 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00035 .
+
+archiving-data:Record_00036 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00036 .
+
+archiving-data:Record_00037 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00037 .
+
+archiving-data:Record_00038 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00038 .
+
+archiving-data:Record_00039 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00039 .
+
+archiving-data:Record_00040 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00040 .
+
+archiving-data:Record_00041 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00041 .
+
+archiving-data:Record_00042 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00042 .
+
+archiving-data:Record_00043 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00043 .
+
+archiving-data:Record_00044 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00044 .
+
+archiving-data:Record_00045 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00045 .
+
+archiving-data:Record_00046 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00046 .
+
+archiving-data:Record_00047 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00047 .
+
+archiving-data:Record_00048 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00048 .
+
+archiving-data:Record_00049 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00049 .
+
+archiving-data:Record_00050 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00050 .
+
+archiving-data:Record_00051 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00051 .
+
+archiving-data:Record_00052 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00052 .
+
+archiving-data:Record_00053 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00053 .
+
+archiving-data:Record_00054 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00054 .
+
+archiving-data:Record_00055 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00055 .
+
+archiving-data:Record_00056 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00056 .
+
+archiving-data:Record_00057 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00057 .
+
+archiving-data:Record_00058 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00058 .
+
+archiving-data:Record_00059 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00059 .
+
+archiving-data:Record_00060 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00060 .
+
+archiving-data:Record_00061 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00061 .
+
+archiving-data:Record_00062 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00062 .
+
+archiving-data:Record_00063 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00063 .
+
+archiving-data:Record_00064 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00064 .
+
+archiving-data:Record_00065 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00065 .
+
+archiving-data:Record_00066 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00066 .
+
+archiving-data:Record_00067 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00067 .
+
+archiving-data:Record_00068 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00068 .
+
+archiving-data:Record_00069 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00069 .
+
+archiving-data:Record_00070 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00070 .
+
+archiving-data:Record_00071 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00071 .
+
+archiving-data:Record_00072 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00072 .
+
+archiving-data:Record_00073 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00073 .
+
+archiving-data:Record_00074 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00074 .
+
+archiving-data:Record_00075 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00075 .
+
+archiving-data:Record_00076 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00076 .
+
+archiving-data:Record_00077 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00077 .
+
+archiving-data:Record_00078 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00078 .
+
+archiving-data:Record_00079 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00079 .
+
+archiving-data:Record_00080 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00080 .
+
+archiving-data:Record_00081 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00081 .
+
+archiving-data:Record_00082 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00082 .
+
+archiving-data:Record_00083 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00083 .
+
+archiving-data:Record_00084 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00084 .
+
+archiving-data:Record_00085 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00085 .
+
+archiving-data:Record_00086 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00086 .
+
+archiving-data:Record_00087 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00087 .
+
+archiving-data:Record_00088 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00088 .
+
+archiving-data:Record_00089 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00089 .
+
+archiving-data:Record_00090 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00090 .
+
+archiving-data:Record_00091 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00091 .
+
+archiving-data:Record_00092 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00092 .
+
+archiving-data:Record_00093 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00093 .
+
+archiving-data:Record_00094 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00094 .
+
+archiving-data:Record_00095 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00095 .
+
+archiving-data:Record_00096 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00096 .
+
+archiving-data:Record_00097 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00097 .
+
+archiving-data:Record_00098 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00098 .
+
+archiving-data:Record_00099 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00099 .
+
+archiving-data:Record_00100 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00100 .
+
+archiving-data:Record_00101 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00101 .
+
+archiving-data:Record_00102 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00102 .
+
+archiving-data:Record_00103 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00103 .
+
+archiving-data:Record_00104 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00104 .
+
+archiving-data:Record_00105 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00105 .
+
+archiving-data:Record_00106 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00106 .
+
+archiving-data:Record_00107 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00107 .
+
+archiving-data:Record_00108 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00108 .
+
+archiving-data:Record_00109 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00109 .
+
+archiving-data:Record_00110 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00110 .
+
+archiving-data:Record_00111 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00111 .
+
+archiving-data:Record_00112 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00112 .
+
+archiving-data:Record_00113 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00113 .
+
+archiving-data:Record_00114 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00114 .
+
+archiving-data:Record_00115 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00115 .
+
+archiving-data:Record_00116 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00116 .
+
+archiving-data:Record_00117 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00117 .
+
+archiving-data:Record_00118 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00118 .
+
+archiving-data:Record_00119 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00119 .
+
+archiving-data:Record_00120 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00120 .
+
+archiving-data:Record_00121 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00121 .
+
+archiving-data:Record_00122 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00122 .
+
+archiving-data:Record_00123 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00123 .
+
+archiving-data:Record_00124 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00124 .
+
+archiving-data:Record_00125 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00125 .
+
+archiving-data:Record_00126 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00126 .
+
+archiving-data:Record_00127 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00127 .
+
+archiving-data:Record_00128 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00128 .
+
+archiving-data:Record_00129 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00129 .
+
+archiving-data:Record_00130 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00130 .
+
+archiving-data:Record_00131 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00131 .
+
+archiving-data:Record_00132 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00132 .
+
+archiving-data:Record_00133 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00133 .
+
+archiving-data:Record_00134 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00134 .
+
+archiving-data:Record_00135 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00135 .
+
+archiving-data:Record_00136 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00136 .
+
+archiving-data:Record_00137 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00137 .
+
+archiving-data:Record_00138 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00138 .
+
+archiving-data:Record_00139 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00139 .
+
+archiving-data:Record_00140 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00140 .
+
+archiving-data:Record_00141 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00141 .
+
+archiving-data:Record_00142 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00142 .
+
+archiving-data:Record_00143 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00143 .
+
+archiving-data:Record_00144 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00144 .
+
+archiving-data:Record_00145 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00145 .
+
+archiving-data:Record_00146 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00146 .
+
+archiving-data:Record_00147 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00147 .
+
+archiving-data:Record_00148 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00148 .
+
+archiving-data:Record_00149 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00149 .
+
+archiving-data:Record_00150 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00150 .
+
+archiving-data:Record_00151 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00151 .
+
+archiving-data:Record_00152 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00152 .
+
+archiving-data:Record_00153 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00153 .
+
+archiving-data:Record_00154 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00154 .
+
+archiving-data:Record_00155 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00155 .
+
+archiving-data:Record_00156 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00156 .
+
+archiving-data:Record_00157 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00157 .
+
+archiving-data:Record_00158 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00158 .
+
+archiving-data:Record_00159 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00159 .
+
+archiving-data:Record_00160 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00160 .
+
+archiving-data:Record_00161 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00161 .
+
+archiving-data:Record_00162 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00162 .
+
+archiving-data:Record_00163 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00163 .
+
+archiving-data:Record_00164 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00164 .
+
+archiving-data:Record_00165 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00165 .
+
+archiving-data:Record_00166 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00166 .
+
+archiving-data:Record_00167 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00167 .
+
+archiving-data:Record_00168 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00168 .
+
+archiving-data:Record_00169 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00169 .
+
+archiving-data:Record_00170 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00170 .
+
+archiving-data:Record_00171 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00171 .
+
+archiving-data:Record_00172 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00172 .
+
+archiving-data:Record_00173 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00173 .
+
+archiving-data:Record_00174 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00174 .
+
+archiving-data:Record_00175 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00175 .
+
+archiving-data:Record_00176 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00176 .
+
+archiving-data:Record_00177 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00177 .
+
+archiving-data:Record_00178 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00178 .
+
+archiving-data:Record_00179 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00179 .
+
+archiving-data:Record_00180 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00180 .
+
+archiving-data:Record_00181 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00181 .
+
+archiving-data:Record_00182 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00182 .
+
+archiving-data:Record_00183 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00183 .
+
+archiving-data:Record_00184 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00184 .
+
+archiving-data:Record_00185 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00185 .
+
+archiving-data:Record_00186 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00186 .
+
+archiving-data:Record_00187 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00187 .
+
+archiving-data:Record_00188 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00188 .
+
+archiving-data:Record_00189 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00189 .
+
+archiving-data:Record_00190 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00190 .
+
+archiving-data:Record_00191 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00191 .
+
+archiving-data:Record_00192 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00192 .
+
+archiving-data:Record_00193 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00193 .
+
+archiving-data:Record_00194 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00194 .
+
+archiving-data:Record_00195 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00195 .
+
+archiving-data:Record_00196 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00196 .
+
+archiving-data:Record_00197 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00197 .
+
+archiving-data:Record_00198 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00198 .
+
+archiving-data:Record_00199 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00199 .
+
+archiving-data:Record_00200 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00200 .
+
+archiving-data:Record_00201 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00201 .
+
+archiving-data:Record_00202 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00202 .
+
+archiving-data:Record_00203 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00203 .
+
+archiving-data:Record_00204 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00204 .
+
+archiving-data:Record_00205 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00205 .
+
+archiving-data:Record_00206 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00206 .
+
+archiving-data:Record_00207 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00207 .
+
+archiving-data:Record_00208 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00208 .
+
+archiving-data:Record_00209 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00209 .
+
+archiving-data:Record_00210 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00210 .
+
+archiving-data:Record_00211 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00211 .
+
+archiving-data:Record_00212 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00212 .
+
+archiving-data:Record_00213 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00213 .
+
+archiving-data:Record_00214 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00214 .
+
+archiving-data:Record_00215 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00215 .
+
+archiving-data:Record_00216 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00216 .
+
+archiving-data:Record_00217 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00217 .
+
+archiving-data:Record_00218 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00218 .
+
+archiving-data:Record_00219 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00219 .
+
+archiving-data:Record_00220 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00220 .
+
+archiving-data:Record_00221 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00221 .
+
+archiving-data:Record_00222 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00222 .
+
+archiving-data:Record_00223 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00223 .
+
+archiving-data:Record_00224 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00224 .
+
+archiving-data:Record_00225 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00225 .
+
+archiving-data:Record_00226 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00226 .
+
+archiving-data:Record_00227 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00227 .
+
+archiving-data:Record_00228 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00228 .
+
+archiving-data:Record_00229 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00229 .
+
+archiving-data:Record_00230 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00230 .
+
+archiving-data:Record_00231 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00231 .
+
+archiving-data:Record_00232 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00232 .
+
+archiving-data:Record_00233 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00233 .
+
+archiving-data:Record_00234 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00234 .
+
+archiving-data:Record_00235 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00235 .
+
+archiving-data:Record_00236 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00236 .
+
+archiving-data:Record_00237 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00237 .
+
+archiving-data:Record_00238 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00238 .
+
+archiving-data:Record_00239 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00239 .
+
+archiving-data:Record_00240 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00240 .
+
+archiving-data:Record_00241 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00241 .
+
+archiving-data:Record_00242 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00242 .
+
+archiving-data:Record_00243 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00243 .
+
+archiving-data:Record_00244 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00244 .
+
+archiving-data:Record_00245 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00245 .
+
+archiving-data:Record_00246 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00246 .
+
+archiving-data:Record_00247 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00247 .
+
+archiving-data:Record_00248 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00248 .
+
+archiving-data:Record_00249 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00249 .
+
+archiving-data:Record_00250 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00250 .
+
+archiving-data:Record_00251 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00251 .
+
+archiving-data:Record_00252 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00252 .
+
+archiving-data:Record_00253 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00253 .
+
+archiving-data:Record_00254 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00254 .
+
+archiving-data:Record_00255 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00255 .
+
+archiving-data:Record_00256 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00256 .
+
+archiving-data:Record_00257 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00257 .
+
+archiving-data:Record_00258 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00258 .
+
+archiving-data:Record_00259 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00259 .
+
+archiving-data:Record_00260 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00260 .
+
+archiving-data:Record_00261 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00261 .
+
+archiving-data:Record_00262 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00262 .
+
+archiving-data:Record_00263 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00263 .
+
+archiving-data:Record_00264 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00264 .
+
+archiving-data:Record_00265 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00265 .
+
+archiving-data:Record_00266 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00266 .
+
+archiving-data:Record_00267 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00267 .
+
+archiving-data:Record_00268 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00268 .
+
+archiving-data:Record_00269 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00269 .
+
+archiving-data:Record_00270 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00270 .
+
+archiving-data:Record_00271 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00271 .
+
+archiving-data:Record_00272 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00272 .
+
+archiving-data:Record_00273 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00273 .
+
+archiving-data:Record_00274 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00274 .
+
+archiving-data:Record_00275 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00275 .
+
+archiving-data:Record_00276 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00276 .
+
+archiving-data:Record_00277 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00277 .
+
+archiving-data:Record_00278 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00278 .
+
+archiving-data:Record_00279 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00279 .
+
+archiving-data:Record_00280 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00280 .
+
+archiving-data:Record_00281 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00281 .
+
+archiving-data:Record_00282 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00282 .
+
+archiving-data:Record_00283 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00283 .
+
+archiving-data:Record_00284 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00284 .
+
+archiving-data:Record_00285 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00285 .
+
+archiving-data:Record_00286 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00286 .
+
+archiving-data:Record_00287 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00287 .
+
+archiving-data:Record_00288 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00288 .
+
+archiving-data:Record_00289 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00289 .
+
+archiving-data:Record_00290 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00290 .
+
+archiving-data:Record_00291 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00291 .
+
+archiving-data:Record_00292 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00292 .
+
+archiving-data:Record_00293 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00293 .
+
+archiving-data:Record_00294 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00294 .
+
+archiving-data:Record_00295 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00295 .
+
+archiving-data:Record_00296 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00296 .
+
+archiving-data:Record_00297 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00297 .
+
+archiving-data:Record_00298 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00298 .
+
+archiving-data:Record_00299 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00299 .
+
+archiving-data:Record_00300 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00300 .
+
+archiving-data:Record_00301 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00301 .
+
+archiving-data:Record_00302 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00302 .
+
+archiving-data:Record_00303 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00303 .
+
+archiving-data:Record_00304 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00304 .
+
+archiving-data:Record_00305 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00305 .
+
+archiving-data:Record_00306 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00306 .
+
+archiving-data:Record_00307 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00307 .
+
+archiving-data:Record_00308 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00308 .
+
+archiving-data:Record_00309 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00309 .
+
+archiving-data:Record_00310 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00310 .
+
+archiving-data:Record_00311 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00311 .
+
+archiving-data:Record_00312 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00312 .
+
+archiving-data:Record_00313 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00313 .
+
+archiving-data:Record_00314 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00314 .
+
+archiving-data:Record_00315 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00315 .
+
+archiving-data:Record_00316 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00316 .
+
+archiving-data:Record_00317 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00317 .
+
+archiving-data:Record_00318 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00318 .
+
+archiving-data:Record_00319 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00319 .
+
+archiving-data:Record_00320 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00320 .
+
+archiving-data:Record_00321 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00321 .
+
+archiving-data:Record_00322 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00322 .
+
+archiving-data:Record_00323 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00323 .
+
+archiving-data:Record_00324 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00324 .
+
+archiving-data:Record_00325 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00325 .
+
+archiving-data:Record_00326 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00326 .
+
+archiving-data:Record_00327 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00327 .
+
+archiving-data:Record_00328 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00328 .
+
+archiving-data:Record_00329 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00329 .
+
+archiving-data:Record_00330 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00330 .
+
+archiving-data:Record_00331 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00331 .
+
+archiving-data:Record_00332 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00332 .
+
+archiving-data:Record_00333 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00333 .
+
+archiving-data:Record_00334 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00334 .
+
+archiving-data:Record_00335 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00335 .
+
+archiving-data:Record_00336 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00336 .
+
+archiving-data:Record_00337 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00337 .
+
+archiving-data:Record_00338 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00338 .
+
+archiving-data:Record_00339 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00339 .
+
+archiving-data:Record_00340 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00340 .
+
+archiving-data:Record_00341 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00341 .
+
+archiving-data:Record_00342 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00342 .
+
+archiving-data:Record_00343 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00343 .
+
+archiving-data:Record_00344 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00344 .
+
+archiving-data:Record_00345 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00345 .
+
+archiving-data:Record_00346 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00346 .
+
+archiving-data:Record_00347 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00347 .
+
+archiving-data:Record_00348 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00348 .
+
+archiving-data:Record_00349 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00349 .
+
+archiving-data:Record_00350 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00350 .
+
+archiving-data:Record_00351 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00351 .
+
+archiving-data:Record_00352 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00352 .
+
+archiving-data:Record_00353 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00353 .
+
+archiving-data:Record_00354 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00354 .
+
+archiving-data:Record_00355 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00355 .
+
+archiving-data:Record_00356 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00356 .
+
+archiving-data:Record_00357 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00357 .
+
+archiving-data:Record_00358 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00358 .
+
+archiving-data:Record_00359 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00359 .
+
+archiving-data:Record_00360 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00360 .
+
+archiving-data:Record_00361 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00361 .
+
+archiving-data:Record_00362 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00362 .
+
+archiving-data:Record_00363 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00363 .
+
+archiving-data:Record_00364 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00364 .
+
+archiving-data:Record_00365 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00365 .
+
+archiving-data:Record_00366 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00366 .
+
+archiving-data:Record_00367 a archiving:Record ;
+    archiving:recordHasManifestation archiving-data:Volume_00367 .
+
+archiving-data:stazh a archiving:Archive ;
+    archiving:archiveHasNameLiteral "Staatsarchiv des Kantons Zürich" .
+
+archiving-data:Volume_00001 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.725; StadtA Winterthur B 3 m/1" .
+
+archiving-data:Volume_00002 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.726 (Teil 1); StadtA Winterthur B 3 m/2" .
+
+archiving-data:Volume_00003 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.7; StATG Slg. 13.2.0/8" .
+
+archiving-data:Volume_00004 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.1; StATG Slg. 13.2.0" .
+
+archiving-data:Volume_00005 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 10.1" .
+
+archiving-data:Volume_00006 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 101.1" .
+
+archiving-data:Volume_00007 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 102.1" .
+
+archiving-data:Volume_00008 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 102.2" .
+
+archiving-data:Volume_00009 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 103.1" .
+
+archiving-data:Volume_00010 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 104.1" .
+
+archiving-data:Volume_00011 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 104.2" .
+
+archiving-data:Volume_00012 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 11.1" .
+
+archiving-data:Volume_00013 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 110.1" .
+
+archiving-data:Volume_00014 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 114.1" .
+
+archiving-data:Volume_00015 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 115.1" .
+
+archiving-data:Volume_00016 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 115.2" .
+
+archiving-data:Volume_00017 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 115.3" .
+
+archiving-data:Volume_00018 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 116.1" .
+
+archiving-data:Volume_00019 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 116.2" .
+
+archiving-data:Volume_00020 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 116.3" .
+
+archiving-data:Volume_00021 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 117.1" .
+
+archiving-data:Volume_00022 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 117.4" .
+
+archiving-data:Volume_00023 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 118.1" .
+
+archiving-data:Volume_00024 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 12.1" .
+
+archiving-data:Volume_00025 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 12.2" .
+
+archiving-data:Volume_00026 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 120.1" .
+
+archiving-data:Volume_00027 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 121.1" .
+
+archiving-data:Volume_00028 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 121.2" .
+
+archiving-data:Volume_00029 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 123.1" .
+
+archiving-data:Volume_00030 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 123.2" .
+
+archiving-data:Volume_00031 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 125.1" .
+
+archiving-data:Volume_00032 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 125.2" .
+
+archiving-data:Volume_00033 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 125.3" .
+
+archiving-data:Volume_00034 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.42; StATG Slg. 13.2.0/353" .
+
+archiving-data:Volume_00035 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 126.1" .
+
+archiving-data:Volume_00036 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 128.1" .
+
+archiving-data:Volume_00037 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 129.1" .
+
+archiving-data:Volume_00038 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 129.2" .
+
+archiving-data:Volume_00039 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 13.1" .
+
+archiving-data:Volume_00040 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 131.1" .
+
+archiving-data:Volume_00041 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 132.1" .
+
+archiving-data:Volume_00042 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 132.2" .
+
+archiving-data:Volume_00043 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 133.1" .
+
+archiving-data:Volume_00044 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 133.2" .
+
+archiving-data:Volume_00045 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 133.3" .
+
+archiving-data:Volume_00046 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 135.1" .
+
+archiving-data:Volume_00047 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 135.2" .
+
+archiving-data:Volume_00048 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 136.1" .
+
+archiving-data:Volume_00049 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 137.1" .
+
+archiving-data:Volume_00050 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 137.2" .
+
+archiving-data:Volume_00051 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 138.1" .
+
+archiving-data:Volume_00052 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 139.1" .
+
+archiving-data:Volume_00053 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 139.2" .
+
+archiving-data:Volume_00054 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.16; StATG Slg. 13.2.0/64" .
+
+archiving-data:Volume_00055 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 14.1" .
+
+archiving-data:Volume_00056 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 140.1" .
+
+archiving-data:Volume_00057 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 141.1" .
+
+archiving-data:Volume_00058 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 142.1" .
+
+archiving-data:Volume_00059 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 142.2" .
+
+archiving-data:Volume_00060 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 143.1" .
+
+archiving-data:Volume_00061 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 143.2" .
+
+archiving-data:Volume_00062 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 147.1" .
+
+archiving-data:Volume_00063 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 147.2" .
+
+archiving-data:Volume_00064 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 148.1" .
+
+archiving-data:Volume_00065 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 15.1" .
+
+archiving-data:Volume_00066 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 15.2" .
+
+archiving-data:Volume_00067 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 150.1" .
+
+archiving-data:Volume_00068 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 16.1" .
+
+archiving-data:Volume_00069 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 17.1" .
+
+archiving-data:Volume_00070 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 18.1" .
+
+archiving-data:Volume_00071 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 19.1" .
+
+archiving-data:Volume_00072 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 19.2" .
+
+archiving-data:Volume_00073 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 2.1" .
+
+archiving-data:Volume_00074 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 20.1" .
+
+archiving-data:Volume_00075 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 20.3" .
+
+archiving-data:Volume_00076 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 21.1" .
+
+archiving-data:Volume_00077 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 21.2" .
+
+archiving-data:Volume_00078 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 21.3" .
+
+archiving-data:Volume_00079 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 22.1" .
+
+archiving-data:Volume_00080 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 22.2" .
+
+archiving-data:Volume_00081 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 22.3" .
+
+archiving-data:Volume_00082 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 23.1" .
+
+archiving-data:Volume_00083 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 24.1" .
+
+archiving-data:Volume_00084 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 26.1" .
+
+archiving-data:Volume_00085 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 27.1" .
+
+archiving-data:Volume_00086 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 27.2" .
+
+archiving-data:Volume_00087 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 28.1" .
+
+archiving-data:Volume_00088 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 3.1" .
+
+archiving-data:Volume_00089 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 3.2" .
+
+archiving-data:Volume_00090 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 30.1" .
+
+archiving-data:Volume_00091 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 31.1" .
+
+archiving-data:Volume_00092 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 32.1" .
+
+archiving-data:Volume_00093 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 32.2" .
+
+archiving-data:Volume_00094 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 32.3" .
+
+archiving-data:Volume_00095 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 33.1" .
+
+archiving-data:Volume_00096 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 33.2" .
+
+archiving-data:Volume_00097 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 33.3" .
+
+archiving-data:Volume_00098 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 33.4" .
+
+archiving-data:Volume_00099 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 34.1" .
+
+archiving-data:Volume_00100 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 34.2" .
+
+archiving-data:Volume_00101 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 35.1" .
+
+archiving-data:Volume_00102 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 36.1" .
+
+archiving-data:Volume_00103 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 37.1" .
+
+archiving-data:Volume_00104 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 38.1" .
+
+archiving-data:Volume_00105 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 39.1" .
+
+archiving-data:Volume_00106 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 40.1" .
+
+archiving-data:Volume_00107 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 41.1" .
+
+archiving-data:Volume_00108 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 41.2" .
+
+archiving-data:Volume_00109 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.27; StATG Slg. 13.2.0/153" .
+
+archiving-data:Volume_00110 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 42.1" .
+
+archiving-data:Volume_00111 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 42.2" .
+
+archiving-data:Volume_00112 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 42.3" .
+
+archiving-data:Volume_00113 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 43.1" .
+
+archiving-data:Volume_00114 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 43.2" .
+
+archiving-data:Volume_00115 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 44.2" .
+
+archiving-data:Volume_00116 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 44.4" .
+
+archiving-data:Volume_00117 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 45.1" .
+
+archiving-data:Volume_00118 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 45.2" .
+
+archiving-data:Volume_00119 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 46.1" .
+
+archiving-data:Volume_00120 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 47.1" .
+
+archiving-data:Volume_00121 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 49.1" .
+
+archiving-data:Volume_00122 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 50.1" .
+
+archiving-data:Volume_00123 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 51.1" .
+
+archiving-data:Volume_00124 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 52.1" .
+
+archiving-data:Volume_00125 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 53.1" .
+
+archiving-data:Volume_00126 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 57.1" .
+
+archiving-data:Volume_00127 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 127.1" .
+
+archiving-data:Volume_00128 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 48.1" .
+
+archiving-data:Volume_00129 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 57.2" .
+
+archiving-data:Volume_00130 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 57.3" .
+
+archiving-data:Volume_00131 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 58.2" .
+
+archiving-data:Volume_00132 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 58.3" .
+
+archiving-data:Volume_00133 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 6.1" .
+
+archiving-data:Volume_00134 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 60.1" .
+
+archiving-data:Volume_00135 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 61.1" .
+
+archiving-data:Volume_00136 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 62.1" .
+
+archiving-data:Volume_00137 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 62.2" .
+
+archiving-data:Volume_00138 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 62.3" .
+
+archiving-data:Volume_00139 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 63.2" .
+
+archiving-data:Volume_00140 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 63.3" .
+
+archiving-data:Volume_00141 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 63.4" .
+
+archiving-data:Volume_00142 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 63.5" .
+
+archiving-data:Volume_00143 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 64.1" .
+
+archiving-data:Volume_00144 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 64.2" .
+
+archiving-data:Volume_00145 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 65.1" .
+
+archiving-data:Volume_00146 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 68.1" .
+
+archiving-data:Volume_00147 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 68.4" .
+
+archiving-data:Volume_00148 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 69.1" .
+
+archiving-data:Volume_00149 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 70.1" .
+
+archiving-data:Volume_00150 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 71.1" .
+
+archiving-data:Volume_00151 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 71.2" .
+
+archiving-data:Volume_00152 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 72.1" .
+
+archiving-data:Volume_00153 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 73.1" .
+
+archiving-data:Volume_00154 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 73.2" .
+
+archiving-data:Volume_00155 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 75.1" .
+
+archiving-data:Volume_00156 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 75.2" .
+
+archiving-data:Volume_00157 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 76.1" .
+
+archiving-data:Volume_00158 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 77.1" .
+
+archiving-data:Volume_00159 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 78.1" .
+
+archiving-data:Volume_00160 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 78.2" .
+
+archiving-data:Volume_00161 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 79.1" .
+
+archiving-data:Volume_00162 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 79.3" .
+
+archiving-data:Volume_00163 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 8.1" .
+
+archiving-data:Volume_00164 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 8.10" .
+
+archiving-data:Volume_00165 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 8.7" .
+
+archiving-data:Volume_00166 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 8.8" .
+
+archiving-data:Volume_00167 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 8.9" .
+
+archiving-data:Volume_00168 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 80.1" .
+
+archiving-data:Volume_00169 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 81.1" .
+
+archiving-data:Volume_00170 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 85.1" .
+
+archiving-data:Volume_00171 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 86.1" .
+
+archiving-data:Volume_00172 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 86.2" .
+
+archiving-data:Volume_00173 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 87.1" .
+
+archiving-data:Volume_00174 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 87.2" .
+
+archiving-data:Volume_00175 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 88.1" .
+
+archiving-data:Volume_00176 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 88.2" .
+
+archiving-data:Volume_00177 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 88.3" .
+
+archiving-data:Volume_00178 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 89.1" .
+
+archiving-data:Volume_00179 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 89.2" .
+
+archiving-data:Volume_00180 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 89.3" .
+
+archiving-data:Volume_00181 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 90.1" .
+
+archiving-data:Volume_00182 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 91.1" .
+
+archiving-data:Volume_00183 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 92.1" .
+
+archiving-data:Volume_00184 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 93.1" .
+
+archiving-data:Volume_00185 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 95.1" .
+
+archiving-data:Volume_00186 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 95.2" .
+
+archiving-data:Volume_00187 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 96.1" .
+
+archiving-data:Volume_00188 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 96.2" .
+
+archiving-data:Volume_00189 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 97.1" .
+
+archiving-data:Volume_00190 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 98.1" .
+
+archiving-data:Volume_00191 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 99.2" .
+
+archiving-data:Volume_00192 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 99.3" .
+
+archiving-data:Volume_00193 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.709.1; StadtA Winterthur OJB 1" .
+
+archiving-data:Volume_00194 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.709.2; StadtA Winterthur OJB 2" .
+
+archiving-data:Volume_00195 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.713; StadtA Winterthur SJB 1" .
+
+archiving-data:Volume_00196 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.718; StadtA Winterthur TJB 1" .
+
+archiving-data:Volume_00197 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.735 (Teil 1); StadtAZH VIII.C. 1." .
+
+archiving-data:Volume_00198 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.735 (Teil 2); StadtAZH VIII.C. 1." .
+
+archiving-data:Volume_00199 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.749; StadtAZH VIII.C. 15." .
+
+archiving-data:Volume_00200 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.862 (Teil 2); StadtAZH VIII.C. 166." .
+
+archiving-data:Volume_00201 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.865; StadtAZH VIII.C. 169." .
+
+archiving-data:Volume_00202 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.867; StadtAZH VIII.C. 171." .
+
+archiving-data:Volume_00203 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.873 (Teil 4); StadtAZH VIII.C. 177." .
+
+archiving-data:Volume_00204 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.879; StadtAZH VIII.C. 183." .
+
+archiving-data:Volume_00205 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.883; StadtAZH VIII.C. 187." .
+
+archiving-data:Volume_00206 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.708; ERKGA St. Peter IV B 39" .
+
+archiving-data:Volume_00207 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.737; StadtAZH VIII.C. 3." .
+
+archiving-data:Volume_00208 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.768 (Teil 2); StadtAZH VIII.C. 34." .
+
+archiving-data:Volume_00209 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.738; StadtAZH VIII.C. 4." .
+
+archiving-data:Volume_00210 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.739; StadtAZH VIII.C. 5." .
+
+archiving-data:Volume_00211 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.824; StadtAZH VIII.C. 89." .
+
+archiving-data:Volume_00212 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.721; StadtA Winterthur VJB 1" .
+
+archiving-data:Volume_00213 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.722; StadtA Winterthur VJB 2" .
+
+archiving-data:Volume_00214 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.731; StadtA Winterthur WJB 1" .
+
+archiving-data:Volume_00215 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.732; StadtA Winterthur WJB 2" .
+
+archiving-data:Volume_00216 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.769 (Teil 1); StadtAZH VIII.C. 35." .
+
+archiving-data:Volume_00217 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 3.3" .
+
+archiving-data:Volume_00218 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 9.1" .
+
+archiving-data:Volume_00219 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 9.2" .
+
+archiving-data:Volume_00220 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 10.2" .
+
+archiving-data:Volume_00221 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 10.3" .
+
+archiving-data:Volume_00222 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 11.2" .
+
+archiving-data:Volume_00223 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 11.3" .
+
+archiving-data:Volume_00224 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 12.3" .
+
+archiving-data:Volume_00225 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 13.2" .
+
+archiving-data:Volume_00226 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 14.2" .
+
+archiving-data:Volume_00227 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 15.3" .
+
+archiving-data:Volume_00228 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 18.2" .
+
+archiving-data:Volume_00229 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 19.3" .
+
+archiving-data:Volume_00230 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 21.6" .
+
+archiving-data:Volume_00231 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 22.4" .
+
+archiving-data:Volume_00232 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 24.2" .
+
+archiving-data:Volume_00233 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 25.1" .
+
+archiving-data:Volume_00234 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 27.3" .
+
+archiving-data:Volume_00235 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 29.1" .
+
+archiving-data:Volume_00236 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 30.2" .
+
+archiving-data:Volume_00237 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 31.2" .
+
+archiving-data:Volume_00238 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 32.4" .
+
+archiving-data:Volume_00239 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 32.5" .
+
+archiving-data:Volume_00240 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 33.5" .
+
+archiving-data:Volume_00241 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 34.3" .
+
+archiving-data:Volume_00242 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 36.2" .
+
+archiving-data:Volume_00243 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 38.2" .
+
+archiving-data:Volume_00244 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 39.2" .
+
+archiving-data:Volume_00245 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 40.2" .
+
+archiving-data:Volume_00246 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 41.3" .
+
+archiving-data:Volume_00247 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 41.5" .
+
+archiving-data:Volume_00248 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 41.7" .
+
+archiving-data:Volume_00249 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 42.4" .
+
+archiving-data:Volume_00250 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 43.3" .
+
+archiving-data:Volume_00251 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 45.3" .
+
+archiving-data:Volume_00252 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 45.4" .
+
+archiving-data:Volume_00253 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 47.2" .
+
+archiving-data:Volume_00254 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 48.2" .
+
+archiving-data:Volume_00255 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 51.2" .
+
+archiving-data:Volume_00256 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 52.2" .
+
+archiving-data:Volume_00257 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 53.2" .
+
+archiving-data:Volume_00258 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 54.1" .
+
+archiving-data:Volume_00259 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 57.4" .
+
+archiving-data:Volume_00260 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 58.4" .
+
+archiving-data:Volume_00261 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 71.4" .
+
+archiving-data:Volume_00262 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 72.2" .
+
+archiving-data:Volume_00263 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 73.3" .
+
+archiving-data:Volume_00264 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 74.1" .
+
+archiving-data:Volume_00265 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 75.3" .
+
+archiving-data:Volume_00266 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 75.4" .
+
+archiving-data:Volume_00267 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 76.2" .
+
+archiving-data:Volume_00268 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 78.3" .
+
+archiving-data:Volume_00269 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 79.4" .
+
+archiving-data:Volume_00270 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 80.2" .
+
+archiving-data:Volume_00271 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 81.2" .
+
+archiving-data:Volume_00272 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 82.1" .
+
+archiving-data:Volume_00273 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 85.2" .
+
+archiving-data:Volume_00274 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 86.3" .
+
+archiving-data:Volume_00275 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 87.3" .
+
+archiving-data:Volume_00276 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 88.4" .
+
+archiving-data:Volume_00277 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 88.5" .
+
+archiving-data:Volume_00278 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 89.4" .
+
+archiving-data:Volume_00279 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 90.2" .
+
+archiving-data:Volume_00280 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 91.2" .
+
+archiving-data:Volume_00281 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 92.2" .
+
+archiving-data:Volume_00282 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 93.2" .
+
+archiving-data:Volume_00283 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 95.3" .
+
+archiving-data:Volume_00284 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 98.2" .
+
+archiving-data:Volume_00285 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 100.1" .
+
+archiving-data:Volume_00286 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 101.2" .
+
+archiving-data:Volume_00287 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 103.2" .
+
+archiving-data:Volume_00288 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 105.1" .
+
+archiving-data:Volume_00289 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 106.1" .
+
+archiving-data:Volume_00290 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 106.2" .
+
+archiving-data:Volume_00291 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 108.1" .
+
+archiving-data:Volume_00292 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 112.1" .
+
+archiving-data:Volume_00293 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 114.2" .
+
+archiving-data:Volume_00294 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 114.3" .
+
+archiving-data:Volume_00295 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 115.4" .
+
+archiving-data:Volume_00296 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 115.5" .
+
+archiving-data:Volume_00297 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 116.4" .
+
+archiving-data:Volume_00298 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 117.6" .
+
+archiving-data:Volume_00299 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 118.2" .
+
+archiving-data:Volume_00300 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.710 (Teil 2); StadtA Winterthur OJB 3" .
+
+archiving-data:Volume_00301 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.714; StadtA Winterthur SJB 2" .
+
+archiving-data:Volume_00302 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.719; StadtA Winterthur TJB 2" .
+
+archiving-data:Volume_00303 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.728; StadtA Winterthur B 3 m/4" .
+
+archiving-data:Volume_00304 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.733; StadtA Winterthur WJB 3" .
+
+archiving-data:Volume_00305 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 58.5" .
+
+archiving-data:Volume_00306 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 59.1" .
+
+archiving-data:Volume_00307 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 60.2" .
+
+archiving-data:Volume_00308 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 62.4" .
+
+archiving-data:Volume_00309 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 62.5" .
+
+archiving-data:Volume_00310 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 63.6" .
+
+archiving-data:Volume_00311 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 65.3" .
+
+archiving-data:Volume_00312 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 66.1" .
+
+archiving-data:Volume_00313 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 67.1" .
+
+archiving-data:Volume_00314 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 68.5" .
+
+archiving-data:Volume_00315 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 69.2" .
+
+archiving-data:Volume_00316 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 71.3" .
+
+archiving-data:Volume_00317 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.740 (Teil 1); StadtAZH VIII.C. 6." .
+
+archiving-data:Volume_00318 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.741 (Teil 1); StadtAZH VIII.C. 7." .
+
+archiving-data:Volume_00319 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.742 (Teil 1); StadtAZH VIII.C. 8." .
+
+archiving-data:Volume_00320 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.750; StadtAZH VIII.C. 16." .
+
+archiving-data:Volume_00321 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.759; StadtAZH VIII.C. 25." .
+
+archiving-data:Volume_00322 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.770 (Teil 2); StadtAZH VIII.C. 36." .
+
+archiving-data:Volume_00323 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.790; StadtAZH VIII.C. 55." .
+
+archiving-data:Volume_00324 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.825; StadtAZH VIII.C. 90." .
+
+archiving-data:Volume_00325 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.846 (Teil 1); StadtAZH VIII.C. 110." .
+
+archiving-data:Volume_00326 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.846 (Teil 2); StadtAZH VIII.C. 110." .
+
+archiving-data:Volume_00327 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.868; StadtAZH VIII.C. 172." .
+
+archiving-data:Volume_00328 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.874 (Teil 3); StadtAZH VIII.C. 178." .
+
+archiving-data:Volume_00329 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.877 (Teil 1); StadtAZH VIII.C. 181." .
+
+archiving-data:Volume_00330 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.880; StadtAZH VIII.C. 184." .
+
+archiving-data:Volume_00331 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.2; StATG Slg. 13.2.0/2" .
+
+archiving-data:Volume_00332 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.8; StATG Slg. 13.2.0/9" .
+
+archiving-data:Volume_00333 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.33; StATG Slg. 13.2.0/245" .
+
+archiving-data:Volume_00334 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 3.43; StATG Slg. 13.2.0/354" .
+
+archiving-data:Volume_00335 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 128.3" .
+
+archiving-data:Volume_00336 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 129.3" .
+
+archiving-data:Volume_00337 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 129.4" .
+
+archiving-data:Volume_00338 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 131.2" .
+
+archiving-data:Volume_00339 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 132.3" .
+
+archiving-data:Volume_00340 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 119.1" .
+
+archiving-data:Volume_00341 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 119.2" .
+
+archiving-data:Volume_00342 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 120.2" .
+
+archiving-data:Volume_00343 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 121.3" .
+
+archiving-data:Volume_00344 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 123.3" .
+
+archiving-data:Volume_00345 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 123.5" .
+
+archiving-data:Volume_00346 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 125.4" .
+
+archiving-data:Volume_00347 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 126.2" .
+
+archiving-data:Volume_00348 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 127.2" .
+
+archiving-data:Volume_00349 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 128.2" .
+
+archiving-data:Volume_00350 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 138.2" .
+
+archiving-data:Volume_00351 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 139.3" .
+
+archiving-data:Volume_00352 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 141.2" .
+
+archiving-data:Volume_00353 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 142.3" .
+
+archiving-data:Volume_00354 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 143.3" .
+
+archiving-data:Volume_00355 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 147.3" .
+
+archiving-data:Volume_00356 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 148.5" .
+
+archiving-data:Volume_00357 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 149.10" .
+
+archiving-data:Volume_00358 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 150.2" .
+
+archiving-data:Volume_00359 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 132.4" .
+
+archiving-data:Volume_00360 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 133.4" .
+
+archiving-data:Volume_00361 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 134.1" .
+
+archiving-data:Volume_00362 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 135.3" .
+
+archiving-data:Volume_00363 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 136.2" .
+
+archiving-data:Volume_00364 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "E III 137.3" .
+
+archiving-data:Volume_00365 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.769 (Teil 3); StadtAZH VIII.C. 35." .
+
+archiving-data:Volume_00366 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.740 (Teil 2); StadtAZH VIII.C. 6." .
+
+archiving-data:Volume_00367 a archiving:Volume ;
+    archiving:manifestationIsIdentifiedByIdentifierLiteral "TAI 1.741 (Teil 2); StadtAZH VIII.C. 7." .
+
