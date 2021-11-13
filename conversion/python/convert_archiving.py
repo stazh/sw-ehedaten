@@ -94,21 +94,18 @@ for row in input_file:
 		if row['Herkunft_Frau'] != "":
 			title_string = title_string + ", " + row['Herkunft_Frau']
 		additional_content_string = ""
-		if row['Zusatzinfo_Mann'] != "":
-			additional_content_string = "Zusatzinformationen zu Mann:\n"+row['Zusatzinfo_Mann']
-		if row['Zusatzinfo_Frau'] != "":
-			if row['Zusatzinfo_Mann'] != "":
-				additional_content_string = additional_content_string + "\nZusatzinformationen zu Frau:\n"+row['Zusatzinfo_Frau']
-			else:
-				additional_content_string = "Zusatzinformationen zu Frau:\n"+row['Zusatzinfo_Frau']
+		if row['Zusatzinfo_Mann'] != "" and row['Zusatzinfo_Mann'] != "-":
+			additional_content_string = "Zusatzinformation Mann: "+row['Zusatzinfo_Mann']
+			output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasAdditionalContentLiteral, Literal(additional_content_string))) 
+		if row['Zusatzinfo_Frau'] != "" and row['Zusatzinfo_Frau'] != "-":
+			additional_content_string = "Zusatzinformation Frau: "+row['Zusatzinfo_Frau']
+			output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasAdditionalContentLiteral, Literal(additional_content_string))) 
 
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasTitleLiteral, Literal(title_string)))
-		if additional_content_string != "":
-			output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasAdditionalContentLiteral, Literal(additional_content_string))) 
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasdateOfOriginLiteral, Literal(row['Datum'])))	
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasWebpageURI, Literal(row['Webseite'], datatype=XSD.anyURI)))
 	
-	if rowCounter % 3000 == 0:
+	if rowCounter % 10000 == 0:
 		fileCounter += 1
 		fileName = 'triples_archiving_' + str(fileCounter) + '.ttl'
 		output_graph.serialize(destination=fileName, format='turtle')
