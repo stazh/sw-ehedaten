@@ -104,12 +104,11 @@ archiving:Webpage
 	rdfs:comment """Webpage of the record or record part in an archive information system."""@en;
 	rdfs:subClassOf electronic-information:Webpage.
 
-archiving:RecordPartReference
+archiving:Reference
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
-	rdfs:label "record part reference"@en, "Archivverzeichniseinheit-Teil-Referenz"@de;
-	rdfs:comment """A reference to a part of the manifestation of a record. This reference is described in the record part of a record. F.e. a record part has as manifestation a textline in a volume. And this volume is the manifestation of the record, of which the record part is part of. So in this example the record part reference is an information in the record part, which says, on which page of the volume the textline can be found."""@en;
-	rdfs:subClassOf document:ContentStructureReference.
+	rdfs:label "reference"@en, "Referenz"@de;
+	rdfs:comment """A reference as the information, how a record refers to an other record or record part or vice versa. Same holds for manifestation."""@en.
 
 
 #
@@ -128,6 +127,15 @@ archiving:recordHasRecordPart
 	a owl:ObjectProperty;
 	rdfs:label "record has record part"@en, "Archivverzeichniseinheit hat Archivverzeichniseinheit-Teil";
 	rdfs:comment """Relating a record part to the record of which it is part of."""@en;
+	rdfs:domain archiving:Record;
+	rdfs:range archiving:RecordPart;
+	rdfs:subPropertyOf rico:hasOrHadPart.
+
+archiving:recordHasReferenceToRecordPart
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record has reference to record part"@en, "Archivverzeichniseinheit hat Referenz zu Archivverzeichniseinheit-Teil";
+	rdfs:comment """Relating a record part to the record of which it is part of and at the same time it is said that a reference to this relation exists."""@en;
 	rdfs:domain archiving:Record;
 	rdfs:range archiving:RecordPart;
 	rdfs:subPropertyOf rico:hasOrHadPart.
@@ -238,8 +246,6 @@ archiving:recordPartHasdateOfOriginLiteral
 	rdfs:domain archiving:RecordPart;
 	rdfs:range rdfs:Literal;
 	rdfs:subPropertyOf rico:creationDate.
-
-#HIER WEITER mit direktem LITERAL
 
 #Scope-ID
 archiving:recordIsIdentifiedByIdentifier 
@@ -364,9 +370,17 @@ archiving:agentHasNameLiteral
 archiving:referenceHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a owl:ObjectProperty;
-	rdfs:label "reference has name literal"@en, "Referenz hat Literal";
+	rdfs:label "reference has literal"@en, "Referenz hat Literal";
 	rdfs:comment """Relating a reference to its literal."""@en;
 	rdfs:domain archiving:Reference;
+	rdfs:range rdfs:Literal.
+
+archiving:recordPartHasReferenceLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "record part has reference literal"@en, "Archivverzeichniseinheit-Teil hat Referenz-Literal";
+	rdfs:comment """Relating a record part to its reference literal."""@en;
+	rdfs:domain archiving:RecordPart;
 	rdfs:range rdfs:Literal.
 
 archiving:recordHasWebpage
