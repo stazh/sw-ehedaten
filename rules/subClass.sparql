@@ -1,6 +1,6 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-INSERT {?X a ?D} WHERE {?C rdfs:subClassOf ?D. ?X a ?C}.
-INSERT {?C rdfs:subClassOf ?E} WHERE {?C rdfs:subClassOf ?D. ?D rdfs:subClassOf ?E}.
-INSERT {?P rdfs:domain ?D} WHERE {?C rdfs:subClassOf ?D. ?P rdfs:domain ?C}.
-INSERT {?P rdfs:range ?D} WHERE {?C rdfs:subClassOf ?D. ?P rdfs:range ?C}.
+INSERT {?X a ?D} WHERE {?C rdfs:subClassOf ?D. ?X a ?C}
+INSERT {?C rdfs:subClassOf ?E} WHERE {?C rdfs:subClassOf ?D. ?D rdfs:subClassOf ?E}
+INSERT {?P rdfs:domain ?D} WHERE {?C rdfs:subClassOf ?D. ?P rdfs:domain ?C}
+INSERT {?P rdfs:range ?D} WHERE {?C rdfs:subClassOf ?D. ?P rdfs:range ?C}
