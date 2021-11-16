@@ -1,0 +1,4 @@
+PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
+
+INSERT {?Record archiving:recordHasTitle [a archiving:Title. archiving:titleHasLiteral ?Literal]} WHERE {?Record archiving:recordHasTitleLiteral ?Literal}.
+INSERT {?RecordPart archiving:recordPartHasTitle [a archiving:Title. archiving:titleHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartHasTitleLiteral ?Literal}.
