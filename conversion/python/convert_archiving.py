@@ -81,6 +81,7 @@ output_graph.add((data_archiving.stazh, ontology_archiving.archiveHasNameLiteral
 
 fileName = 'triples_archiving_records_and_agents' + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
+print(fileName)
 
 output_graph = Graph()
 output_graph.bind('archiving', ontology_archiving)

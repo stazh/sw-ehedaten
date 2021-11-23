@@ -76,6 +76,13 @@ archiving:Volume
 	rdfs:comment """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en;
 	rdfs:subClassOf archiving:Manifestation, information-carrier:Volume.
 
+archiving:DigitalCopy
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a rdfs:Class;
+	rdfs:label "digital copy"@en, "Digitalisat"@de;
+	rdfs:comment """Digital copy as type of the carrier resp. the archival material type."""@en;
+	rdfs:subClassOf archiving:Manifestation.
+
 archiving:AdditionalContent
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
@@ -413,6 +420,14 @@ archiving:recordPartHasWebpageURI
 	rdfs:label "record part has webpage URI"@en, "Archivverzeichniseinheit-Teil hat Webseite-URI";
 	rdfs:comment """Relating a record part to the webpage uri of the entry in an archive information system."""@en;
 	rdfs:domain archiving:RecordPart;
+	rdfs:range xsd:anyURI.
+
+archiving:digitalCopyHasWebpageURI
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
+	a owl:ObjectProperty;
+	rdfs:label "digital copy has webpage URI"@en, "Digitalisat hat Webseite-URI";
+	rdfs:comment """Relating a digital copy to the webpage uri."""@en;
+	rdfs:domain archiving:DigitalCopy;
 	rdfs:range xsd:anyURI.
 
 archiving:webpageHasURL

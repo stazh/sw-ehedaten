@@ -69,6 +69,14 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "volume"@en, "Band"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation), [information-carrier:Volume](https://e-editiones.ch/ontology/information-carrier#Volume). |
+## DigitalCopy
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "digital copy"@en, "Digitalisat"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Digital copy as type of the carrier resp. the archival material type."""@en; |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation). |
 ## AdditionalContent
 | Predicate | Object |
 |:-------- |:-------- |
@@ -440,6 +448,15 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has webpage URI"@en, "Archivverzeichniseinheit-Teil hat Webseite-URI"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the webpage uri of the entry in an archive information system."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI). |
+## digitalCopyHasWebpageURI
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "digital copy has webpage URI"@en, "Digitalisat hat Webseite-URI"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a digital copy to the webpage uri."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:DigitalCopy](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DigitalCopy); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI). |
 ## webpageHasURL
 | Predicate | Object |
