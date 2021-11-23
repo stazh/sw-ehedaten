@@ -20,7 +20,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "archive"@en, "Archiv"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Organization having a role of systematic collection, preservation, care and making accessible documents, objects etc. which hold information of the past. There are state archives which document the activities of the administration of the state, or there are archives that collect documents on specific topics - f.e. Social Archive or Women's Archive."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [organization:Archive](https://e-editiones.ch/ontology/organization#Archive). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-organization:Archive](https://e-editiones.ch/ontology/organization#Archive). |
 ## Agent
 | Predicate | Object |
 |:-------- |:-------- |
@@ -28,7 +28,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "agent"@en, "Akteur"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Something, someone, ... performing in an action."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [agent:Agent](https://e-editiones.ch/ontology/agent#Agent), [rico:Agent](https://www.ica.org/standards/RiC/ontology#Agent). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-agent:Agent](https://e-editiones.ch/ontology/agent#Agent), [rico:Agent](https://www.ica.org/standards/RiC/ontology#Agent). |
 ## Record
 | Predicate | Object |
 |:-------- |:-------- |
@@ -60,7 +60,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "manifestation"@en, "Ausprägung"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Carrier of information created by an agent with role provencance. The physical archived thing to which the record or the record part refers. A record or record part can refer to no manifestation, because it is lost or a record or record part can refer to more than one manifestation (f.e. if there exists a digital representation)."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Instantiation](https://www.ica.org/standards/RiC/ontology#Instantiation), [information-carrier:Carrier](https://e-editiones.ch/ontology/information-carrier#Carrier). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Instantiation](https://www.ica.org/standards/RiC/ontology#Instantiation), [nie-ine-information-carrier:Carrier](https://e-editiones.ch/ontology/information-carrier#Carrier). |
 ## Volume
 | Predicate | Object |
 |:-------- |:-------- |
@@ -68,7 +68,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "volume"@en, "Band"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation), [information-carrier:Volume](https://e-editiones.ch/ontology/information-carrier#Volume). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:Manifestation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Manifestation), [nie-ine-information-carrier:Volume](https://e-editiones.ch/ontology/information-carrier#Volume). |
 ## DigitalCopy
 | Predicate | Object |
 |:-------- |:-------- |
@@ -107,7 +107,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "webpage"@en, "Webseite"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Webpage of the record or record part in an archive information system."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [electronic-information:Webpage](https://e-editiones.ch/ontology/electronic-information#Webpage). |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-electronic-information:Webpage](https://e-editiones.ch/ontology/electronic-information#Webpage). |
 ## Reference
 | Predicate | Object |
 |:-------- |:-------- |
@@ -467,7 +467,7 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a webpage to its URL."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Webpage](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Webpage); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI); |
-| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [electronic-information:webpageHasURL](https://e-editiones.ch/ontology/electronic-information#webpageHasURL). |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [nie-ine-electronic-information:webpageHasURL](https://e-editiones.ch/ontology/electronic-information#webpageHasURL). |
 ## recordHasAdditionalContent
 | Predicate | Object |
 |:-------- |:-------- |

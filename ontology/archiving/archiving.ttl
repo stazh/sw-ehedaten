@@ -4,11 +4,11 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@prefix information-carrier: <https://e-editiones.ch/ontology/information-carrier#> .
-@prefix organization: <https://e-editiones.ch/ontology/organization#> .
-@prefix document: <https://e-editiones.ch/ontology/document#> .
-@prefix agent: <https://e-editiones.ch/ontology/agent#> .
-@prefix electronic-information: <https://e-editiones.ch/ontology/electronic-information#> .
+@prefix nie-ine-information-carrier: <https://e-editiones.ch/ontology/information-carrier#> .
+@prefix nie-ine-organization: <https://e-editiones.ch/ontology/organization#> .
+@prefix nie-ine-document: <https://e-editiones.ch/ontology/document#> .
+@prefix nie-ine-agent: <https://e-editiones.ch/ontology/agent#> .
+@prefix nie-ine-electronic-information: <https://e-editiones.ch/ontology/electronic-information#> .
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving.> .
 @prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#> .
@@ -32,14 +32,14 @@ archiving:Archive
 	a rdfs:Class;
 	rdfs:label "archive"@en, "Archiv"@de;
 	rdfs:comment """Organization having a role of systematic collection, preservation, care and making accessible documents, objects etc. which hold information of the past. There are state archives which document the activities of the administration of the state, or there are archives that collect documents on specific topics - f.e. Social Archive or Women's Archive."""@en;
-	rdfs:subClassOf organization:Archive.
+	rdfs:subClassOf nie-ine-organization:Archive.
 
 archiving:Agent
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
 	rdfs:label "agent"@en, "Akteur"@de;
 	rdfs:comment """Something, someone, ... performing in an action."""@en;
-	rdfs:subClassOf agent:Agent, rico:Agent.
+	rdfs:subClassOf nie-ine-agent:Agent, rico:Agent.
 
 archiving:Record
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -67,14 +67,14 @@ archiving:Manifestation
 	a rdfs:Class;
 	rdfs:label "manifestation"@en, "Ausprägung"@de;
 	rdfs:comment """Carrier of information created by an agent with role provencance. The physical archived thing to which the record or the record part refers. A record or record part can refer to no manifestation, because it is lost or a record or record part can refer to more than one manifestation (f.e. if there exists a digital representation)."""@en;
-	rdfs:subClassOf rico:Instantiation, information-carrier:Carrier.
+	rdfs:subClassOf rico:Instantiation, nie-ine-information-carrier:Carrier.
 
 archiving:Volume
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
 	a rdfs:Class;
 	rdfs:label "volume"@en, "Band"@de;
 	rdfs:comment """Volume as type of the carrier resp. the archival material type. It is also a special book: One book of a serie of books. One serie is a set of books which are mostly created for the same purpose by the same agent."""@en;
-	rdfs:subClassOf archiving:Manifestation, information-carrier:Volume.
+	rdfs:subClassOf archiving:Manifestation, nie-ine-information-carrier:Volume.
 
 archiving:DigitalCopy
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -109,7 +109,7 @@ archiving:Webpage
 	a rdfs:Class;
 	rdfs:label "webpage"@en, "Webseite"@de;
 	rdfs:comment """Webpage of the record or record part in an archive information system."""@en;
-	rdfs:subClassOf electronic-information:Webpage.
+	rdfs:subClassOf nie-ine-electronic-information:Webpage.
 
 archiving:Reference
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
@@ -437,7 +437,7 @@ archiving:webpageHasURL
 	rdfs:comment """Relating a webpage to its URL."""@en;
 	rdfs:domain archiving:Webpage;
 	rdfs:range xsd:anyURI;
-	rdfs:subPropertyOf electronic-information:webpageHasURL.
+	rdfs:subPropertyOf nie-ine-electronic-information:webpageHasURL.
 
 archiving:recordHasAdditionalContent
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>;
