@@ -120,10 +120,10 @@ marriage:marriageEntryHasDatingOnDate
 	rdfs:domain marriage:MarriageEntry;
 	rdfs:range date:Date.
 
-marriage:marriageEntryHasDatingBetweenDatePeriod
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasDatingBetweenDatePeriod>;
+marriage:marriageEntryHasDatingWithinDatePeriod
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasDatingWithinDatePeriod>;
 	a owl:ObjectProperty;
-	rdfs:label "marriage entry has dating between date period"@en, "Eheeintrag hat Datierung zwischen Datumsperiode"@de;
-	rdfs:comment """Relating a marriage entry to the date period between which its dating is possible."""@en;
+	rdfs:label "marriage entry has dating within date period"@en, "Eheeintrag hat Datierung innerhalb Datumsperiode"@de;
+	rdfs:comment """Relating a marriage entry to the date period within its dating is possible."""@en;
 	rdfs:domain marriage:MarriageEntry;
 	rdfs:range date:DatePeriod.
