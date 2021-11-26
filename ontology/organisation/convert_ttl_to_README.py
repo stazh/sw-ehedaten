@@ -15,7 +15,7 @@ for line in content:
 
 prefixdict['rdf'] = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
 
-readme.write('# Ontology archiving\n')
+readme.write('# Ontology organisation\n')
 for line in content:
     if line.startswith('# CLASSES') or line.startswith('# PROPERTIES'):
         readme.write(line + '\n')   

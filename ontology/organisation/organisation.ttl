@@ -7,6 +7,7 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix nie-ine-organization: <http://e-editiones.ch/ontology/organization#>.
 @prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
+@prefix place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>.
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 @prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>.
 
@@ -37,14 +38,14 @@ organisation:Parish
 	a rdfs:Class;
 	rdfs:label "parish"@en, "Kirchgemeinde"@de;
 	rdfs:comment """Parish as a religious organization that conducts preaching and usually has an associated church."""@en;
-  	rdfs:subClassOf organisation:Organisation, archiving:Agent.
+	rdfs:subClassOf organisation:Organisation, archiving:Agent.
 
 #
 # PROPERTIES
 #
 
 organisation:parishHasSeatAtPlace 
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasSeatIn >;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasSeatIn>;
 	a owl:ObjectProperty;
 	rdfs:label "parish has seat at place"@en, "Kirchgemeinde hat Sitz an Ort"@de;
 	rdfs:comment """Relating a parish to its place where it has its seat at."""@en;

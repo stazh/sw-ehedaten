@@ -7,6 +7,7 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
+@prefix place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>.
 @prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
