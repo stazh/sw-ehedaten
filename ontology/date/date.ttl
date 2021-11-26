@@ -40,7 +40,7 @@ date:DatePeriod
 
 date:julianDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "julian dating"@en, "julianische Datierung"@de;
 	rdfs:comment """Relating a date object to its julian date."""@en;
 	rdfs:domain date:Date;
@@ -48,7 +48,7 @@ date:julianDating
 
 date:gregorianDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "gregorian dating"@en, "gregorianische Datierung"@de;
 	rdfs:comment """Relating a date object to its gregorian date."""@en;
 	rdfs:domain date:Date;
@@ -56,7 +56,7 @@ date:gregorianDating
 
 date:julianStartDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "julian start dating"@en, "julianische Startdatierung"@de;
 	rdfs:comment """Relating a date period object to its julian start date."""@en;
 	rdfs:domain date:DatePeriod;
@@ -64,7 +64,7 @@ date:julianStartDating
 
 date:gregorianStartDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "gregorian start dating"@en, "gregorianische Startdatierung"@de;
 	rdfs:comment """Relating a date period object to its gregorian start date."""@en;
 	rdfs:domain date:DatePeriod;
@@ -72,7 +72,7 @@ date:gregorianStartDating
 
 date:julianEndDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "julian end dating"@en, "julianische Enddatierung"@de;
 	rdfs:comment """Relating a date period object to its julian end date."""@en;
 	rdfs:domain date:DatePeriod;
@@ -80,7 +80,7 @@ date:julianEndDating
 
 date:gregorianEndDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
-	a owl:ObjectProperty;
+	a owl:DatatypeProperty;
 	rdfs:label "gregorian end dating"@en, "gregorianische Enddatierung"@de;
 	rdfs:comment """Relating a date period object to its gregorian end date."""@en;
 	rdfs:domain date:DatePeriod;
