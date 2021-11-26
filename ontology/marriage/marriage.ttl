@@ -67,7 +67,23 @@ marriage:marriageEntryIsInParishBook
 	a owl:ObjectProperty;
 	rdfs:label "marriage entry is in parish book"@en, "Eheeintrag befindet sich in Pfarrbuch"@de;
 	rdfs:comment """Relating a marriage entry to its parish book in which it is written."""@en;
-	rdfs:domain marriage:Wedding;
-	rdfs:range marriage:Parish.
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range marriage:ParishBook.
+
+marriage:marriageEntryHasCommentToWoman
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	a owl:DatatypeProperty;
+	rdfs:label "marriage entry has comment to woman"@en, "Eheeintrag hat Anmerkung zu Frau"@de;
+	rdfs:comment """Relating a marriage entry to the comment written as a note next to the woman registered in the entry."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range rdfs:Literal.
+
+marriage:marriageEntryHasGeneralCommentOrCommentToMan
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	a owl:DatatypeProperty;
+	rdfs:label "marriage entry has general comment or comment to man"@en, "Eheeintrag hat allgemeine Anmerkung oder Anmerkung zu Mann"@de;
+	rdfs:comment """Relating a marriage entry to the comment written as a note next to the man registered in the entry. It mustn't be a comment to the man, it can also be a general comment to the marriage."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range rdfs:Literal.
 
 
