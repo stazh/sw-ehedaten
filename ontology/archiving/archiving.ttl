@@ -97,12 +97,18 @@ archiving:Identifier
 	rdfs:comment """The identifying mark with which a record or an record part or manifestation of it can be clearly identified and referenced. In the context of an archive information system, this is usually the signature."""@en;
 	rdfs:subClassOf rico:Identifier.
 
+archiving:TimePeriod
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>;
+	a rdfs:Class;
+	rdfs:label "time period"@en, "Zeitraum"@de;
+	rdfs:comment """date or date period"""@en;
+	rdfs:subClassOf rico:Date.
+
 archiving:DateOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>;
 	a rdfs:Class;
 	rdfs:label "date of origin"@en, "Entstehungszeitraum"@de;
-	rdfs:comment """The date when the archived thing was originally created."""@en;
-	rdfs:subClassOf rico:Date.
+	rdfs:comment """The date or date period when the archived thing was originally created."""@en.
 
 archiving:Webpage
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Webpage>;
