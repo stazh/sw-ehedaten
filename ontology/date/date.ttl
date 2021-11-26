@@ -5,6 +5,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix nie-ine-calendar: <https://e-editiones.ch/ontology/calendar#> .
+@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#> .
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date> .
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#> .
@@ -25,13 +26,15 @@ date:Date
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Date>;
 	a rdfs:Class;
 	rdfs:label "date"@en, "Datum"@de;
-	rdfs:comment """date of a day."""@en.
+	rdfs:comment """date of a day."""@en;
+	rdfs:subClassOf archiving:TimePeriod.
 
 date:DatePeriod
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#DatePeriod>;
 	a rdfs:Class;
 	rdfs:label "date period"@en, "Datumsperiode"@de;
-	rdfs:comment """date period with start date and end date."""@en.
+	rdfs:comment """date period with start date and end date."""@en;
+	rdfs:subClassOf archiving:TimePeriod.
 
 
 #
