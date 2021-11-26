@@ -5,8 +5,6 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
-@prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place>.
 @prefix place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>.
@@ -23,9 +21,22 @@
 #
 # CLASSES
 #
+
 place:Place
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place>;
 	a rdfs:Class;
 	rdfs:label "place"@en, "Ort"@de;
-	rdfs:comment """Place with political boundaries"""@en.
+	rdfs:comment """Place with political boundaries. Its a village, town or city."""@en.
+
+#
+# PROPERTIES
+#
+
+place:placeHasNameLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#placeHasNameLiteral>;
+	a owl:DatatypeProperty;
+	rdfs:label "place has name literal"@en, "Ort hat Namensliteral"@de;
+	rdfs:comment """Relating a place to the literal of its name."""@en;
+	rdfs:domain place:Place;
+	rdfs:range rdfs:Literal.
 
