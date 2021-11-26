@@ -78,7 +78,7 @@ date:julianEndDating
 	rdfs:domain date:DatePeriod;
 	rdfs:range xsd:date.
 
-date:gregorianStartDating
+date:gregorianEndDating
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
 	a owl:ObjectProperty;
 	rdfs:label "gregorian end dating"@en, "gregorianische Enddatierung"@de;
