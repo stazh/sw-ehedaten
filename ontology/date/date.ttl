@@ -13,7 +13,7 @@
 	a owl:Ontology;
 	dct:license <http://creativecommons.org/licenses/by/3.0/>;
 	dct:title "An ontology about date and time"@en;
-	dct:description """Formal description of a gregorian and julian dates and related time values."""@en;
+	dct:description """Formal description of a gregorian and julian dates, general subclasses, related classes and properties."""@en;
 	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
 	dct:publisher "States Archive canton of Zürich"@en;
 	owl:versionInfo "2021-11-26"^^xsd:date.
