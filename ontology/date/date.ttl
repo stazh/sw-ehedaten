@@ -1,1 +1,88 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix nie-ine-calendar: <https://e-editiones.ch/ontology/calendar#> .
+
+@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date> .
+@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#> .
+
+<https://github.com/stazh/sw-ehedaten/tree/main/ontology/date>
+	a owl:Ontology;
+	dct:license <http://creativecommons.org/licenses/by/3.0/>;
+	dct:title "An ontology about date and time"@en;
+	dct:description """Formal description of a gregorian and julian dates and related time values."""@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-26"^^xsd:date.
+
+#
+# CLASSES
+#
+date:Date
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a rdfs:Class;
+	rdfs:label "date"@en, "Datum"@de;
+	rdfs:comment """date of a day."""@en.
+
+date:DatePeriod
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a rdfs:Class;
+	rdfs:label "date period"@en, "Datumsperiode"@de;
+	rdfs:comment """date period with start date and end date."""@en.
+
+
+#
+# PROPERTIES
+#
+
+date:julianDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "julian dating"@en, "julianische Datierung"@de;
+	rdfs:comment """Relating a date object to its julian date."""@en;
+	rdfs:domain date:Date;
+	rdfs:range xsd:date.
+
+date:gregorianDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "gregorian dating"@en, "gregorianische Datierung"@de;
+	rdfs:comment """Relating a date object to its gregorian date."""@en;
+	rdfs:domain date:Date;
+	rdfs:range xsd:date.
+
+date:julianStartDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "julian start dating"@en, "julianische Startdatierung"@de;
+	rdfs:comment """Relating a date period object to its julian start date."""@en;
+	rdfs:domain date:DatePeriod;
+	rdfs:range xsd:date.
+
+date:gregorianStartDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "gregorian start dating"@en, "gregorianische Startdatierung"@de;
+	rdfs:comment """Relating a date period object to its gregorian start date."""@en;
+	rdfs:domain date:DatePeriod;
+	rdfs:range xsd:date.
+
+date:julianEndDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "julian end dating"@en, "julianische Enddatierung"@de;
+	rdfs:comment """Relating a date period object to its julian end date."""@en;
+	rdfs:domain date:DatePeriod;
+	rdfs:range xsd:date.
+
+date:gregorianStartDating
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>;
+	a owl:ObjectProperty;
+	rdfs:label "gregorian end dating"@en, "gregorianische Enddatierung"@de;
+	rdfs:comment """Relating a date period object to its gregorian end date."""@en;
+	rdfs:domain date:DatePeriod;
+	rdfs:range xsd:date.
 
