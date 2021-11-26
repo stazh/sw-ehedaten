@@ -86,4 +86,9 @@ marriage:marriageEntryHasGeneralCommentOrCommentToMan
 	rdfs:domain marriage:MarriageEntry;
 	rdfs:range rdfs:Literal.
 
+#Pfarrbuch wird geführt von organisation:Parish
+#Eheeintrag dokumentiert person:Man
+#Eheeintrag dokumentiert person:Woman
+#Eheeintrag hat Datierung auf date:Date
+#Eheeintrag hat Datierung auf date:DatePeriod
 
