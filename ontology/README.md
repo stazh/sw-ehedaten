@@ -1,6 +1,6 @@
 # Ontologie
 
-<div align="center"><img src="/images/Ontology.jpg" width="1000"></div>
+<div align="center"><img src="/images/Ontology_basic.jpg" width="1000"></div>
 
 
 
