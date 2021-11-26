@@ -1,1 +1,73 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
+@prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 
+@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>.
+@prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
+
+<https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>
+	a owl:Ontology;
+	dct:license <http://creativecommons.org/licenses/by/3.0/>;
+	dct:title "An ontology about person"@en;
+	dct:description """Formal description of a person, general subclasses, related classes and properties."""@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-26"^^xsd:date.
+
+#
+# CLASSES
+#
+person:Person
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person>;
+	a rdfs:Class;
+	rdfs:label "person"@en, "Person"@de;
+	rdfs:comment """A real born human"""@en;
+	rdfs:subClassOf nie-ine-human:Person.
+
+person:Woman
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Woman>;
+	a rdfs:Class;
+	rdfs:label "woman"@en, "Frau"@de;
+	rdfs:comment """A real born human with female sex"""@en;
+	rdfs:subClassOf person:Person.
+
+person:Man
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Man>;
+	a rdfs:Class;
+	rdfs:label "man"@en, "Mann"@de;
+	rdfs:comment """A real born human with male sex"""@en;
+	rdfs:subClassOf person:Person.
+
+#
+# PROPERTIES
+#
+
+person:personHasFirstNameLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasFirstNameLiteral>;
+	a owl:DatatypeProperty;
+	rdfs:label "person has first name literal"@en, "Person hat Vornamenliteral"@de;
+	rdfs:comment """Relating a person to the literal of its first name"""@en;
+	rdfs:domain person:Person;
+	rdfs:range rdfs:Literal.
+
+person:personHasLastNameLiteral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasLastNameLiteral>;
+	a owl:DatatypeProperty;
+	rdfs:label "person has last name literal"@en, "Person hat Nachnamenliteral"@de;
+	rdfs:comment """Relating a person to the literal of its last name"""@en;
+	rdfs:domain person:Person;
+	rdfs:range rdfs:Literal.
+
+person:personHasPlaceOfOrigin
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOrigin>;
+	a owl:ObjectProperty;
+	rdfs:label "person has place of origin"@en, "Person hat Herkunftsort"@de;
+	rdfs:comment """Relating a person to its place of origin""@en;
+	rdfs:domain person:Person;
+	rdfs:range place:place.
