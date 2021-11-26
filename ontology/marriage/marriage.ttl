@@ -7,7 +7,9 @@
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 @prefix nie-ine-event: <http://e-editiones.ch/ontology/event#>.
 @prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
-
+@prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>.
+@prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
+@prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage>.
 @prefix marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>.
@@ -25,33 +27,33 @@
 # CLASSES
 #
 marriage:Marriage
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Marriage>;
 	a rdfs:Class;
 	rdfs:label "marriage"@en, "Heirat"@de;
 	rdfs:comment """Marriage as the event of the union of two people."""@en;
 	rdfs:subClassOf nie-ine-event:Event.
 
 marriage:ParishBook
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#ParishBook>;
 	a rdfs:Class;
 	rdfs:label "parish book"@en, "Pfarrbuch"@de;
 	rdfs:comment """The book in which a marriage is registered resp. the marriage entry is written."""@en.
 
 marriage:MarriageEntry
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry>;
 	a rdfs:Class;
 	rdfs:label "marriage entry"@en, "Eheeintrag"@de;
 	rdfs:comment """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day."""@en.
 
 marriage:Bride
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Bride>;
 	a rdfs:Class;
 	rdfs:label "bride"@en, "Braut"@de;
 	rdfs:comment """Role of a woman marrying."""@en;
 	rdfs:subClassOf nie-ine-human:PersonRole.
 
 marriage:Bridegroom
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Bridegroom>;
 	a rdfs:Class;
 	rdfs:label "bridegroom"@en, "Bräutigam"@de;
 	rdfs:comment """Role of a man marrying."""@en;
@@ -63,7 +65,7 @@ marriage:Bridegroom
 #
 
 marriage:marriageEntryIsInParishBook
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryIsInParishBook>;
 	a owl:ObjectProperty;
 	rdfs:label "marriage entry is in parish book"@en, "Eheeintrag befindet sich in Pfarrbuch"@de;
 	rdfs:comment """Relating a marriage entry to its parish book in which it is written."""@en;
@@ -71,7 +73,7 @@ marriage:marriageEntryIsInParishBook
 	rdfs:range marriage:ParishBook.
 
 marriage:marriageEntryHasCommentToWoman
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasCommentToWoman>;
 	a owl:DatatypeProperty;
 	rdfs:label "marriage entry has comment to woman"@en, "Eheeintrag hat Anmerkung zu Frau"@de;
 	rdfs:comment """Relating a marriage entry to the comment written as a note next to the woman registered in the entry."""@en;
@@ -79,16 +81,49 @@ marriage:marriageEntryHasCommentToWoman
 	rdfs:range rdfs:Literal.
 
 marriage:marriageEntryHasGeneralCommentOrCommentToMan
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasGeneralCommentOrCommentToMan>;
 	a owl:DatatypeProperty;
 	rdfs:label "marriage entry has general comment or comment to man"@en, "Eheeintrag hat allgemeine Anmerkung oder Anmerkung zu Mann"@de;
 	rdfs:comment """Relating a marriage entry to the comment written as a note next to the man registered in the entry. It mustn't be a comment to the man, it can also be a general comment to the marriage."""@en;
 	rdfs:domain marriage:MarriageEntry;
 	rdfs:range rdfs:Literal.
 
-#Pfarrbuch wird geführt von organisation:Parish
-#Eheeintrag dokumentiert person:Man
-#Eheeintrag dokumentiert person:Woman
-#Eheeintrag hat Datierung auf date:Date
-#Eheeintrag hat Datierung auf date:DatePeriod
+marriage:parishBookIsKeptByParish
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#parishBookIsKeptByParish>;
+	a owl:ObjectProperty;
+	rdfs:label "parish book is kept by parish"@en, "Pfarrbuch wird geführt von Kirchgemeinde"@de;
+	rdfs:comment """Relating a parish book to the parish in which it is kept."""@en;
+	rdfs:domain marriage:ParishBook;
+	rdfs:range organisation:Parish.
 
+marriage:marriageEntryRegistersWoman
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersWoman>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry registers woman"@en, "Eheeintrag registriert Frau"@de;
+	rdfs:comment """Relating a marriage entry to the woman it registers."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range person:Woman.
+
+marriage:marriageEntryRegistersMan
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersMan>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry registers man"@en, "Eheeintrag registriert Mann"@de;
+	rdfs:comment """Relating a marriage entry to the man it registers."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range person:Man.
+
+marriage:marriageEntryHasDatingOnDate
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasDatingOnDate>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry has dating on date"@en, "Eheeintrag hat Datierung auf Datum"@de;
+	rdfs:comment """Relating a marriage entry to its registered date."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range date:Date.
+
+marriage:marriageEntryHasDatingBetweenDatePeriod
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasDatingBetweenDatePeriod>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry has dating between date period"@en, "Eheeintrag hat Datierung zwischen Datumsperiode"@de;
+	rdfs:comment """Relating a marriage entry to the date period between which its dating is possible."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range date:DatePeriod.
