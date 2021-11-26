@@ -7,7 +7,7 @@
 @prefix nie-ine-calendar: <https://e-editiones.ch/ontology/calendar#> .
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date> .
-@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#> .
+@prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#> .
 
 <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date>
 	a owl:Ontology;
