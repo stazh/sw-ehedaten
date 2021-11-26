@@ -17,7 +17,9 @@
 	dct:license <http://creativecommons.org/licenses/by/3.0/>;
 	dct:title "An ontology about marriage"@en;
 	dct:description """Formal description of a marriage, general subclasses, related classes and properties."""@en;
-	dct:creator "Rebekka Plüss, research assistant and software developer, University of Basel, Switzerland"@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-26"^^xsd:date.
 
 #
 # CLASSES
@@ -25,7 +27,7 @@
 marriage:Marriage
 	rdfs:isDefinedBy <http://e-editiones.ch/ontology/marriage#>;
 	a rdfs:Class;
-	rdfs:label "marriage"@en, "Ehe"@de;
+	rdfs:label "marriage"@en, "Heirat"@de;
 	rdfs:comment """Legally approved cohabitation of two people."""@en;
 	rdfs:subClassOf human:Action.
 
