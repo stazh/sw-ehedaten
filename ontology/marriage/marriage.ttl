@@ -5,25 +5,19 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
-@prefix agent: <http://e-editiones.ch/ontology/agent#>.
-@prefix calendar: <http://e-editiones.ch/ontology/calendar#>.
-@prefix event: <http://e-editiones.ch/ontology/event#>.
-@prefix human: <http://e-editiones.ch/ontology/human#>.
-@prefix humgeo: <http://e-editiones.ch/ontology/human-geography#>.
-@prefix org: <http://e-editiones.ch/ontology/organization#>.
+@prefix nie-ine-event: <http://e-editiones.ch/ontology/event#>.
+@prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
+
 
 @base <http://e-editiones.ch/ontology/marriage>.
 @prefix marriage: <http://e-editiones.ch/ontology/marriage#>.
 
-<http://e-editiones.ch/ontology/archive-record>
+<http://e-editiones.ch/ontology/marriage>
 	a owl:Ontology;
 	dct:license <http://creativecommons.org/licenses/by/3.0/>;
 	dct:title "An ontology about marriage"@en;
 	dct:description """Formal description of a marriage, general subclasses, related classes and properties."""@en;
 	dct:creator "Rebekka Plüss, research assistant and software developer, University of Basel, Switzerland"@en;
-	dct:contributor "Hans Cools, MD, knowledge engineer, ontologist, software developer, University of Basel, Switzerland"@en;
-	dct:publisher "Universities of Basel, Bern, and Zürich, Switzerland"@en;
-	owl:versionInfo "2020-10-29"^^xsd:date.
 
 #
 # CLASSES
