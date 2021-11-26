@@ -1,1 +1,51 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
+@prefix nie-ine-organization: <http://e-editiones.ch/ontology/organization#>.
+@prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
+@prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 
+@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation>.
+@prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>.
+
+<https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation>
+	a owl:Ontology;
+	dct:license <http://creativecommons.org/licenses/by/3.0/>;
+	dct:title "An ontology about organisation"@en;
+	dct:description """Formal description of a organisation, general subclasses, related classes and properties."""@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-26"^^xsd:date.
+
+#
+# CLASSES
+#
+organisation:Organisation
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Organisation>;
+	a rdfs:Class;
+	rdfs:label "organisation"@en, "Organisation"@de;
+	rdfs:comment """Organisation as a organized group"""@en;
+	rdfs:subClassOf nie-ine-organization:Organization.
+
+organisation:Parish
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Parish>;
+	a rdfs:Class;
+	rdfs:label "parish"@en, "Kirchgemeinde"@de;
+	rdfs:comment """Parish as a religious organization that conducts preaching and usually has an associated church."""@en;
+  rdfs:subClassOf organisation:Organisation.
+
+#
+# PROPERTIES
+#
+
+organisation:parishHasSeatAtPlace 
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasSeatIn >;
+	a owl:ObjectProperty;
+	rdfs:label "parish has seat at place"@en, "Kirchgemeinde hat Sitz an Ort"@de;
+	rdfs:comment """Relating a parish to its place where it has its seat at."""@en;
+	rdfs:domain organisation:Parish;
+	rdfs:range place:Place.
