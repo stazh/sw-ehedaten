@@ -8,6 +8,7 @@
 @prefix nie-ine-organization: <http://e-editiones.ch/ontology/organization#>.
 @prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
+@prefix archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation>.
 @prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>.
@@ -36,7 +37,7 @@ organisation:Parish
 	a rdfs:Class;
 	rdfs:label "parish"@en, "Kirchgemeinde"@de;
 	rdfs:comment """Parish as a religious organization that conducts preaching and usually has an associated church."""@en;
-  rdfs:subClassOf organisation:Organisation.
+  	rdfs:subClassOf organisation:Organisation, archiving:Agent.
 
 #
 # PROPERTIES
