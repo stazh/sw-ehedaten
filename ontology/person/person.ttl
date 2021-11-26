@@ -9,7 +9,7 @@
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>.
-@prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
+@prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
 
 <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>
 	a owl:Ontology;
