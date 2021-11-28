@@ -5,7 +5,7 @@ import sys
 
 inFile = sys.argv[1]
 input_file = csv.DictReader(open(inFile), delimiter=';')
-data_archiving = "https://github.com/stazh/sw-ehedaten/data/archiving#"
+data_archiving = "https://github.com/stazh/sw-ehedaten/tree/main/data/"
 
 input_file_list = list(input_file)
 herkunfst_ort_counter = 0

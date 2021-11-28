@@ -26,6 +26,16 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Parish as a religious organization that conducts preaching and usually has an associated church."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [organisation:Organisation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Organisation), [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent). |
 # PROPERTIES
+## parishHasNameLiteral 
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasNameLiteral>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "parish has name literal"@en, "Kirchgemeinde hat Namenliteral"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a parish to the literal of its name."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [organisation:Parish](https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Parish); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [archiving:agentHasNameLiteral](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#agentHasNameLiteral). |
 ## parishHasSeatAtPlace 
 | Predicate | Object |
 |:-------- |:-------- |

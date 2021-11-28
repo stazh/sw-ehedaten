@@ -43,6 +43,14 @@ organisation:Parish
 #
 # PROPERTIES
 #
+organisation:parishHasNameLiteral 
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasNameLiteral>;
+	a owl:DatatypeProperty;
+	rdfs:label "parish has name literal"@en, "Kirchgemeinde hat Namenliteral"@de;
+	rdfs:comment """Relating a parish to the literal of its name."""@en;
+	rdfs:domain organisation:Parish;
+	rdfs:range rdfs:Literal;
+	rdfs:subPropertyOf archiving:agentHasNameLiteral.
 
 organisation:parishHasSeatAtPlace 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#parishHasSeatIn>;
