@@ -262,7 +262,7 @@ archiving:recordPartHasdateOfOriginLiteral
 
 #Scope-ID
 archiving:recordIsIdentifiedByIdentifier 
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordIsIdentifiedByIdentifier >;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordIsIdentifiedByIdentifier>;
 	a owl:ObjectProperty;
 	rdfs:label "record is identified by identifier"@en, "Archivverzeichniseinheit wird identifiziert mit Identifikator."@de;
 	rdfs:comment """Relating a record to its identifier."""@en;
