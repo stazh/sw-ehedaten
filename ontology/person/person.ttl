@@ -69,6 +69,6 @@ person:personHasPlaceOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOrigin>;
 	a owl:ObjectProperty;
 	rdfs:label "person has place of origin"@en, "Person hat Herkunftsort"@de;
-	rdfs:comment """Relating a person to its place of origin""@en;
+	rdfs:comment """Relating a person to its place of origin"""@en;
 	rdfs:domain person:Person;
-	rdfs:range place:place.
+	rdfs:range place:Place.
