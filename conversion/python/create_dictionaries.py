@@ -5,7 +5,7 @@ import sys
 
 inFile = sys.argv[1]
 input_file = csv.DictReader(open(inFile), delimiter=';')
-data_archiving = "https://github.com/stazh/sw-ehedaten/tree/main/data/"
+data_prefix = "https://github.com/stazh/sw-ehedaten/tree/main/data#"
 
 input_file_list = list(input_file)
 herkunfst_ort_counter = 0
@@ -21,7 +21,7 @@ Kirchgemeinden = {}
 band_sigantur_counter = 0
 Band_Signaturen = {}
 
-def insert_item_in_dict(item, dictionary,item_counter,placeHolder):
+def insert_item_in_dict_by_counter(item, dictionary,item_counter,placeHolder):
 	item = item.replace(' ?','')
 	item = item.replace(' (?)','')
 	item = item.replace('?','')
@@ -30,21 +30,34 @@ def insert_item_in_dict(item, dictionary,item_counter,placeHolder):
 		item_counter_str = str(item_counter)
 		while len(item_counter_str) < 5:
   			item_counter_str = '0' + item_counter_str
-		dictionary[item] = data_archiving + placeHolder + item_counter_str
+		dictionary[item] = data_prefix + placeHolder + item_counter_str
 	return dictionary, item_counter
+
+def insert_item_in_dict_by_name(item, dictionary,placeHolder):
+	item = item.replace(' ?','')
+	item = item.replace(' (?)','')
+	item = item.replace('?','')
+	item_name = item.replace(' ','_')
+	item_name = item_name.replace('ä','ae')
+	item_name = item_name.replace('ö','oe')
+	item_name = item_name.replace('ü','ue')
+	if not item == "" and not item in dictionary:
+		dictionary[item] = data_prefix + placeHolder + item_name
+	return dictionary
 
 for row in input_file_list:
 	row = dict(row)
-	Herkunftsorte, herkunfts_ort_counter = insert_item_in_dict(row['Herkunft_Mann'], Herkunftsorte, herkunfst_ort_counter, 'PlaceName_')
-	Herkunftsorte, herkunfts_ort_counter = insert_item_in_dict(row['Herkunft_Frau'], Herkunftsorte, herkunfst_ort_counter, 'PlaceName_')
-	Nachnamen, nachnamen_counter = insert_item_in_dict(row['Nachname_Mann'], Nachnamen, nachnamen_counter, 'FamilyName_')
-	Nachnamen, nachnamen_counter = insert_item_in_dict(row['Nachname_Frau'], Nachnamen, nachnamen_counter, 'FamilyName_')
-	Frauenvornamen, frauenvornamen_counter = insert_item_in_dict(row['Vorname_Frau'], Frauenvornamen, frauenvornamen_counter, 'FirstNameWoman_')
-	Maennervornamen, maennervornamen_counter = insert_item_in_dict(row['Vorname_Mann'], Maennervornamen, maennervornamen_counter, 'FirstNameMan_')	
-	Kirchgemeinden, kirchgemeinden_counter = insert_item_in_dict(row['Kirchgemeinde'], Kirchgemeinden, kirchgemeinden_counter, 'Parish_')	
+	Herkunftsorte = insert_item_in_dict_by_name(row['Herkunft_Mann'], Herkunftsorte, 'PlaceName_')
+	Herkunftsorte = insert_item_in_dict_by_name(row['Herkunft_Frau'], Herkunftsorte, 'PlaceName_')
+	Nachnamen = insert_item_in_dict_by_name(row['Nachname_Mann'], Nachnamen, 'FamilyName_')
+	Nachnamen = insert_item_in_dict_by_name(row['Nachname_Frau'], Nachnamen,  'FamilyName_')
+	Frauenvornamen = insert_item_in_dict_by_name(row['Vorname_Frau'], Frauenvornamen, 'FirstNameWoman_')
+	Maennervornamen = insert_item_in_dict_by_name(row['Vorname_Mann'], Maennervornamen, 'FirstNameMan_')	
+	Kirchgemeinden = insert_item_in_dict_by_name(row['Kirchgemeinde'], Kirchgemeinden, 'Parish_')	
+	
 	k = row['Signatur'].rfind(",")
 	bandSignaturString = row['Signatur'][:k]
-	Band_Signaturen, band_sigantur_counter = insert_item_in_dict(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'Volume_')	
+	Band_Signaturen, band_sigantur_counter = insert_item_in_dict_by_counter(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'Volume_')	
 	
 with open('kirchgemeinden.csv', 'w', newline='') as fk:
     writerk = csv.writer(fk)

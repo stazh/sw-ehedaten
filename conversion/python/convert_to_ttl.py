@@ -12,13 +12,14 @@ inFileBaende = sys.argv[2]
 input_file_baende = csv.DictReader(open(inFileBaende), delimiter=';')
 
 
+
 ontology_archiving = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#")
 ontology_date = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#")
 ontology_organisation = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#")
 ontology_place = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#")
 ontology_person = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#")
 ontology_marriage = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#")
-data = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/data/")
+data = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/data#")
 
 #Erstelle Kirchgemeinden-Dictionary aus kirchgemeinden.csv (erstellt durch create_dictionaries.py-Skript)
 
@@ -26,6 +27,23 @@ kirchgemeinden = csv.DictReader(open('kirchgemeinden.csv'), delimiter=',')
 kirchgemeinden_dict = {}
 for row in kirchgemeinden:
 	kirchgemeinden_dict[row['Kirchgemeinde']] = row['URI']
+
+eheeintraege_von_bis = csv.DictReader(open('Ehedaten_von_bis.csv'), delimiter=';')
+eheeintraege_von_bis_dict = {}
+for row in eheeintraege_von_bis:
+	eheeintraege_von_bis_dict[row['ID']] = {'Entstehungszeitraum_von':row['Entstehungszeitraum_von'],'Entstehungszeitraum_bis':row['Entstehungszeitraum_von']}
+
+herkunftsorte = csv.DictReader(open('herkunftsorte.csv'), delimiter=',')
+orte_dict = {}
+for row in herkunftsorte:
+	orte_dict[row['Herkunftsort']] = row['URI']
+for entry in kirchgemeinden_dict:
+	if not entry in orte_dict:
+		if entry == "Fraumünster" or entry == "Grossmünster" or entry == "St. Peter" or entry == "Predigern":
+			pass
+		else:
+			orte_dict[entry] = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceName_' + entry.replace('ü','ue')
+
 
 band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
 band_dict = {}
@@ -62,7 +80,7 @@ for entry in band_dict:
 	counter_str = str(counter)
 	while len(counter_str) < 5:
 		counter_str  = '0' + counter_str 
-	recordURI = "https://github.com/stazh/sw-ehedaten/tree/main/data/Record_" + counter_str
+	recordURI = "https://github.com/stazh/sw-ehedaten/tree/main/data#Record_" + counter_str
 	record_dict[entry] = recordURI
 	volumeURI = band_dict[entry]['URI']
 	output_graph.add((URIRef(recordURI), RDF.type, ontology_archiving.Record))	
@@ -83,15 +101,15 @@ for entry in band_dict:
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasWebpageURI, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
 	output_graph.add((URIRef(recordURI.replace('Record','ParishBook')), RDF.type, ontology_marriage.ParishBook))
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordRepresents, URIRef(recordURI.replace('Record','ParishBook'))))
+	output_graph.add((URIRef(recordURI.replace('Record','ParishBook')), ontology_marriage.parishBookIsKeptByParish, URIRef(kirchgemeinden_dict[band_dict[entry]['Provenienz'].replace('Kirchgemeinde ','')])))
 	
-	#über Regel dynamisch?
-	#output_graph.add((URIRef(band_dict[entry]), RDF.type, ontology_archiving.Identifier))
-	#output_graph.add((URIRef(volumeURI), ontology_archiving.manifestationIsIdentifiedByIdentifier, URIRef(band_dict[entry])))				
-	#output_graph.add((URIRef(band_dict[entry]), ontology_archiving.identifierHasLiteral, Literal(entry)))
 for entry in kirchgemeinden_dict:
 	output_graph.add((URIRef(kirchgemeinden_dict[entry]),RDF.type,ontology_organisation.Parish))
 	output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasNameLiteral, Literal("Kirchgemeinde " + entry)))
-
+	if entry == "Grossmünster" or entry == "St. Peter" or entry == "Fraumünster" or entry == "Predigern":		
+		output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasSeatAtPlace, URIRef(orte_dict['Zürich'])))
+	else:
+		output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasSeatAtPlace, URIRef(orte_dict[entry])))
 
 output_graph.add((data.stazh, RDF.type, ontology_archiving.Archive))
 output_graph.add((data.stazh, ontology_archiving.archiveHasNameLiteral, Literal("Staatsarchiv des Kantons Zürich")))
@@ -126,8 +144,8 @@ for row in input_file:
 		band_signatur_string = row['Signatur'][:k]
 		volumeURI = band_dict[band_signatur_string]['URI']
 		recordURI = record_dict[band_signatur_string]
-		RecordPartURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data/archiving#RecordPart_' + rowCountString
-		ManifestationOfRecordPartURI = "https://github.com/stazh/sw-ehedaten/tree/main/data/archiving#ManifestationOfRecordPart_"+ rowCountString
+		RecordPartURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#archiving#RecordPart_' + rowCountString
+		ManifestationOfRecordPartURI = "https://github.com/stazh/sw-ehedaten/tree/main/data#ManifestationOfRecordPart_"+ rowCountString
 
 		output_graph.add((URIRef(RecordPartURI), RDF.type, ontology_archiving.RecordPart))
 		output_graph.add((URIRef(recordURI), ontology_archiving.recordHasRecordPart, URIRef(RecordPartURI)))
