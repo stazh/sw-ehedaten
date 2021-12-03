@@ -41,6 +41,7 @@ def insert_item_in_dict_by_name(item, dictionary,placeHolder):
 	item_name = item_name.replace('(','')
 	item_name = item_name.replace(')','')
 	item_name = item_name.replace('.','')
+	item_name = item_name.replace('"','')
 	item_name = item_name.replace('ä','ae')
 	item_name = item_name.replace('ö','oe')
 	item_name = item_name.replace('ü','ue')

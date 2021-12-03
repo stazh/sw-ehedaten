@@ -39,10 +39,11 @@ for row in herkunftsorte:
 	orte_dict[row['Herkunftsort']] = row['URI']
 for entry in kirchgemeinden_dict:
 	if not entry in orte_dict:
-		if entry == "Fraumünster" or entry == "Grossmünster" or entry == "St. Peter" or entry == "Predigern":
+		if entry == "Fraumünster" or entry == "Grossmünster" or entry == "St. Peter" or entry == "Predigern" or entry == "Spitalpfarramt":
 			pass
 		else:
 			orte_dict[entry] = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceName_' + entry.replace('ü','ue')
+			print(orte_dict[entry])
 
 
 band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
@@ -75,6 +76,11 @@ output_graph.bind('marriage', ontology_marriage)
 output_graph.bind('data', data)
 counter = 0
 record_dict = {}
+for entry in orte_dict:
+	output_graph.add((URIRef(orte_dict[entry]), RDF.type, ontology_place.Place))	
+	output_graph.add((URIRef(orte_dict[entry]), RDFS.label, Literal(entry, lang='de')))
+	output_graph.add((URIRef(orte_dict[entry]), ontology_place.placeHasNameLiteral, Literal(entry, lang='de')))
+
 for entry in band_dict:
 	counter+=1
 	counter_str = str(counter)
@@ -106,7 +112,7 @@ for entry in band_dict:
 for entry in kirchgemeinden_dict:
 	output_graph.add((URIRef(kirchgemeinden_dict[entry]),RDF.type,ontology_organisation.Parish))
 	output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasNameLiteral, Literal("Kirchgemeinde " + entry)))
-	if entry == "Grossmünster" or entry == "St. Peter" or entry == "Fraumünster" or entry == "Predigern":		
+	if entry == "Grossmünster" or entry == "St. Peter" or entry == "Fraumünster" or entry == "Predigern" or entry == "Spitalpfarramt":		
 		output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasSeatAtPlace, URIRef(orte_dict['Zürich'])))
 	else:
 		output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_organisation.parishHasSeatAtPlace, URIRef(orte_dict[entry])))
