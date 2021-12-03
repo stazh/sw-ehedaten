@@ -27,21 +27,21 @@
 person:Person
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person>;
 	a rdfs:Class;
-	rdfs:label "person"@en, "Person"@de;
+	rdfs:label "Person"@en, "Person"@de;
 	rdfs:comment """A real born human"""@en;
 	rdfs:subClassOf nie-ine-human:Person.
 
 person:Woman
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Woman>;
 	a rdfs:Class;
-	rdfs:label "woman"@en, "Frau"@de;
+	rdfs:label "Woman"@en, "Frau"@de;
 	rdfs:comment """A real born human with female sex"""@en;
 	rdfs:subClassOf person:Person.
 
 person:Man
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Man>;
 	a rdfs:Class;
-	rdfs:label "man"@en, "Mann"@de;
+	rdfs:label "Man"@en, "Mann"@de;
 	rdfs:comment """A real born human with male sex"""@en;
 	rdfs:subClassOf person:Person.
 

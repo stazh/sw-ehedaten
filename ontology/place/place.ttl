@@ -25,8 +25,8 @@
 place:Place
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place>;
 	a rdfs:Class;
-	rdfs:label "place"@en, "Ort"@de;
-	rdfs:comment """Place with political boundaries. Its a village, town or city."""@en.
+	rdfs:label "Place"@en, "Ort"@de;
+	rdfs:comment """A place with political boundaries. It's a village, town or city."""@en.
 
 #
 # PROPERTIES

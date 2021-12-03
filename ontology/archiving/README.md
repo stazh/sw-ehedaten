@@ -274,7 +274,7 @@
 ## recordIsIdentifiedByIdentifier 
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordIsIdentifiedByIdentifier >; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordIsIdentifiedByIdentifier>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record is identified by identifier"@en, "Archivverzeichniseinheit wird identifiziert mit Identifikator."@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record to its identifier."""@en; |

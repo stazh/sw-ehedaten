@@ -14,7 +14,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Organisation>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "organisation"@en, "Organisation"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Organisation"@en, "Organisation"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Organisation as a organized group"""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-organization:Organization](http://e-editiones.ch/ontology/organization#Organization). |
 ## Parish
@@ -22,7 +22,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Parish>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "parish"@en, "Kirchgemeinde"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Parish"@en, "Kirchgemeinde"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Parish as a religious organization that conducts preaching and usually has an associated church."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [organisation:Organisation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Organisation), [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent). |
 # PROPERTIES

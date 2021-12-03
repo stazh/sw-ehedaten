@@ -14,7 +14,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person"@en, "Person"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Person"@en, "Person"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A real born human"""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-human:Person](http://e-editiones.ch/ontology/human#Person). |
 ## Woman
@@ -22,7 +22,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Woman>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "woman"@en, "Frau"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Woman"@en, "Frau"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A real born human with female sex"""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person). |
 ## Man
@@ -30,7 +30,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Man>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "man"@en, "Mann"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Man"@en, "Mann"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A real born human with male sex"""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person). |
 # PROPERTIES
@@ -58,6 +58,6 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOrigin>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person has place of origin"@en, "Person hat Herkunftsort"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its place of origin""@en; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its place of origin"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [place:place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#place). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [place:Place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place). |

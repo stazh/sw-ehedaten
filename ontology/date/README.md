@@ -14,7 +14,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Date>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date"@en, "Datum"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Date"@en, "Datum"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """date of a day."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:TimePeriod](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod). |
 ## DatePeriod
@@ -22,7 +22,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#DatePeriod>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date period"@en, "Datumsperiode"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Date period"@en, "Datumsperiode"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """date period with start date and end date."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:TimePeriod](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod). |
 # PROPERTIES

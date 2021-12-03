@@ -29,14 +29,14 @@
 organisation:Organisation
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Organisation>;
 	a rdfs:Class;
-	rdfs:label "organisation"@en, "Organisation"@de;
+	rdfs:label "Organisation"@en, "Organisation"@de;
 	rdfs:comment """Organisation as a organized group"""@en;
 	rdfs:subClassOf nie-ine-organization:Organization.
 
 organisation:Parish
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#Parish>;
 	a rdfs:Class;
-	rdfs:label "parish"@en, "Kirchgemeinde"@de;
+	rdfs:label "Parish"@en, "Kirchgemeinde"@de;
 	rdfs:comment """Parish as a religious organization that conducts preaching and usually has an associated church."""@en;
 	rdfs:subClassOf organisation:Organisation, archiving:Agent.
 
