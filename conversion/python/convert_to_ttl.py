@@ -28,10 +28,25 @@ kirchgemeinden_dict = {}
 for row in kirchgemeinden:
 	kirchgemeinden_dict[row['Kirchgemeinde']] = row['URI']
 
+nachnamen = csv.DictReader(open('Nachnamen.csv'), delimiter=',')
+nachnamen_dict = {}
+for row in nachnamen:
+	nachnamen_dict[row['Nachname']] = row['URI']
+
+frauenvornamen = csv.DictReader(open('Frauenvornamen.csv'), delimiter=',')
+frauenvornamen_dict = {}
+for row in frauenvornamen:
+	frauenvornamen_dict[row['Frauenvorname']] = row['URI']
+
+maennervornamen = csv.DictReader(open('Maennervornamen.csv'), delimiter=',')
+maennervornamen_dict = {}
+for row in maennervornamen:
+	maennervornamen_dict[row['Männervorname']] = row['URI']
+
 eheeintraege_von_bis = csv.DictReader(open('Ehedaten_von_bis.csv'), delimiter=';')
 eheeintraege_von_bis_dict = {}
 for row in eheeintraege_von_bis:
-	eheeintraege_von_bis_dict[row['ID']] = {'Entstehungszeitraum_von':row['Entstehungszeitraum_von'],'Entstehungszeitraum_bis':row['Entstehungszeitraum_von']}
+	eheeintraege_von_bis_dict[row['ID']] = {'Entstehungszeitraum_von':row['Entstehungszeitraum_von'],'Entstehungszeitraum_bis':row['Entstehungszeitraum_bis']}
 
 herkunftsorte = csv.DictReader(open('herkunftsorte.csv'), delimiter=',')
 orte_dict = {}
@@ -107,6 +122,7 @@ for entry in band_dict:
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasWebpageURI, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
 	output_graph.add((URIRef(recordURI.replace('Record','ParishBook')), RDF.type, ontology_marriage.ParishBook))
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordRepresents, URIRef(recordURI.replace('Record','ParishBook'))))
+
 	output_graph.add((URIRef(recordURI.replace('Record','ParishBook')), ontology_marriage.parishBookIsKeptByParish, URIRef(kirchgemeinden_dict[band_dict[entry]['Provenienz'].replace('Kirchgemeinde ','')])))
 	
 for entry in kirchgemeinden_dict:
@@ -150,10 +166,17 @@ for row in input_file:
 		band_signatur_string = row['Signatur'][:k]
 		volumeURI = band_dict[band_signatur_string]['URI']
 		recordURI = record_dict[band_signatur_string]
-		RecordPartURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#archiving#RecordPart_' + rowCountString
+		RecordPartURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#RecordPart_' + rowCountString
+		MarriageEntryURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#MarriageEntry_' + rowCountString
+		ManURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Man_' + rowCountString
+		WomanURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Woman_' + rowCountString
+		DatingURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Dating_' + rowCountString
 		ManifestationOfRecordPartURI = "https://github.com/stazh/sw-ehedaten/tree/main/data#ManifestationOfRecordPart_"+ rowCountString
 
 		output_graph.add((URIRef(RecordPartURI), RDF.type, ontology_archiving.RecordPart))
+		output_graph.add((URIRef(MarriageEntryURI), RDF.type, ontology_marriage.MarriageEntry))
+		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartRepresents, URIRef(MarriageEntryURI)))
+		output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryIsInParishBook, URIRef(recordURI.replace('Record','ParishBook'))))
 		output_graph.add((URIRef(recordURI), ontology_archiving.recordHasRecordPart, URIRef(RecordPartURI)))
 		output_graph.add((URIRef(ManifestationOfRecordPartURI), RDF.type, ontology_archiving.Manifestation))
 		output_graph.add((URIRef(RecordPartURI),ontology_archiving.recordPartHasManifestation, URIRef(ManifestationOfRecordPartURI)))
@@ -180,10 +203,59 @@ for row in input_file:
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasTitleLiteral, Literal(title_string)))
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasdateOfOriginLiteral, Literal(row['Datum'])))	
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasWebpageURI, Literal(row['Webseite'], datatype=XSD.anyURI)))
-	
-	if rowCounter % 10000 == 0:
+		if row['Zusatzinfo_Frau'] != "" and row['Zusatzinfo_Frau'] != "-":
+			output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasCommentToWoman, Literal(row['Zusatzinfo_Frau'])))
+		if row['Zusatzinfo_Mann'] != "" and row['Zusatzinfo_Mann'] != "-":
+			output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasGeneralCommentOrCommentToMan, Literal(row['Zusatzinfo_Mann'])))
+
+		output_graph.add((URIRef(ManURI), RDF.type, ontology_person.Man))
+		output_graph.add((URIRef(WomanURI), RDF.type, ontology_person.Woman))
+		output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersWoman, URIRef(WomanURI)))
+		output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersMan, URIRef(ManURI)))
+		output_graph.add((URIRef(ManURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Mann'])))
+		output_graph.add((URIRef(WomanURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Frau'])))
+		output_graph.add((URIRef(ManURI), ontology_person.personHasLastNameLiteral, Literal(row['Nachname_Mann'])))
+		output_graph.add((URIRef(WomanURI), ontology_person.personHasLastNameLiteral, Literal(row['Nachname_Frau'])))
+		if row['Herkunft_Mann'] != "":
+			item = row['Herkunft_Mann']
+			item = item.replace(' ?','')
+			item = item.replace(' (?)','')
+			item = item.replace('?','')
+			output_graph.add((URIRef(ManURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[item])))
+		if row['Herkunft_Frau'] != "":
+			item = row['Herkunft_Frau']
+			item = item.replace(' ?','')
+			item = item.replace(' (?)','')
+			item = item.replace('?','')
+			output_graph.add((URIRef(WomanURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[item])))
+		
+		if eheeintraege_von_bis_dict[row['ID']]['Entstehungszeitraum_von'] == eheeintraege_von_bis_dict[row['ID']]['Entstehungszeitraum_bis']:
+			output_graph.add((URIRef(DatingURI), RDF.type, ontology_date.Date))
+			output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasDatingOnDate, URIRef(DatingURI)))			
+			date_list = eheeintraege_von_bis_dict[row['ID']]['Entstehungszeitraum_von'].split(".")
+			if int(date_list[2]) < 1700:
+				output_graph.add((URIRef(DatingURI), ontology_date.julianDating, Literal(date_list[2] + "-"+ date_list[1] + "-"+ date_list[0],datatype=XSD.date)))
+			else:
+				output_graph.add((URIRef(DatingURI), ontology_date.gregorianDating, Literal(date_list[2] + "-"+ date_list[1] + "-"+ date_list[0],datatype=XSD.date)))
+		else:	
+			output_graph.add((URIRef(DatingURI), RDF.type, ontology_date.DatePeriod))
+			output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasDatingWithinDatePeriod, URIRef(DatingURI)))
+			date_start_list = eheeintraege_von_bis_dict[row['ID']]['Entstehungszeitraum_von'].split(".")
+			date_end_list = eheeintraege_von_bis_dict[row['ID']]['Entstehungszeitraum_bis'].split(".")
+			if int(date_start_list[2]) < 1700:
+				output_graph.add((URIRef(DatingURI), ontology_date.julianStartDating, Literal(date_start_list[2] + "-"+ date_start_list[1] + "-"+ date_start_list[0],datatype=XSD.date)))
+			else:
+				output_graph.add((URIRef(DatingURI), ontology_date.gregorianStartDating, Literal(date_start_list[2] + "-"+ date_start_list[1] + "-"+ date_start_list[0],datatype=XSD.date)))
+			if int(date_end_list[2]) < 1700:
+				output_graph.add((URIRef(DatingURI), ontology_date.julianEndDating, Literal(date_end_list[2] + "-"+ date_end_list[1] + "-"+ date_end_list[0],datatype=XSD.date)))
+			else:
+				output_graph.add((URIRef(DatingURI), ontology_date.gregorianEndDating, Literal(date_end_list[2] + "-"+ date_end_list[1] + "-"+ date_end_list[0],datatype=XSD.date)))
+
+
+	row['ID']
+	if rowCounter % 7000 == 0:
 		fileCounter += 1
-		fileName = 'triples_archiving_' + str(fileCounter) + '.ttl'
+		fileName = 'data_triples_' + str(fileCounter) + '.ttl'
 		output_graph.serialize(destination=fileName, format='turtle')
 		output_graph = Graph()
 		output_graph.bind('archiving', ontology_archiving)
