@@ -38,9 +38,16 @@ def insert_item_in_dict_by_name(item, dictionary,placeHolder):
 	item = item.replace(' (?)','')
 	item = item.replace('?','')
 	item_name = item.replace(' ','_')
+	item_name = item_name.replace('(','')
+	item_name = item_name.replace(')','')
+	item_name = item_name.replace('.','')
 	item_name = item_name.replace('ä','ae')
 	item_name = item_name.replace('ö','oe')
 	item_name = item_name.replace('ü','ue')
+	item_name = item_name.replace('Ä','Ae')
+	item_name = item_name.replace('Ö','Oe')
+	item_name = item_name.replace('Ü','Ue')
+	item_name = item_name.replace('é','e')
 	if not item == "" and not item in dictionary:
 		dictionary[item] = data_prefix + placeHolder + item_name
 	return dictionary
