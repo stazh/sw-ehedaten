@@ -35,11 +35,10 @@ SELECT ?vornameFrau (COUNT(?vornameFrau) as ?anzahl) WHERE {
 } ORDER BY DESC (?anzahl)
 
 # Entwicklung Anna ab 1700
-SELECT ?jahr WHERE {
+SELECT * WHERE {
   ?entry marriage:marriageEntryRegistersWoman ?woman.
-  ?woman person:personHasFirstNameLiteral ?vornameFrau .
+  ?woman person:personHasFirstNameLiteral "Anna" .
   ?entry marriage:marriageEntryHasDatingOnDate ?datum .
-  ?datum date:gregorianDating ?gregDatum.
-  FILTER (?vornameFrau = "Anna") .
-  BIND (xsd:integer(STRBEFORE(STR(?gregDatum), "-" )) AS ?jahr )
-} ORDER BY (?jahr)
+  {?datum date:gregorianDating ?gregOderJulDatum} UNION {?datum date:julianDating ?gregOderJulDatum}.
+  BIND (xsd:integer(STRBEFORE(STR(?gregOderJulDatum), "-" )) AS ?jahr )
+} ORDER BY ?jahr
