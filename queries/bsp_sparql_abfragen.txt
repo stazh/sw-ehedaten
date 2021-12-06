@@ -1,39 +1,43 @@
-http://fuseki.nie-ine.ch/edbzh-rw/query
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
+PREFIX person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>
+PREFIX marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>
+PREFIX date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>
+PREFIX organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>
+PREFIX place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>
 
-Alle Vornamen der Frauen:
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
-prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
+# alle Bände und deren Einträge
 SELECT * WHERE {
-  ?sub a edbzh-po:Marriage .
-  ?sub edbzh-po:vornameFrau ?vornameFrau 
+   ?record a archiving:Record.
+   ?record archiving:recordHasTitleLiteral ?title.
+   ?record archiving:recordHasdateOfOriginLiteral ?date.
+   ?record archiving:recordHasProvenance ?kirchgemeinde.
+   ?kirchgemeinde organisation:parishHasNameLiteral ?kirchgemeindeName.
+   ?record archiving:recordHasRecordPart ?recordPart.
+} LIMIT 100
+
+# Alle Vornamen der Frauen
+SELECT * WHERE {
+  ?woman a person:Woman .
+  ?woman person:personHasFirstNameLiteral ?vornameFrau .
 } ORDER BY (?vornameFrau)
 
-Alle Annas:
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
-prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
-prefix xsd: <http://www.w3.org/2001/XMLSchema#>
-SELECT * WHERE {
-  ?sub a edbzh-po:Marriage .
-  ?sub edbzh-po:vornameFrau ?vornameFrau .
-  ?sub edbzh-po:entstehungszeitraum ?datum .
-  FILTER (?vornameFrau = "Anna") .
-  BIND (xsd:integer(STRBEFORE( ?datum, "." )) AS ?jahr )
-} ORDER BY (?jahr)
 
 
-Zählen der Einträge und nach Grösse ordnen:
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-prefix edbzh-po: <http://e-editiones.ch/project/ontology/edbzh#>
-prefix edbzh-pd: <http://e-editiones.ch/project/data/edbzh#>
+# Zählen der Frauenvornamen-Vorkommen und der Grösse nach ordnen
 SELECT * WHERE{
 SELECT ?vornameFrau (COUNT(?vornameFrau) as ?anzahl) WHERE {
-  	?sub a edbzh-po:Marriage .
-    ?sub edbzh-po:zusatzinformationAllgemeinMannFrau ?vornameFrau .
+  	?entry marriage:marriageEntryRegistersWoman ?woman.
+    ?woman person:personHasFirstNameLiteral ?vornameFrau .
 	} GROUP BY ?vornameFrau
 } ORDER BY DESC (?anzahl)
 
+# Entwicklung Anna ab 1700
+SELECT ?jahr WHERE {
+  ?entry marriage:marriageEntryRegistersWoman ?woman.
+  ?woman person:personHasFirstNameLiteral ?vornameFrau .
+  ?entry marriage:marriageEntryHasDatingOnDate ?datum .
+  ?datum date:gregorianDating ?gregDatum.
+  FILTER (?vornameFrau = "Anna") .
+  BIND (xsd:integer(STRBEFORE(STR(?gregDatum), "-" )) AS ?jahr )
+} ORDER BY (?jahr)
