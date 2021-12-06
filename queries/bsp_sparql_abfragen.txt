@@ -1,3 +1,5 @@
+https://int.lindas.admin.ch/sparql/
+
 PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
 PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
 PREFIX person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>
