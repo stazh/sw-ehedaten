@@ -15,7 +15,8 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Place"@en, "Ort"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A place with political boundaries. It's a village, town or city."""@en. |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A place with political boundaries. It's f.e. a village, town or city."""@en; |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Place](https://www.ica.org/standards/RiC/ontology#Place). |
 # PROPERTIES
 ## placeHasNameLiteral
 | Predicate | Object |

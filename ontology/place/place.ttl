@@ -3,6 +3,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix dct: <http://purl.org/dc/terms/>.
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix cidoc: <http://www.cidoc-crm.org/cidoc-crm/>.
 
@@ -26,7 +27,8 @@ place:Place
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place>;
 	a rdfs:Class;
 	rdfs:label "Place"@en, "Ort"@de;
-	rdfs:comment """A place with political boundaries. It's a village, town or city."""@en.
+	rdfs:comment """A place with political boundaries. It's f.e. a village, town or city."""@en;
+	rdfs:subClassOf rico:Place.
 
 #
 # PROPERTIES
