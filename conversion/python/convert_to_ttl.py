@@ -118,7 +118,7 @@ for entry in band_dict:
 	if band_dict[entry]['Inhalt_und_Form'] != "":
 		output_graph.add((URIRef(recordURI), ontology_archiving.recordHasAdditionalContentLiteral, Literal(band_dict[entry]['Inhalt_und_Form'].replace('\\n','\n'))))
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasTitleLiteral, Literal(band_dict[entry]['Titel'])))
-	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasdateOfOriginLiteral, Literal(band_dict[entry]['Entstehungszeitraum'])))	
+	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasDateOfOriginLiteral, Literal(band_dict[entry]['Entstehungszeitraum'])))	
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordHasWebpageURI, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
 	output_graph.add((URIRef(recordURI.replace('Record','ParishBook')), RDF.type, ontology_marriage.ParishBook))
 	output_graph.add((URIRef(recordURI), ontology_archiving.recordRepresents, URIRef(recordURI.replace('Record','ParishBook'))))
@@ -201,7 +201,7 @@ for row in input_file:
 			output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasAdditionalContentLiteral, Literal(additional_content_string))) 
 
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasTitleLiteral, Literal(title_string)))
-		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasdateOfOriginLiteral, Literal(row['Datum'])))	
+		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasDateOfOriginLiteral, Literal(row['Datum'])))	
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasWebpageURI, Literal(row['Webseite'], datatype=XSD.anyURI)))
 		if row['Zusatzinfo_Frau'] != "" and row['Zusatzinfo_Frau'] != "-":
 			output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasCommentToWoman, Literal(row['Zusatzinfo_Frau'])))

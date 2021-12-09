@@ -251,20 +251,20 @@
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Title](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Title); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:creationDate](https://www.ica.org/standards/RiC/ontology#creationDate). |
-## recordHasdateOfOriginLiteral
+## recordHasDateOfOriginLiteral
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordHasdateOfOriginLiteral>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordHasDateOfOriginLiteral>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record has date of origin literal"@en, "Archivverzeichniseinheit hat Entstehungszeitraum-Literal"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record to the date of origin literal."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:creationDate](https://www.ica.org/standards/RiC/ontology#creationDate). |
-## recordPartHasdateOfOriginLiteral
+## recordPartHasDateOfOriginLiteral
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasdateOfOriginLiteral>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasDateOfOriginLiteral>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has date of origin literal"@en, "Archivverzeichniseinheit-Teil hat Entstehungszeitraum-Literal"; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the date of origin literal."""@en; |
