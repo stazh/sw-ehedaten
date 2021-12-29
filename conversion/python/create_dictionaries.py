@@ -3,10 +3,12 @@ from datetime import datetime
 from datetime import date
 import sys
 
+#1. Als Parameter wird der OGD-Datensatz der Ehedaten mitgegeben:
 inFile = sys.argv[1]
 input_file = csv.DictReader(open(inFile), delimiter=';')
-data_prefix = "https://github.com/stazh/sw-ehedaten/tree/main/data#"
 
+#2. Intitallisiere alle Dictionaries und weiteren Variablen:
+data_prefix = "https://github.com/stazh/sw-ehedaten/tree/main/data#"
 input_file_list = list(input_file)
 herkunfst_ort_counter = 0
 Herkunftsorte = {}
@@ -21,6 +23,7 @@ Kirchgemeinden = {}
 band_sigantur_counter = 0
 Band_Signaturen = {}
 
+#3a
 def insert_item_in_dict_by_counter(item, dictionary,item_counter,placeHolder):
 	item = item.replace(' ?','')
 	item = item.replace(' (?)','')
@@ -32,7 +35,7 @@ def insert_item_in_dict_by_counter(item, dictionary,item_counter,placeHolder):
   			item_counter_str = '0' + item_counter_str
 		dictionary[item] = data_prefix + placeHolder + item_counter_str
 	return dictionary, item_counter
-
+#3b
 def insert_item_in_dict_by_name(item, dictionary,placeHolder):
 	item = item.replace(' ?','')
 	item = item.replace(' (?)','')
@@ -53,6 +56,8 @@ def insert_item_in_dict_by_name(item, dictionary,placeHolder):
 		dictionary[item] = data_prefix + placeHolder + item_name
 	return dictionary
 
+#3. Iteriere durch jeden Ehedaten-Datensatz bzw. Linie in Input-File. Rufe dazu entweder Methode 
+# insert_item_in_dict_by_counter (3a) oder insert_item_in_dict_by_name (3b) auf.
 for row in input_file_list:
 	row = dict(row)
 	Herkunftsorte = insert_item_in_dict_by_name(row['Herkunft_Mann'], Herkunftsorte, 'PlaceName_')
@@ -63,10 +68,12 @@ for row in input_file_list:
 	Maennervornamen = insert_item_in_dict_by_name(row['Vorname_Mann'], Maennervornamen, 'FirstNameMan_')	
 	Kirchgemeinden = insert_item_in_dict_by_name(row['Kirchgemeinde'], Kirchgemeinden, 'Parish_')	
 	
+	#Für Band-Signatur entferne Zusatz ", EDB [Laufnummer]" am Schluss der Eheeintrag-Signatur
 	k = row['Signatur'].rfind(",")
 	bandSignaturString = row['Signatur'][:k]
 	Band_Signaturen, band_sigantur_counter = insert_item_in_dict_by_counter(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'Volume_')	
-	
+
+#4. Erstelle Csv-Tabellen aus allen Dictionaries:
 with open('kirchgemeinden.csv', 'w', newline='') as fk:
     writerk = csv.writer(fk)
     writerk.writerow(["Kirchgemeinde", "URI"])
