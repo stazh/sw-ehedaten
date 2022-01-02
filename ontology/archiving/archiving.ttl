@@ -108,7 +108,8 @@ archiving:DateOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>;
 	a rdfs:Class;
 	rdfs:label "Date of origin"@en, "Entstehungszeitraum"@de;
-	rdfs:comment """The date or date period when the archived thing was originally created."""@en.
+	rdfs:comment """The date or date period when the archived thing was originally created."""@en;
+	rdfs:subClassOf archiving:TimePeriod. #Noch einfügen auf Tripple store!
 
 archiving:Webpage
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Webpage>;
