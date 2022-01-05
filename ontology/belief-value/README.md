@@ -1,7 +1,5 @@
 # Ontology belief-value
 
-<div align="center"><img src="archiving.jpg" width="600"></div>
-
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
