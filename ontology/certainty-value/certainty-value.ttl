@@ -27,7 +27,7 @@
 certainty-value:CertaintyValue
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue>;
 	a rdfs:Class;
-	rdfs:label "Certainty value"@en, "Glaubenswert"@de;
+	rdfs:label "Certainty value"@en, "Sicherheitswert"@de;
 	rdfs:comment """Value of a certainty in a proposition by a certain agent in a certain time."""@en;
 	rdfs:subClassOf cidoc-inf:I2_Belief;
 	owl:oneOf (certainty-value:Certain certainty-value:Uncertain certainty-value:VeryLikely certainty-value:Likely certainty-value:LessLikely certainty-value:Neutral certainty-value:LessUnlikely certainty-value:Unlikely certainty-value:VeryUnlikely certainty-value:Impossible).
