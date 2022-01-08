@@ -1,6 +1,6 @@
 # Ontology marriage
 
-<div align="center"><img src="archiving.jpg" width="600"></div>
+<div align="center"><img src="marriage_example.png" width="800"></div>
 
 | Predicate | Object |
 |:-------- |:-------- |
