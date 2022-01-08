@@ -15,7 +15,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Certainty value"@en, "Glaubenswert"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Certainty value"@en, "Sicherheitswert"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Value of a certainty in a proposition by a certain agent in a certain time."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [cidoc-inf:I2_Belief](http://www.ics.forth.gr/isl/CRMinf/I2_Belief); |
 | [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | (certainty-value:Certain, certainty-value:Uncertain, certainty-value:VeryLikely, certainty-value:Likely, certainty-value:LessLikely, certainty-value:Neutral, certainty-value:LessUnlikely, certainty-value:Unlikely, certainty-value:VeryUnlikely, certainty-value:Impossible). |
