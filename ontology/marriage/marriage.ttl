@@ -33,31 +33,24 @@ marriage:Marriage
 	rdfs:comment """Marriage as the event of the union of two people."""@en;
 	rdfs:subClassOf nie-ine-event:Event.
 
+marriage:MarriageProclamation
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageProclamation>;
+	a rdfs:Class;
+	rdfs:label "Marriage proclamation"@en, "Heiratsverkündung"@de;
+	rdfs:comment """Marriage proclamation as the event of the proclamation of the union of two people in future."""@en;
+	rdfs:subClassOf nie-ine-event:Event.
+
 marriage:ParishBook
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#ParishBook>;
 	a rdfs:Class;
 	rdfs:label "Parish book"@en, "Pfarrbuch"@de;
-	rdfs:comment """The book in which a marriage is registered resp. the marriage entry is written."""@en.
+	rdfs:comment """The book in which a marriage or marriage proclamation is registered resp. the marriage entry is written."""@en.
 
 marriage:MarriageEntry
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry>;
 	a rdfs:Class;
 	rdfs:label "Marriage entry"@en, "Eheeintrag"@de;
-	rdfs:comment """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day."""@en.
-
-marriage:Bride
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Bride>;
-	a rdfs:Class;
-	rdfs:label "Bride"@en, "Braut"@de;
-	rdfs:comment """Role of a woman marrying."""@en;
-	rdfs:subClassOf nie-ine-human:PersonRole.
-
-marriage:Bridegroom
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Bridegroom>;
-	a rdfs:Class;
-	rdfs:label "Bridegroom"@en, "Bräutigam"@de;
-	rdfs:comment """Role of a man marrying."""@en;
-	rdfs:subClassOf nie-ine-human:PersonRole.
+	rdfs:comment """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day or that the marriage of two persons is proclaimed on a certain day."""@en.
 
 
 #
