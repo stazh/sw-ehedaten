@@ -1,0 +1,98 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix log: <http://www.w3.org/2000/10/swap/log#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix cidoc-inf: <http://www.ics.forth.gr/isl/CRMinf/>.
+
+
+@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value>.
+@prefix certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>.
+
+<https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value>
+	a owl:Ontology;
+	dct:license <http://creativecommons.org/licenses/by/3.0/>;
+	dct:title "An ontology about certainty value"@en;
+	dct:description """Formal description of certainty value, general subclasses, related classes and properties. This ontology adopts the majority of the concepts of the unpublished ontology belief-value created in the project NIE-INE by Hans Cools and Roberta Padlina: https://github.com/nie-ine/Ontologies/blob/master/Nie-ontologies/Generic-ontologies/belief-value.ttl"""@en;
+	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
+	dct:publisher "States Archive canton of Zürich"@en;
+	owl:versionInfo "2021-11-26"^^xsd:date.
+
+#
+# CLASSES
+#
+
+certainty-value:CertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue>;
+	a rdfs:Class;
+	rdfs:label "Certainty value"@en, "Glaubenswert"@de;
+	rdfs:comment """Value of a certainty in a proposition by a certain agent in a certain time."""@en;
+	rdfs:subClassOf cidoc-inf:I2_Belief;
+	owl:oneOf (certainty-value:Certain certainty-value:Uncertain certainty-value:VeryLikely certainty-value:Likely certainty-value:LessLikely certainty-value:Neutral certainty-value:LessUnlikely certainty-value:Unlikely certainty-value:VeryUnlikely certainty-value:Impossible).
+
+#
+# INSTANCES
+#
+
+certainty-value:Certain
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Certain>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "certain"@en, "sicher"@de;
+	rdfs:comment """Certainty value representing being 'true'."""@en.
+
+certainty-value:Uncertain
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Uncertain>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "uncertain"@en, "unsicher"@de;
+	rdfs:comment """Certainty value representing that being 'true' can not be assured."""@en.
+
+certainty-value:VeryLikely
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#VeryLikely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "very likely"@en, "sehr warscheinlich"@de;
+	rdfs:comment """Certainty value representing a high probability of being true."""@en.
+
+certainty-value:Likely
+	rdfs:isDefinedBy <hhttps://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Likely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "likely"@en, "warscheinlich"@de;
+	rdfs:comment """Certainty value representing a moderate probability of being true."""@en.
+
+certainty-value:LessLikely
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#LessLikely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "less likely"@en, "wenig warscheinlich"@de;
+	rdfs:comment """Certainty value representing a low probability of being true."""@en.
+
+certainty-value:Neutral
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Neutral>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "neutral"@en, "neutral"@de;
+	rdfs:comment """Certainty value representing being neither true nor false."""@en.
+
+certainty-value:LessUnlikely
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#LessUnlikely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "less unlikely"@en, "wenig unwarscheinlich"@de;
+	rdfs:comment """Certainty value representing a low probability of being false."""@en.
+
+certainty-value:Unlikely
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Unlikely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "unlikely"@en, "unwarscheinlich"@de;
+	rdfs:comment """Certainty value representing a moderate probability of being false."""@en.
+
+certainty-value:VeryUnlikely
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#VeryUnlikely>;
+	a rdfs:Class, certainty-value:CertaintyValue;
+	rdfs:label "very unlikely"@en, "sehr unwarscheinlich"@de;
+	rdfs:comment """Certainty value representing a high probability of being false."""@en.
+
+certainty-value:Impossible
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#Impossible>;
+	a rdfs:Class;
+	rdfs:label "impossible"@en, "unmöglich"@de;
+	rdfs:comment """Certainty value representing being 'false'."""@en.
+
