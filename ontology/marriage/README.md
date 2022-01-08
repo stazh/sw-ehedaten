@@ -1,7 +1,11 @@
 # Ontology marriage
 ## Modell
-<div align="center"><img src="marriage_model.jpg" width="800"></div>## Beispiel
-<div align="center"><img src="marriage_example.png" width="800"></div>## Definition der Klassen und Beziehungen
+<div align="center"><img src="marriage_model.jpg" width="800"></div>
+
+## Beispiel
+<div align="center"><img src="marriage_example.png" width="800"></div>
+
+## Definition der Klassen und Beziehungen
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
