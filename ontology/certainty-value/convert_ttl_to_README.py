@@ -15,7 +15,7 @@ for line in content:
 
 prefixdict['rdf'] = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
 
-readme.write('# Ontology belief-value\n\n')
+readme.write('# Ontology certainty-value\n\n')
 readme.write('<div align="center"><img src="archiving.jpg" width="600"></div>\n\n')
 for line in content:
     if line.startswith('# CLASSES') or line.startswith('# INSTANCES'):
