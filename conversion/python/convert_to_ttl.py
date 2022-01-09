@@ -251,8 +251,6 @@ for row in input_file:
 			else:
 				output_graph.add((URIRef(DatingURI), ontology_date.gregorianEndDating, Literal(date_end_list[2] + "-"+ date_end_list[1] + "-"+ date_end_list[0],datatype=XSD.date)))
 
-
-	row['ID']
 	if rowCounter % 7000 == 0:
 		fileCounter += 1
 		fileName = 'data_triples_' + str(fileCounter) + '.ttl'
