@@ -1,6 +1,6 @@
 # Ontology date
 ## Modell
-<div align="center"><img src="date_model.jpg" width="800"></div>
+<div align="center"><img src="date_model.jpg" width="500"></div>
 
 [//]: <> (## Beispiel)
 [//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
