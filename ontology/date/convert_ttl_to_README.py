@@ -23,7 +23,7 @@ readme.write('<div align="center"><img src="date_model.jpg" width="500"></div>\n
 readme.write('[//]: <> (## Beispiel)\n')
 readme.write('[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)\n')
 
-## Definition der Klassen, Beziehungen und Instanzen
+readme.write('## Definition der Klassen, Beziehungen und Instanzen\n')
 for line in content:
     if line.startswith('# CLASSES') or line.startswith('# PROPERTIES') or line.startswith('# INSTANCES'):
         readme.write(line + '\n')   
