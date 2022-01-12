@@ -21,12 +21,6 @@ kirchgemeinden_dict = {}
 for row in kirchgemeinden:
 	kirchgemeinden_dict[row['Kirchgemeinde']] = row['URI']
 
-#Erstelle Dictionary für Datum-Von und Datum-Bis aus Ehedaten_von_bis.csv (erstellt durch create_dictionaries.py-Skript)
-eheeintraege_von_bis = csv.DictReader(open('Ehedaten_von_bis.csv'), delimiter=';')
-eheeintraege_von_bis_dict = {}
-for row in eheeintraege_von_bis:
-	eheeintraege_von_bis_dict[row['ID']] = {'Entstehungszeitraum_von':row['Entstehungszeitraum_von'],'Entstehungszeitraum_bis':row['Entstehungszeitraum_bis']}
-
 #Erstelle Dictionary um Metadaten zu Kirchband eines bestimmten Eheeintrags nachschlagen zu können (über Signatur)
 band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
 band_dict = {}
@@ -89,7 +83,7 @@ for entry in kirchgemeinden_dict:
 output_graph.add((data.stazh, RDF.type, ontology_archiving.Archive))
 output_graph.add((data.stazh, ontology_archiving.archiveHasNameLiteral, Literal("Staatsarchiv des Kantons Zürich")))
 
-fileName = 'data_triples_record_volume_agent' + '.ttl'
+fileName = 'data_triples_archiving_record_volume_agent' + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
 print(fileName)
 
@@ -153,9 +147,9 @@ for row in input_file:
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasDateOfOriginLiteral, Literal(row['Datum'])))	
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartHasWebpageURI, Literal(row['Webseite'], datatype=XSD.anyURI)))
 
-	if rowCounter % 10000 == 0:
+	if rowCounter % 22000 == 0:
 		fileCounter += 1
-		fileName = 'data_triples_archiving' + str(fileCounter) + '.ttl'
+		fileName = 'data_triples_archiving_recordpart_' + str(fileCounter) + '.ttl'
 		output_graph.serialize(destination=fileName, format='turtle')
 		output_graph = Graph()
 		output_graph.bind('archiving', ontology_archiving)
@@ -163,7 +157,7 @@ for row in input_file:
 		print(fileName)
 
 fileCounter += 1
-fileName = 'data_triples_archiving' + str(fileCounter) + '.ttl'
+fileName = 'data_triples_archiving_recordpart_' + str(fileCounter) + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
 print(fileName)
 

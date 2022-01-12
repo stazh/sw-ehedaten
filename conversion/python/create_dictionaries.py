@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#-*- coding:utf-8 -*-
 import csv
 from datetime import datetime
 from datetime import date
@@ -74,37 +76,37 @@ for row in input_file_list:
 	Band_Signaturen, band_sigantur_counter = insert_item_in_dict_by_counter(bandSignaturString, Band_Signaturen, band_sigantur_counter, 'Volume_')	
 
 #4. Erstelle Csv-Tabellen aus allen Dictionaries:
-with open('kirchgemeinden.csv', 'w', newline='') as fk:
+with open('kirchgemeinden.csv', 'w') as fk:
     writerk = csv.writer(fk)
     writerk.writerow(["Kirchgemeinde", "URI"])
     for kk in Kirchgemeinden:
    	 	writerk.writerow([kk, Kirchgemeinden[kk]])
    	 	
-with open('herkunftsorte.csv', 'w', newline='') as fh:
+with open('herkunftsorte.csv', 'w') as fh:
     writerh = csv.writer(fh)
     writerh.writerow(["Herkunftsort", "URI"])
     for kh in Herkunftsorte:
    	 	writerh.writerow([kh, Herkunftsorte[kh]])
 
-with open('Nachnamen.csv', 'w', newline='') as fn:
+with open('Nachnamen.csv', 'w') as fn:
     writern = csv.writer(fn)
     writern.writerow(["Nachname", "URI"])
     for kn in Nachnamen:
    	 	writern.writerow([kn, Nachnamen[kn]])
    	 	
-with open('Frauenvornamen.csv', 'w', newline='') as ff:
+with open('Frauenvornamen.csv', 'w') as ff:
     writerf = csv.writer(ff)
     writerf.writerow(["Frauenvorname", "URI"])
     for kf in Frauenvornamen:
    	 	writerf.writerow([kf, Frauenvornamen[kf]])
 
-with open('Maennervornamen.csv', 'w', newline='') as fm:
+with open('Maennervornamen.csv', 'w') as fm:
     writerm = csv.writer(fm)
     writerm.writerow(["Männervorname", "URI"])
     for km in Maennervornamen:
    	 	writerm.writerow([km, Maennervornamen[km]])
 
-with open('Bandsignaturen.csv', 'w', newline='') as bs:
+with open('Bandsignaturen.csv', 'w') as bs:
     writerb = csv.writer(bs)
     writerb.writerow(["Bandsignatur", "URI"])
     for kbs in Band_Signaturen:
