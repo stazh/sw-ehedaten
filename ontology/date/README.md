@@ -1,6 +1,10 @@
 # Ontology date
 ## Modell
 <div align="center"><img src="date_model.jpg" width="500"></div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> d721fc63e9241b62e257b470e8fd48ed7a1bd6d5
 [//]: <> (## Beispiel)
 [//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
 | Predicate | Object |
