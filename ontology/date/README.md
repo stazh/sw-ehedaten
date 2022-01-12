@@ -1,4 +1,11 @@
 # Ontology date
+## Modell
+<div align="center"><img src="date_model.jpg" width="800"></div>
+
+[//]: <> (## Beispiel)
+[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
+
+## Definition der Klassen und Beziehungen
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
