@@ -8,6 +8,7 @@
 @prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
 @prefix place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>.
+@prefix certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person>.
 @prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
@@ -24,6 +25,7 @@
 #
 # CLASSES
 #
+
 person:Person
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person>;
 	a rdfs:Class;
@@ -57,6 +59,14 @@ person:personHasFirstNameLiteral
 	rdfs:domain person:Person;
 	rdfs:range rdfs:Literal.
 
+person:personsFirstNameInformationHasCertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsFirstNameInformationHasCertaintyValue>;
+	a owl:ObjectProperty;
+	rdfs:label "persons first name information has certainty value"@en, "Person-Vornamensangabe hat Sicherheitswert"@de;
+	rdfs:comment """Relating a person to the certainty value of its first name information."""@en;
+	rdfs:domain person:Person;
+	rdfs:range certainty-value:CertaintyValue.
+
 person:personHasLastNameLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasLastNameLiteral>;
 	a owl:DatatypeProperty;
@@ -65,6 +75,14 @@ person:personHasLastNameLiteral
 	rdfs:domain person:Person;
 	rdfs:range rdfs:Literal.
 
+person:personsLastNameInformationHasCertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsLastNameInformationHasCertaintyValue>;
+	a owl:ObjectProperty;
+	rdfs:label "persons last name information has certainty value"@en, "Person-Nachnamensangabe hat Sicherheitswert"@de;
+	rdfs:comment """Relating a person to the certainty value of its last name information."""@en;
+	rdfs:domain person:Person;
+	rdfs:range certainty-value:CertaintyValue.
+
 person:personHasPlaceOfOrigin
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOrigin>;
 	a owl:ObjectProperty;
@@ -72,3 +90,11 @@ person:personHasPlaceOfOrigin
 	rdfs:comment """Relating a person to its place of origin"""@en;
 	rdfs:domain person:Person;
 	rdfs:range place:Place.
+
+person:personsPlaceOfOriginInformationHasCertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsPlaceOfOriginInformationHasCertaintyValue>;
+	a owl:ObjectProperty;
+	rdfs:label "persons place of origin information has certainty value"@en, "Person-Herkunftsangabe hat Sicherheitswert"@de;
+	rdfs:comment """Relating a person to the certainty value of its place of origin information."""@en;
+	rdfs:domain person:Person;
+	rdfs:range certainty-value:CertaintyValue.

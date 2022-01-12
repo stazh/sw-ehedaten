@@ -42,7 +42,7 @@ date:Weekday
 	a rdfs:Class;
 	rdfs:label "Weekday"@en, "Wochentag"@de;
 	rdfs:comment """The class instances are the seven days of the week."""@en;
-	owl:oneOf date:Monday date:Tuesday date:Wednesday date:Thursday date:Friday date:Saturday date:Sunday.
+	owl:oneOf (date:Monday date:Tuesday date:Wednesday date:Thursday date:Friday date:Saturday date:Sunday).
 
 
 #
