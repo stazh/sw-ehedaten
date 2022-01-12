@@ -1,6 +1,12 @@
 # Ontology archiving
 
+## Modellausschnitt
 <div align="center"><img src="archiving.jpg" width="600"></div>
+
+## Beispiel
+<div align="center"><img src="manifestation.jpg" width="800"></div>
+
+## Definition der Klassen und Beziehungen
 
 | Predicate | Object |
 |:-------- |:-------- |
