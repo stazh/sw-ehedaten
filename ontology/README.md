@@ -13,3 +13,9 @@ Sowohl die Kirch- und Pfarrbücher, als auch die Einträge sind im Archivinforma
 Um die Ehedaten als historische Quelle(n) zu erfassen wurden fünf weitere Ontologien, die an die Ontologie Archiving anknüpfen, erstellt. Diese erfassen die Daten in ihrer Grundstruktur und lassen sich anhand definierter Anwendungsfällen stetig erweiteren. Es sind dies [Marriage](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage), [Date](https://github.com/stazh/sw-ehedaten/tree/main/ontology/date), [Place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place),[Organisation](https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation) und [Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person).
 
 <div align="center"><img src="/images/Ontologybasic.jpg" width="1000"></div>
+
+
+## Ontologie Certainty-Value
+
+Bei der Ontologie [certainty-value](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value) handelt es sich um eine Art Hilfsontologie, welche von allen anderen Ontologien verwendet wird. Darin werden Sicherheitswerte wie "sicher", "unsicher", "möglich", "unmöglich" etc. definiert, um anzugeben wie gesichert, bzw. wie wahrscheinlich eine bestimmte Information in den Daten ist. 
+
