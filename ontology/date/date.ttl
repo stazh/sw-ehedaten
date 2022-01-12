@@ -17,11 +17,12 @@
 	dct:description """Formal description of a gregorian and julian dates, general subclasses, related classes and properties."""@en;
 	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
 	dct:publisher "States Archive canton of Zürich"@en;
-	owl:versionInfo "2021-11-26"^^xsd:date.
+	owl:versionInfo "2022-01-12"^^xsd:date.
 
 #
 # CLASSES
 #
+
 date:Date
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Date>;
 	a rdfs:Class;
@@ -35,6 +36,13 @@ date:DatePeriod
 	rdfs:label "Date period"@en, "Datumsperiode"@de;
 	rdfs:comment """date period with start date and end date."""@en;
 	rdfs:subClassOf archiving:TimePeriod.
+
+date:Weekday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Weekday>;
+	a rdfs:Class;
+	rdfs:label "Weekday"@en, "Wochentag"@de;
+	rdfs:comment """The class instances are the seven days of the week."""@en;
+	owl:oneOf date:Monday date:Tuesday date:Wednesday date:Thursday date:Friday date:Saturday date:Sunday.
 
 
 #
@@ -57,35 +65,76 @@ date:gregorianDating
 	rdfs:domain date:Date;
 	rdfs:range xsd:date.
 
-date:julianStartDating
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#julianStartDating>;
+date:dateIsInYear
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateIsInYear>;
 	a owl:DatatypeProperty;
-	rdfs:label "julian start dating"@en, "julianische Startdatierung"@de;
-	rdfs:comment """Relating a date period object to its julian start date."""@en;
-	rdfs:domain date:DatePeriod;
-	rdfs:range xsd:date.
+	rdfs:label "date is in year"@en, "Datum ist in Jahr"@de;
+	rdfs:comment """Relating a date object to its year."""@en;
+	rdfs:domain date:Date;
+	rdfs:range xsd:gYear.
 
-date:gregorianStartDating
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#gregorianStartDating>;
-	a owl:DatatypeProperty;
-	rdfs:label "gregorian start dating"@en, "gregorianische Startdatierung"@de;
-	rdfs:comment """Relating a date period object to its gregorian start date."""@en;
-	rdfs:domain date:DatePeriod;
-	rdfs:range xsd:date.
+date:dateHasWeekday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateHasWeekday>;
+	a owl:ObjectProperty;
+	rdfs:label "date has weekday."@en, "Datum hat Wochentag"@de;
+	rdfs:comment """Relating a date object the weekday."""@en;
+	rdfs:domain date:Date;
+	rdfs:range date:Weekday.
 
-date:julianEndDating
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#julianEndDating>;
-	a owl:DatatypeProperty;
-	rdfs:label "julian end dating"@en, "julianische Enddatierung"@de;
-	rdfs:comment """Relating a date period object to its julian end date."""@en;
+date:datePeriodHasStartDate
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#datePeriodHasStartDate>;
+	a owl:ObjectProperty;
+	rdfs:label "date period has start date"@en, "Datumsperiode hat Startdatum"@de;
+	rdfs:comment """Relating a date period object to its start date."""@en;
 	rdfs:domain date:DatePeriod;
-	rdfs:range xsd:date.
+	rdfs:range date:Date.
 
-date:gregorianEndDating
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#gregorianEndDating>;
-	a owl:DatatypeProperty;
-	rdfs:label "gregorian end dating"@en, "gregorianische Enddatierung"@de;
-	rdfs:comment """Relating a date period object to its gregorian end date."""@en;
+date:datePeriodHasEndDate
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#datePeriodHasEndDate>;
+	a owl:ObjectProperty;
+	rdfs:label "date period has end date"@en, "Datumsperiode hat Enddatum"@de;
+	rdfs:comment """Relating a date period object to its end date."""@en;
 	rdfs:domain date:DatePeriod;
-	rdfs:range xsd:date.
+	rdfs:range date:Date.
+
+#
+# INSTANCES
+#
+
+date:Monday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Monday>;
+	a date:Weekday;
+	rdfs:label "Monday"@en, "Montag"@de.
+
+date:Tuesday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Tuesday>;
+	a date:Weekday;
+	rdfs:label "Tuesday"@en, "Dienstag"@de.
+
+date:Wednesday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Wednesday>;
+	a date:Weekday;
+	rdfs:label "Wednesday"@en, "Mittwoch"@de.
+
+date:Thursday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Thursday>;
+	a date:Weekday;
+	rdfs:label "Thursday"@en, "Donnerstag"@de.
+
+date:Friday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Friday>;
+	a date:Weekday;
+	rdfs:label "Friday"@en, "Freitag"@de.
+
+date:Saturday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Saturday>;
+	a date:Weekday;
+	rdfs:label "Saturday"@en, "Samstag"@de.
+
+date:Sunday
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Sunday>;
+	a date:Weekday;
+	rdfs:label "Sunday"@en, "Sonntag"@de.
+
+
 

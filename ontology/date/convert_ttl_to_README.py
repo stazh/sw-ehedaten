@@ -16,8 +16,16 @@ for line in content:
 prefixdict['rdf'] = 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'
 
 readme.write('# Ontology date\n')
+
+readme.write('## Modell\n')
+readme.write('<div align="center"><img src="date_model.jpg" width="500"></div>\n')
+
+readme.write('[//]: <> (## Beispiel)\n')
+readme.write('[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)\n')
+
+## Definition der Klassen, Beziehungen und Instanzen
 for line in content:
-    if line.startswith('# CLASSES') or line.startswith('# PROPERTIES'):
+    if line.startswith('# CLASSES') or line.startswith('# PROPERTIES') or line.startswith('# INSTANCES'):
         readme.write(line + '\n')   
     elif line.startswith('<'):
         readme.write('| Predicate | Object |\n|:-------- |:-------- |\n')
