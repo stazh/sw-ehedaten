@@ -95,8 +95,6 @@ output_graph.bind('data', data)
 rowCounter = 0
 fileCounter = 0
 
-
-
 for row in input_file:
 
 	row = dict(row)
