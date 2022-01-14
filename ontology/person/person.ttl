@@ -126,13 +126,13 @@ person:personHasPlaceOfOrigin
 	rdfs:domain person:Person;
 	rdfs:range place:Place.
 
-person:placeOfOriginSpezificationHasLiteral
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasLiteral>;
-	a owl:DatatypeProperty;
+person:placeOfOriginSpezificationHasPlace
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasPlace>;
+	a owl:ObjectProperty;
 	rdfs:label "place of origin spezification has literal"@en, "Herkunftsangabe hat Literal"@de;
-	rdfs:comment """Relating a place of origin spezification to a person to the literal of the spezification."""@en;
+	rdfs:comment """Relating a place of origin spezification to a person to the place of the spezification."""@en;
 	rdfs:domain person:PlaceOfOriginSpezification;
-	rdfs:range rdfs:Literal.
+	rdfs:range place:Place.
 
 person:placeOfOriginSpezificationHasCertaintyValue
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasCertaintyValue>;
