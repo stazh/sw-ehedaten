@@ -8,11 +8,11 @@ PREFIX date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>
 PREFIX organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>
 PREFIX place: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#>
 
-# alle Bände und deren Einträge
+# alle Bände und deren Einträge. 
 SELECT * WHERE {
    ?record a archiving:Record.
    ?record archiving:recordHasTitleLiteral ?title.
-   ?record archiving:recordHasdateOfOriginLiteral ?date.
+   ?record archiving:recordHasDateOfOriginLiteral ?date.
    ?record archiving:recordHasProvenance ?kirchgemeinde.
    ?kirchgemeinde organisation:parishHasNameLiteral ?kirchgemeindeName.
    ?record archiving:recordHasRecordPart ?recordPart.
