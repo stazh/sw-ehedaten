@@ -151,6 +151,13 @@ for row in input_file:
 		ManURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Man_' + rowCountString
 		WomanURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Woman_' + rowCountString
 		DatingURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Dating_' + rowCountString
+		#TODO DATING Dictionary!
+		FirstNameManSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#FirstNameManSpezification_' + rowCountString
+		LastNameManSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#LastNameManSpezification_' + rowCountString
+		FirstNameWomanSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#FirstNameWomanSpezification_' + rowCountString
+		LastNameWomanSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#LastNameWomanSpezification_' + rowCountString
+		PlaceOfOriginManSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceOfOriginManSpezification_' + rowCountString
+		PlaceOfOriginWomanSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceOfOriginWomanSpezification_' + rowCountString
 
 		output_graph.add((URIRef(MarriageEntryURI), RDF.type, ontology_marriage.MarriageEntry))
 		output_graph.add((URIRef(RecordPartURI), ontology_archiving.recordPartRepresents, URIRef(MarriageEntryURI)))
@@ -159,23 +166,85 @@ for row in input_file:
 		output_graph.add((URIRef(WomanURI), RDF.type, ontology_person.Woman))
 		output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersWoman, URIRef(WomanURI)))
 		output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersMan, URIRef(ManURI)))
-		#HIER WEITER MIT SICHERHEITSWERT
 		output_graph.add((URIRef(ManURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Mann'])))
 		output_graph.add((URIRef(WomanURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Frau'])))
 		output_graph.add((URIRef(ManURI), ontology_person.personHasLastNameLiteral, Literal(row['Nachname_Mann'])))
 		output_graph.add((URIRef(WomanURI), ontology_person.personHasLastNameLiteral, Literal(row['Nachname_Frau'])))
+        
+        #Trippel Vorname Mann. Wenn ? in Namen : unsichere Lesung
+		output_graph.add((URIRef(ManURI), ontology_person.personHasFirstNameSpezification, URIRef(FirstNameManSpezificationURI)))
+		name = row['Vorname_Mann']
+		if name.find('?') > -1:
+			name = name.replace(' ?','')
+			name = name.replace(' (?)','')
+			name = name.replace('?','')
+			output_graph.add((URIRef(FirstNameManSpezificationURI),ontology_person.firstNameSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+		else:
+			output_graph.add((URIRef(FirstNameManSpezificationURI),ontology_person.firstNameSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+		output_graph.add((URIRef(FirstNameManSpezificationURI),ontology_person.firstNameSpezificationHasLiteral,Literal(name)))
+        
+        #Trippel Vorname Frau. Wenn ? in Namen : unsichere Lesung
+		output_graph.add((URIRef(WomanURI), ontology_person.personHasFirstNameSpezification, URIRef(FirstNameWomanSpezificationURI)))
+		name = row['Vorname_Frau']	
+		if name.find('?') > -1:
+			name = name.replace(' ?','')
+			name = name.replace(' (?)','')
+			lname = name.replace('?','')
+			output_graph.add((URIRef(FirstNameWomanSpezificationURI),ontology_person.firstNameSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+		else:
+			output_graph.add((URIRef(FirstNameWomanSpezificationURI),ontology_person.firstNameSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+		output_graph.add((URIRef(FirstNameWomanSpezificationURI),ontology_person.firstNameSpezificationHasLiteral,Literal(name)))
+		
+		#Trippel Nachname Mann. Wenn ? in Namen : unsichere Lesung
+		output_graph.add((URIRef(ManURI), ontology_person.personHasLastNameSpezification, URIRef(LastNameManSpezificationURI)))			
+		name = row['Nachname_Mann']
+		if name.find('?') > -1:
+			name = name.replace(' ?','')
+			name = name.replace(' (?)','')
+			name = name.replace('?','')
+			output_graph.add((URIRef(LastNameManSpezificationURI),ontology_person.lastNameSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+		else:
+			output_graph.add((URIRef(LastNameManSpezificationURI),ontology_person.lastNameSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+		output_graph.add((URIRef(LastNameManSpezificationURI),ontology_person.lastNameSpezificationHasLiteral,Literal(name)))
+		
+		#Trippel Nachname Frau. Wenn ? in Namen : unsichere Lesung
+		output_graph.add((URIRef(WomanURI), ontology_person.personHasLastNameSpezification, URIRef(LastNameWomanSpezificationURI)))	
+		name = row['Nachname_Frau']	
+		if name.find('?') > -1:
+			name = name.replace(' ?','')
+			name = name.replace(' (?)','')
+			lname = name.replace('?','')
+			output_graph.add((URIRef(LastNameWomanSpezificationURI),ontology_person.lastNameSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+		else:
+			output_graph.add((URIRef(LastNameWomanSpezificationURI),ontology_person.lastNameSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+		output_graph.add((URIRef(LastNameWomanSpezificationURI),ontology_person.lastNameSpezificationHasLiteral,Literal(name)))
+
+
 		if row['Herkunft_Mann'] != "":
-			item = row['Herkunft_Mann']
-			item = item.replace(' ?','')
-			item = item.replace(' (?)','')
-			item = item.replace('?','')
-			output_graph.add((URIRef(ManURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[item])))
+			output_graph.add((URIRef(ManURI),ontology_person.personHasPlaceOfOriginSpezification,URIRef(PlaceOfOriginManSpezificationURI)))
+			herkunft_mann = row['Herkunft_Mann']
+			if herkunft_mann.find('?') > -1:
+				herkunft_mann = herkunft_mann.replace(' ?','')
+				herkunft_mann = herkunft_mann.replace(' (?)','')
+				herkunft_mann = herkunft_mann.replace('?','')
+				output_graph.add((URIRef(PlaceOfOriginManSpezificationURI),ontology_person.placeOfOriginSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+			else:
+				output_graph.add((URIRef(PlaceOfOriginManSpezificationURI),ontology_person.placeOfOriginSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+				output_graph.add((URIRef(ManURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[herkunft_mann])))
+			output_graph.add((URIRef(PlaceOfOriginManSpezificationURI),ontology_person.placeOfOriginSpezificationHasPlace,URIRef(orte_dict[herkunft_mann])))
+		
 		if row['Herkunft_Frau'] != "":
-			item = row['Herkunft_Frau']
-			item = item.replace(' ?','')
-			item = item.replace(' (?)','')
-			item = item.replace('?','')
-			output_graph.add((URIRef(WomanURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[item])))
+			output_graph.add((URIRef(WomanURI),ontology_person.personHasPlaceOfOriginSpezification,URIRef(PlaceOfOriginWomanSpezificationURI)))
+			herkunft_frau = row['Herkunft_Frau']
+			if herkunft_frau.find('?') > -1:
+				herkunft_frau = herkunft_frau.replace(' ?','')
+				herkunft_frau = herkunft_frau.replace(' (?)','')
+				herkunft_frau = herkunft_frau.replace('?','')
+				output_graph.add((URIRef(PlaceOfOriginWomanSpezificationURI),ontology_person.placeOfOriginSpezificationHasCertaintyValue,ontology_certainty_value.Uncertain))
+			else:
+				output_graph.add((URIRef(PlaceOfOriginWomanSpezificationURI),ontology_person.placeOfOriginSpezificationHasCertaintyValue,ontology_certainty_value.Certain))
+				output_graph.add((URIRef(WomanURI), ontology_person.personHasPlaceOfOrigin, URIRef(orte_dict[herkunft_frau])))
+			output_graph.add((URIRef(PlaceOfOriginWomanSpezificationURI),ontology_person.placeOfOriginSpezificationHasPlace,URIRef(orte_dict[herkunft_frau])))
 		
 		#Datum sollte stimmen
 		if row['Datum_Von'] == row['Datum_Bis']:

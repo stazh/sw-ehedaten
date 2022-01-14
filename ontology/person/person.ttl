@@ -78,6 +78,14 @@ person:personHasFirstNameLiteral
 	rdfs:domain person:Person;
 	rdfs:range rdfs:Literal.
 
+person:personHasFirstNameSpezification
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasFirstNameSpezification>;
+	a owl:ObjectProperty;
+	rdfs:label "person has first name spezification"@en, "Person hat Vornamensangabe"@de;
+	rdfs:comment """Relating a person to its first name spezification."""@en;
+	rdfs:domain person:Person;
+	rdfs:range person:FirstNameSpezification.
+
 person:firstNameSpezificationHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#firstNameSpezificationHasLiteral>;
 	a owl:DatatypeProperty;
@@ -102,6 +110,14 @@ person:personHasLastNameLiteral
 	rdfs:domain person:Person;
 	rdfs:range rdfs:Literal.
 
+person:personHasLastNameSpezification
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasLastNameSpezification>;
+	a owl:ObjectProperty;
+	rdfs:label "person has last name spezification"@en, "Person hat Nachnamensangabe"@de;
+	rdfs:comment """Relating a person to its last name spezification."""@en;
+	rdfs:domain person:Person;
+	rdfs:range person:LastNameSpezification.
+
 person:lastNameSpezificationHasLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#lastNameSpezificationHasLiteral>;
 	a owl:DatatypeProperty;
@@ -125,6 +141,14 @@ person:personHasPlaceOfOrigin
 	rdfs:comment """Relating a person to its place of origin"""@en;
 	rdfs:domain person:Person;
 	rdfs:range place:Place.
+
+person:personHasPlaceOfOriginSpezification
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOriginSpezification>;
+	a owl:ObjectProperty;
+	rdfs:label "person has place of origin spezification"@en, "Person hat Herkunftsangabe"@de;
+	rdfs:comment """Relating a person to its place of origin spezification."""@en;
+	rdfs:domain person:Person;
+	rdfs:range person:PlaceOfOriginSpezification.
 
 person:placeOfOriginSpezificationHasPlace
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasPlace>;

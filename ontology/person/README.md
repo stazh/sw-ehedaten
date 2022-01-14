@@ -1,10 +1,8 @@
 # Ontology person
 ## Modell
 <div align="center"><img src="person_model.jpg" width="500"></div>
-
 [//]: <> (## Beispiel)
 [//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
-
 ## Definition der Klassen und Beziehungen
 
 | Predicate | Object |
@@ -72,6 +70,15 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the literal of its first name"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## personHasFirstNameSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasFirstNameSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person has first name spezification"@en, "Person hat Vornamensangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its first name spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:FirstNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#FirstNameSpezification). |
 ## firstNameSpezificationHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -99,6 +106,15 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the literal of its last name"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## personHasLastNameSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasLastNameSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person has last name spezification"@en, "Person hat Nachnamensangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its last name spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:LastNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#LastNameSpezification). |
 ## lastNameSpezificationHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -126,6 +142,15 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its place of origin"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [place:Place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place). |
+## personHasPlaceOfOriginSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasPlaceOfOriginSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person has place of origin spezification"@en, "Person hat Herkunftsangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its place of origin spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:PlaceOfOriginSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification). |
 ## placeOfOriginSpezificationHasPlace
 | Predicate | Object |
 |:-------- |:-------- |
