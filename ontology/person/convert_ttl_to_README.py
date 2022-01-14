@@ -22,7 +22,7 @@ readme.write('<div align="center"><img src="person_model.jpg" width="500"></div>
 readme.write('[//]: <> (## Beispiel)\n')
 readme.write('[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)\n')
 
-readme.write('## Definition der Klassen und Beziehungen\n')
+readme.write('## Definition der Klassen und Beziehungen\n\n')
 
 for line in content:
     if line.startswith('# CLASSES') or line.startswith('# PROPERTIES'):

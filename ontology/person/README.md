@@ -1,10 +1,8 @@
 # Ontology person
 ## Modell
 <div align="center"><img src="person_model.jpg" width="500"></div>
-
 [//]: <> (## Beispiel)
 [//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
-
 ## Definition der Klassen und Beziehungen
 
 | Predicate | Object |
@@ -41,6 +39,27 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Man"@en, "Mann"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A real born human with male sex"""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person). |
+## FirstNameSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#FirstNameSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "First name spezification"@en, "Vornamensangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The spezification someone made about a persons first name."""@en. |
+## LastNameSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#LastNameSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Last name spezification"@en, "Nachnamensangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The spezification someone made about a persons last name."""@en. |
+## PlaceOfOriginSpezification
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Place of origin spezification"@en, "Herkunftssangabe"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The spezification someone made about a persons place of origin."""@en. |
 # PROPERTIES
 ## personHasFirstNameLiteral
 | Predicate | Object |
@@ -51,14 +70,23 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the literal of its first name"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
-## personsFirstNameInformationHasCertaintyValue
+## firstNameSpezificationHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsFirstNameInformationHasCertaintyValue>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#firstNameSpezificationHasLiteral>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "first name spezification has Literal"@en, "Vornamensangabe hat Literal"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a first name spezification to a person to the literal of the spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:FirstNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#FirstNameSpezification); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## firstNameSpezificationHasCertaintyValue
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#firstNameSpezificationHasCertaintyValue>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "persons first name information has certainty value"@en, "Person-Vornamensangabe hat Sicherheitswert"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the certainty value of its first name information."""@en; |
-| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "first name spezification has certainty value"@en, "Vornamensangabe hat Sicherheitswert"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a first name spezification to a person to the certainty value of the spezification. For example it would relate to the certainty value Uncertain in case of unclear reading of the first name."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:FirstNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#FirstNameSpezification); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [certainty-value:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue). |
 ## personHasLastNameLiteral
 | Predicate | Object |
@@ -69,14 +97,23 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the literal of its last name"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
-## personsLastNameInformationHasCertaintyValue
+## lastNameSpezificationHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsLastNameInformationHasCertaintyValue>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#lastNameSpezificationHasLiteral>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "last name spezification has Literal"@en, "Nachnamensangabe hat Literal"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a last name spezification to a person to the literal of the spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:LastNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#LastNameSpezification); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## lastNameSpezificationHasCertaintyValue
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#lastNameSpezificationHasCertaintyValue>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "persons last name information has certainty value"@en, "Person-Nachnamensangabe hat Sicherheitswert"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the certainty value of its last name information."""@en; |
-| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "last name spezification has certainty value"@en, "Nachnamensangabe hat Sicherheitswert"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a last name spezification to a person to the certainty value of the spezification. For example it would relate to the certainty value Uncertain in case of unclear reading of the last name."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:LastNameSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#LastNameSpezification); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [certainty-value:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue). |
 ## personHasPlaceOfOrigin
 | Predicate | Object |
@@ -87,12 +124,21 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to its place of origin"""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [place:Place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place). |
-## personsPlaceOfOriginInformationHasCertaintyValue
+## placeOfOriginSpezificationHasLiteral
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personsPlaceOfOriginInformationHasCertaintyValue>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasLiteral>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "place of origin spezification has literal"@en, "Herkunftsangabe hat Literal"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a place of origin spezification to a person to the literal of the spezification."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:PlaceOfOriginSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## placeOfOriginSpezificationHasCertaintyValue
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasCertaintyValue>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "persons place of origin information has certainty value"@en, "Person-Herkunftsangabe hat Sicherheitswert"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to the certainty value of its place of origin information."""@en; |
-| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "place of origin spezification has certainty value"@en, "Herkunftsangabe hat Sicherheitswert"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a place of origin spezification to a person to the certainty value of the spezification. For example it would relate to the certainty value Uncertain in case of unclear reading of the place of origin."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:PlaceOfOriginSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [certainty-value:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue). |
