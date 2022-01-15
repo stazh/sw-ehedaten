@@ -156,7 +156,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasPlace>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "place of origin spezification has literal"@en, "Herkunftsangabe hat Literal"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "place of origin spezification has place"@en, "Herkunftsangabe hat Ort"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a place of origin spezification to a person to the place of the spezification."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:PlaceOfOriginSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [place:Place](https://github.com/stazh/sw-ehedaten/tree/main/ontology/place#Place). |
