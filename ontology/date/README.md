@@ -63,7 +63,7 @@
 ## dateIsInGregorianYear
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateIsGregorianInYear>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateIsInGregorianYear>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date is in year"@en, "Datum ist in Jahr"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a date object to its year."""@en; |
