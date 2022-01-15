@@ -65,8 +65,8 @@ date:gregorianDating
 	rdfs:domain date:Date;
 	rdfs:range xsd:date.
 
-date:dateIsInYear
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateIsInYear>;
+date:dateIsInGregorianYear
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateIsInGregorianYear>;
 	a owl:DatatypeProperty;
 	rdfs:label "date is in year"@en, "Datum ist in Jahr"@de;
 	rdfs:comment """Relating a date object to its year."""@en;

@@ -153,7 +153,7 @@ person:personHasPlaceOfOriginSpezification
 person:placeOfOriginSpezificationHasPlace
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#placeOfOriginSpezificationHasPlace>;
 	a owl:ObjectProperty;
-	rdfs:label "place of origin spezification has literal"@en, "Herkunftsangabe hat Literal"@de;
+	rdfs:label "place of origin spezification has place"@en, "Herkunftsangabe hat Ort"@de;
 	rdfs:comment """Relating a place of origin spezification to a person to the place of the spezification."""@en;
 	rdfs:domain person:PlaceOfOriginSpezification;
 	rdfs:range place:Place.
