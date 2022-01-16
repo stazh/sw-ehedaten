@@ -55,3 +55,17 @@ SELECT * WHERE{
 filter (lang(?weekdayLabel) = 'de')
 ?date date:dateIsInGregorianYear ?year.
 }
+
+# Heiratswochentage Entwicklung Zürich
+
+SELECT * WHERE{
+?me marriage:marriageEntryDocumentsWeddingWithCertaintyValue certainty-value:Likely.
+?me marriage:marriageEntryHasDatingOnDate ?date.
+?me marriage:marriageEntryIsInParishBook ?pb.
+?pb marriage:parishBookIsKeptByParish ?kirchgemeinde.
+?kirchgemeinde organisation:parishHasSeatAtPlace <https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceName_Zuerich>.
+?date date:dateHasWeekday ?weekday.
+?weekday rdfs:label ?weekdayLabel.
+filter (lang(?weekdayLabel) = 'de')
+?date date:dateIsInGregorianYear ?year.
+}
