@@ -1,7 +1,9 @@
 https://int.lindas.admin.ch/sparql/
 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
 PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
+PREFIX certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>
 PREFIX person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>
 PREFIX marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>
 PREFIX date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>
@@ -42,3 +44,14 @@ SELECT * WHERE {
   {?datum date:gregorianDating ?gregOderJulDatum} UNION {?datum date:julianDating ?gregOderJulDatum}.
   BIND (xsd:integer(STRBEFORE(STR(?gregOderJulDatum), "-" )) AS ?jahr )
 } ORDER BY ?jahr
+
+
+# Heiratswochentage Entwicklung
+SELECT * WHERE{
+?me marriage:marriageEntryDocumentsWeddingWithCertaintyValue certainty-value:Likely.
+?me marriage:marriageEntryHasDatingOnDate ?date.
+?date date:dateHasWeekday ?weekday.
+?weekday rdfs:label ?weekdayLabel.
+filter (lang(?weekdayLabel) = 'de')
+?date date:dateIsInGregorianYear ?year.
+}
