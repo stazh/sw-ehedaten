@@ -75,7 +75,6 @@ for row in band_signaturen:
             'Weblink_AIS':rowb['Weblink_AIS']
             }
 
-
 counter = 0
 record_dict = {}
 
@@ -101,12 +100,11 @@ output_graph.bind('data', data)
 
 rowCounter = 0
 fileCounter = 0
-pageURIList = []
-for row in input_file:
 
+for row in input_file:
     row = dict(row)
     rowCounter += 1
-
+    
     if row['Signatur'] != "":
         
         rowCountString = str(rowCounter)
@@ -130,10 +128,12 @@ for row in input_file:
         PlaceOfOriginManSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceOfOriginManSpezification_' + rowCountString
         PlaceOfOriginWomanSpezificationURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceOfOriginWomanSpezification_' + rowCountString
 
-        if row['Datum_Von'] == row['Datum_Bis']:       
+        if row['Datum_Von'] == row['Datum_Bis']:
+            dateOrig = ''       
             if int(row['Datum_Von'][:4]) < 1701:
                 julianDateList = row['Datum_Von'].split('-')
                 julianDate = date(int(julianDateList[0]),int(julianDateList[1]),int(julianDateList[2]))
+                dateOrig = julianDate
                 gregDate = julianDate + timedelta(days=11)
                 weekday = calendar.day_name[gregDate.weekday()]
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
@@ -143,6 +143,7 @@ for row in input_file:
             else:
                 gregDateList = row['Datum_Von'].split('-')
                 gregDate = date(int(gregDateList[0]),int(gregDateList[1]),int(gregDateList[2]))
+                dateOrig = gregDate
                 weekday = calendar.day_name[gregDate.weekday()]
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingURI), ontology_date.dateHasWeekday, URIRef(weekdayURI)))
@@ -182,7 +183,8 @@ for row in input_file:
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingEURI), ontology_date.dateHasWeekday, URIRef(weekdayURI)))
                 output_graph.add((URIRef(DatingEURI),ontology_date.dateIsInGregorianYear,Literal(gregDate.year,datatype=XSD.gYear)))
-    if rowCounter % 100000 == 0:
+
+    if rowCounter % 150000 == 0:
         fileCounter += 1
         fileName = 'data_triples_weekdays_' + str(fileCounter) + '.ttl'
         output_graph.serialize(destination=fileName, format='turtle')
