@@ -1,7 +1,11 @@
 # Ontology marriage
 ## Modell
-<div align="center"><img src="marriage_model.jpg" width="800"></div>## Beispiel
-<div align="center"><img src="marriage_example.png" width="800"></div>## Definition der Klassen und Beziehungen
+<div align="center"><img src="marriage_model.jpg" width="800"></div>
+
+## Beispiel
+<div align="center"><img src="marriage_example.png" width="800"></div>
+
+## Definition der Klassen und Beziehungen
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
@@ -11,6 +15,7 @@
 | [dct:creator](http://purl.org/dc/terms/creator) | "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en; |
 | [dct:publisher](http://purl.org/dc/terms/publisher) | "States Archive canton of Zürich"@en; |
 | [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-26"^^xsd:date. |
+
 # CLASSES
 ## Wedding
 | Predicate | Object |
