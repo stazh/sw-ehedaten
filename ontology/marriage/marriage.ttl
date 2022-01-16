@@ -10,6 +10,7 @@
 @prefix organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>.
 @prefix person: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#>.
 @prefix date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>.
+@prefix certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>.
 
 @base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage>.
 @prefix marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>.
@@ -26,11 +27,11 @@
 #
 # CLASSES
 #
-marriage:Marriage
+marriage:Wedding
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#Marriage>;
 	a rdfs:Class;
-	rdfs:label "Marriage"@en, "Heirat"@de;
-	rdfs:comment """Marriage as the event of the union of two people."""@en;
+	rdfs:label "Wedding"@en, "Heirat"@de;
+	rdfs:comment """Wedding as the event of the union of two people."""@en;
 	rdfs:subClassOf nie-ine-event:Event.
 
 marriage:MarriageProclamation
@@ -44,7 +45,7 @@ marriage:ParishBook
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#ParishBook>;
 	a rdfs:Class;
 	rdfs:label "Parish book"@en, "Pfarrbuch"@de;
-	rdfs:comment """The book in which a marriage or marriage proclamation is registered resp. the marriage entry is written."""@en.
+	rdfs:comment """The book in which a wedding or marriage proclamation is registered resp. the marriage entry is written."""@en.
 
 marriage:MarriageEntry
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry>;
@@ -120,3 +121,27 @@ marriage:marriageEntryHasDatingWithinDatePeriod
 	rdfs:comment """Relating a marriage entry to the date period within its dating is possible."""@en;
 	rdfs:domain marriage:MarriageEntry;
 	rdfs:range date:DatePeriod.
+
+marriage:marriageEntryDocumentsMarriageProclamationWithCertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryDocumentsMarriageProclamationWithCertaintyValue>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry documents marriage proclamation with certainty value"@en, "Eheeintrag dokumentiert Eheverkündung mit Sicherheitswert"@de;
+	rdfs:comment """Relating a marriage entry to the certainty value with which it is possible, that the marriage entry documents a marriage proclamation."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range certainty-value:CertaintyValue.
+
+marriage:marriageEntryDocumentsWeddingWithCertaintyValue
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryDocumentsWeddingWithCertaintyValue>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry documents wedding with certainty value"@en, "Eheeintrag dokumentiert Heirat mit Sicherheitswert"@de;
+	rdfs:comment """Relating a marriage entry to the certainty value with which it is possible, that the marriage entry documents a wedding."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range certainty-value:CertaintyValue.
+
+marriage:marriageEntryDocumentsProbablySameCoupleThanMarriageEntry
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryDocumentsProbablySameCoupleThanMarriageEntry>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry documents probably same couple than marriage entry"@en, "Eheeintrag dokumentiert wahrscheinlich dasselbe Ehepaar wie Eheeintrag"@de;
+	rdfs:comment """Relating a marriage entry to an other marriage entry which belongs probably to the same couple."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range marriage:MarriageEntry.

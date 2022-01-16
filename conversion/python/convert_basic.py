@@ -165,6 +165,10 @@ for row in input_file:
         output_graph.add((URIRef(WomanURI), RDF.type, ontology_person.Woman))
         output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersWoman, URIRef(WomanURI)))
         output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryRegistersMan, URIRef(ManURI)))
+        if row['Zusatzinfo_Frau'] != '' and row['Zusatzinfo_Frau'] != '-':
+            output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.marriageEntryHasCommentToWoman, Literal(row['Zusatzinfo_Frau'])))
+        if row['Zusatzinfo_Mann'] != '' and row['Zusatzinfo_Mann'] != '-':
+            output_graph.add((URIRef(MarriageEntryURI), ontology_marriage.mmarriageEntryHasGeneralCommentOrCommentToMan, Literal(row['Zusatzinfo_Mann'])))
         output_graph.add((URIRef(ManURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Mann'])))
         output_graph.add((URIRef(WomanURI), ontology_person.personHasFirstNameLiteral, Literal(row['Vorname_Frau'])))
         output_graph.add((URIRef(ManURI), ontology_person.personHasLastNameLiteral, Literal(row['Nachname_Mann'])))
