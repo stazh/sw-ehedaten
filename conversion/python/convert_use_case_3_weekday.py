@@ -148,7 +148,7 @@ for row in input_file:
                 julianDateList = row['Datum_Von'].split('-')
                 julianDate = date(int(julianDateList[0]),int(julianDateList[1]),int(julianDateList[2]))
                 dateOrig = julianDate
-                gregDate = julianDate + timedelta(days=11)
+                gregDate = julianDate + timedelta(days=10)
                 weekday = calendar.day_name[gregDate.weekday()]
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingURI), ontology_date.gregorianDating, Literal(gregDate,datatype=XSD.date)))
@@ -162,7 +162,7 @@ for row in input_file:
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingURI), ontology_date.dateHasWeekday, URIRef(weekdayURI)))
                 output_graph.add((URIRef(DatingURI),ontology_date.dateIsInGregorianYear,Literal(gregDate.year,datatype=XSD.gYear)))
-            if weekday == 'Sunday' and gregDate.year > 1611 or row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut in ') >= 0:
+            if weekday == 'Sunday' and gregDate > date(1620,6,26) or row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut in ') >= 0:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsMarriageProclamationWithCertaintyValue,ontology_certainty_value.VeryLikely))
             else:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsWeddingWithCertaintyValue,ontology_certainty_value.Likely))
@@ -172,7 +172,7 @@ for row in input_file:
             if int(row['Datum_Von'][:4]) < 1701:
                 julianDateList = row['Datum_Von'].split('-')
                 julianDate = date(int(julianDateList[0]),int(julianDateList[1]),int(julianDateList[2]))
-                gregDate = julianDate + timedelta(days=11)
+                gregDate = julianDate + timedelta(days=10)
                 weekday = calendar.day_name[gregDate.weekday()]
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingSURI), ontology_date.gregorianDating, Literal(gregDate,datatype=XSD.date)))
@@ -188,7 +188,7 @@ for row in input_file:
             if int(row['Datum_Bis'][:4]) < 1701:
                 julianDateList = row['Datum_Bis'].split('-')
                 julianDate = date(int(julianDateList[0]),int(julianDateList[1]),int(julianDateList[2]))
-                gregDate = julianDate + timedelta(days=11)
+                gregDate = julianDate + timedelta(days=10)
                 weekday = calendar.day_name[gregDate.weekday()]
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingEURI), ontology_date.gregorianDating, Literal(gregDate,datatype=XSD.date)))
@@ -221,7 +221,7 @@ for row in input_file:
         output_graph.bind('data', data)
         print(fileName)
 fileCounter += 1
-fileName = 'data_triples_weekdays_' + str(fileCounter) + '.ttl'
+fileName = 'data_triples_use_case_3_' + str(fileCounter) + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
 print(fileName)
 
