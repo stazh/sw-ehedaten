@@ -158,7 +158,6 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the record of which it is part of and at the same time it is said that a reference to this relation exists."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
-| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasOrHadPart](https://www.ica.org/standards/RiC/ontology#hasOrHadPart). |
 ## recordHasManifestation
 | Predicate | Object |
 |:-------- |:-------- |
