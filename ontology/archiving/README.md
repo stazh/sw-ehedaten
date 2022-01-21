@@ -101,7 +101,7 @@
 ## TimePeriod
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>; |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Time period"@en, "Zeitraum"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """date or date period"""@en; |
@@ -113,6 +113,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Date of origin"@en, "Entstehungszeitraum"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The date or date period when the archived thing was originally created."""@en. |
+| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:TimePeriod](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod). |
 ## Webpage
 | Predicate | Object |
 |:-------- |:-------- |
