@@ -1,9 +1,9 @@
 # Ontology marriage
 ## Modell
-<div align="center"><img src="marriage_model.jpg" width="800"></div>
+<div align="center"><img src="marriage_model.jpg" width="2000"></div>
 
 ## Beispiel
-<div align="center"><img src="marriage_example.png" width="800"></div>
+<div align="center"><img src="marriage_example.png" width="2000"></div>
 
 ## Definition der Klassen und Beziehungen
 | Predicate | Object |
