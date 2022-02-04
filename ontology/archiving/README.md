@@ -1,10 +1,10 @@
 # Ontology archiving
 
 ## Modellausschnitt
-<div align="center"><img src="archiving.png" width="600"></div>
+<div align="center"><img src="archiving.png" width="800"></div>
 
 ## Beispiel
-<div align="center"><img src="manifestation.jpg" width="800"></div>
+<div align="center"><img src="manifestation.jpg" width="900"></div>
 
 ## Definition der Klassen und Beziehungen
 
