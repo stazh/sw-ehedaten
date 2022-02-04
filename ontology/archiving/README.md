@@ -4,7 +4,7 @@
 <div align="center"><img src="archiving.png" width="800"></div>
 
 ## Beispiel
-<div align="center"><img src="manifestation.jpg" width="900"></div>
+<div align="center"><img src="manifestation.jpg" width="1100"></div>
 
 ## Definition der Klassen und Beziehungen
 
