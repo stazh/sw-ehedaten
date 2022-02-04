@@ -1,6 +1,6 @@
 # Ontology person
 ## Modell
-<div align="center"><img src="person_model.jpg" width="500"></div>
+<div align="center"><img src="person_model.jpg" width="1000"></div>
 
 [//]: <> (## Beispiel)
 
