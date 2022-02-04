@@ -5,7 +5,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:Ontology](http://www.w3.org/2002/07/owl#Ontology); |
 | [dct:license](http://purl.org/dc/terms/license) | <http://creativecommons.org/licenses/by/3.0/>; |
 | [dct:title](http://purl.org/dc/terms/title) | "An ontology about certainty value"@en; |
-| [dct:description](http://purl.org/dc/terms/description) | """Formal description of certainty value, general subclasses, related classes and properties. This ontology adopts the majority of the concepts of the unpublished ontology belief-value created in the project NIE-INE by Hans Cools and Roberta Padlina: [https://github.com/nie-ine/Ontologies/blob/master/Nie-ontologies/Generic-ontologies/belief-value.ttl](https://github.com/nie-ine/Ontologies/blob/master/Nie-ontologies/Generic-ontologies/belief-value.ttl)"""@en; |
+| [dct:description](http://purl.org/dc/terms/description) | """Formal description of certainty value, general subclasses, related classes and properties. This ontology adopts the majority of the concepts of the ontology belief-value created in the project NIE-INE by Hans Cools and Roberta Padlina: [https://e-editiones.ch/ontology/belief-value](https://e-editiones.ch/ontology/belief-value)"""@en; |
 | [dct:creator](http://purl.org/dc/terms/creator) | "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en; |
 | [dct:publisher](http://purl.org/dc/terms/publisher) | "States Archive canton of Zürich"@en; |
 | [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-26"^^xsd:date. |
