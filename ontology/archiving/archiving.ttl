@@ -98,7 +98,7 @@ archiving:Identifier
 	rdfs:subClassOf rico:Identifier.
 
 archiving:TimePeriod
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod;
 	a rdfs:Class;
 	rdfs:label "Time period"@en, "Zeitraum"@de;
 	rdfs:comment """date or date period"""@en;
@@ -109,7 +109,7 @@ archiving:DateOfOrigin
 	a rdfs:Class;
 	rdfs:label "Date of origin"@en, "Entstehungszeitraum"@de;
 	rdfs:comment """The date or date period when the archived thing was originally created."""@en;
-	rdfs:subClassOf archiving:TimePeriod. #Noch einfügen auf Tripple store!
+	rdfs:subClassOf archiving:TimePeriod.
 
 archiving:Webpage
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Webpage>;
