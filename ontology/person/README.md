@@ -1,8 +1,11 @@
 # Ontology person
 ## Modell
 <div align="center"><img src="person_model.jpg" width="500"></div>
+
 [//]: <> (## Beispiel)
+
 [//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
+
 ## Definition der Klassen und Beziehungen
 
 | Predicate | Object |
