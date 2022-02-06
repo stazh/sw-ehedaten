@@ -97,7 +97,7 @@ archiving:Identifier
 	rdfs:subClassOf rico:Identifier.
 
 archiving:TimePeriod
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod;
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod>;
 	a rdfs:Class;
 	rdfs:label "Time period"@en, "Zeitraum"@de;
 	rdfs:comment """date or date period"""@en;
