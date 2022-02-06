@@ -17,7 +17,7 @@
 | [dct:creator](http://purl.org/dc/terms/creator) | "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en; |
 | [dct:contributor](http://purl.org/dc/terms/contributor) | "Hans Cools, MD, knowledge engineer, ontologist, software developer, University of Basel, Switzerland"@en; |
 | [dct:publisher](http://purl.org/dc/terms/publisher) | "States Archive canton of Zürich"@en; |
-| [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-05"^^xsd:date. |
+| [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-02-05"^^xsd:date. |
 # CLASSES
 ## Archive
 | Predicate | Object |
@@ -112,7 +112,7 @@
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#DateOfOrigin>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Date of origin"@en, "Entstehungszeitraum"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The date or date period when the archived thing was originally created."""@en. |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The date or date period when the archived thing was originally created."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [archiving:TimePeriod](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#TimePeriod). |
 ## Webpage
 | Predicate | Object |
@@ -158,6 +158,7 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to the record of which it is part of and at the same time it is said that a reference to this relation exists."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasOrHadPart](https://www.ica.org/standards/RiC/ontology#hasOrHadPart). |
 ## recordHasManifestation
 | Predicate | Object |
 |:-------- |:-------- |
@@ -371,6 +372,16 @@
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasProvenance](https://www.ica.org/standards/RiC/ontology#hasProvenance). |
+## agentHasRoleProvenanceForRecord
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#agentHasRoleProvenanceForRecord>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "agent has role provenance for record"@en, "Akteur hat Rolle Provenienz für Archivverzeichniseinheit"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a agent to the record for which holds the role provenance. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Record](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Record); |
+| [owl:inverseOf](http://www.w3.org/2002/07/owl#inverseOf) | [archiving:recordHasProvenance](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordHasProvenance). |
 ## recordHasProvenanceLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -390,6 +401,16 @@
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent); |
 | [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [rico:hasProvenance](https://www.ica.org/standards/RiC/ontology#hasProvenance). |
+## agentHasRoleProvenanceForRecordPart
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#agentHasRoleProvenanceForRecordPart>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "agent has role provenance for record part"@en, "Akteur hat Rolle Provenienz für Archivverzeichniseinheit-Teil"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a agent to the record part for which holds the role provenance. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Agent](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Agent); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
+| [owl:inverseOf](http://www.w3.org/2002/07/owl#inverseOf) | [archiving:recordPartHasProvenance](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasProvenance). |
 ## recordPartHasProvenanceLiteral
 | Predicate | Object |
 |:-------- |:-------- |
@@ -417,6 +438,15 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a reference to its literal."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:Reference](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Reference); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [rdfs:Literal](http://www.w3.org/2000/01/rdf-schema#Literal). |
+## recordPartHasReference
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasReference>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "record part has reference"@en, "Archivverzeichniseinheit-Teil hat Referenz"; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a record part to a reference it has."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [archiving:RecordPart](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#RecordPart); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [archiving:Reference](https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Reference). |
 ## recordPartHasReferenceLiteral
 | Predicate | Object |
 |:-------- |:-------- |

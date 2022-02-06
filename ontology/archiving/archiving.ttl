@@ -347,6 +347,15 @@ archiving:recordHasProvenance
 	rdfs:range archiving:Agent;
 	rdfs:subPropertyOf rico:hasProvenance.
 
+archiving:agentHasRoleProvenanceForRecord
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#agentHasRoleProvenanceForRecord>;
+	a owl:ObjectProperty;
+	rdfs:label "agent has role provenance for record"@en, "Akteur hat Rolle Provenienz für Archivverzeichniseinheit";
+	rdfs:comment """Relating a agent to the record for which holds the role provenance. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en;
+	rdfs:domain archiving:Agent;
+	rdfs:range archiving:Record;
+	owl:inverseOf archiving:recordHasProvenance.
+
 archiving:recordHasProvenanceLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordHasProvenanceLiteral>;
 	a owl:DatatypeProperty;
@@ -363,6 +372,15 @@ archiving:recordPartHasProvenance
 	rdfs:domain archiving:RecordPart;
 	rdfs:range archiving:Agent;
 	rdfs:subPropertyOf rico:hasProvenance.
+
+archiving:agentHasRoleProvenanceForRecordPart
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#agentHasRoleProvenanceForRecordPart>;
+	a owl:ObjectProperty;
+	rdfs:label "agent has role provenance for record part"@en, "Akteur hat Rolle Provenienz für Archivverzeichniseinheit-Teil";
+	rdfs:comment """Relating a agent to the record part for which holds the role provenance. Provenance is the role of an agent (f.e. organization, person), which created the manifestation of the record originally for its own purposes."""@en;
+	rdfs:domain archiving:Agent;
+	rdfs:range archiving:RecordPart;
+	owl:inverseOf archiving:recordPartHasProvenance.
 
 archiving:recordPartHasProvenanceLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasProvenanceLiteral>;
