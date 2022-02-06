@@ -2,3 +2,19 @@ PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archi
 
 INSERT {?Record archiving:recordHasTitle [a archiving:Title. archiving:titleHasLiteral ?Literal]} WHERE {?Record archiving:recordHasTitleLiteral ?Literal}.
 INSERT {?RecordPart archiving:recordPartHasTitle [a archiving:Title. archiving:titleHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartHasTitleLiteral ?Literal}.
+
+INSERT {?Record archiving:recordHasAdditionalContent [a archiving:AdditionalContent. archiving:additionalContentHasLiteral ?Literal]} WHERE {?Record archiving:recordHasAdditionalContentLiteral ?Literal}. 
+INSERT {?RecordPart archiving:recordPartHasAdditionalContent [a archiving:AdditionalContent. archiving:additionalContentHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartHasAdditionalContentLiteral ?Literal}. 
+
+INSERT {?Record archiving:recordIsIdentifiedByIdentifier [a archiving:Identifier. archiving:identifierHasLiteral ?Literal]} WHERE {?Record  archiving:recordIsIdentifiedByIdentifierLiteral ?Literal}. 
+INSERT {?RecordPart archiving:recordPartIsIdentifiedByIdentifier [a archiving:Identifier. archiving:identifierHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartIsIdentifiedByIdentifierLiteral ?Literal}. 
+INSERT {?Manifestation archiving:manifestationIsIdentifiedByIdentifier [a archiving:Identifier. archiving:identifierHasLiteral ?Literal]} WHERE {?Manifestation archiving:manifestationIsIdentifiedByIdentifierLiteral ?Literal}. 
+
+INSERT {?Record archiving:recordHasDateOfOrigin [a archiving:DateOfOrigin. archiving:dateOfOriginHasLiteral ?Literal]} WHERE {?Record  archiving:recordHasDateOfOriginLiteral ?Literal}. 
+INSERT {?RecordPart archiving:recordPartHasDateOfOrigin [a archiving:DateOfOrigin. archiving:dateOfOriginHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartHasDateOfOriginLiteral ?Literal}.
+
+INSERT {?Record archiving:recordHasWebpage [a archiving:Webpage. archiving:webpageHasURL ?URI]} WHERE {?Record archiving:recordHasWebpageURI ?URI}.
+INSERT {?RecordPart archiving:recordPartHasWebpage [a archiving:Webpage. archiving:webpageHasURL ?URI]} WHERE {?RecordPart archiving:recordPartHasWebpageURI ?URI}. 
+
+INSERT {?Record archiving:recordHasReferenceToRecordPart ?RecordPart} WHERE {?Record archiving:recordHasRecordPart ?RecordPart. ?RecordPart archiving:recordPartHasReferenceLiteral ?Literal}.
+INSERT {?RecordPart archiving:recordPartHasReference [a archiving:Reference. archiving:referenceHasLiteral ?Literal]} WHERE {?RecordPart archiving:recordPartHasReferenceLiteral ?Literal}.

@@ -21,7 +21,7 @@
 	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
 	dct:contributor "Hans Cools, MD, knowledge engineer, ontologist, software developer, University of Basel, Switzerland"@en;
 	dct:publisher "States Archive canton of Zürich"@en;
-	owl:versionInfo "2021-02-05"^^xsd:date.
+	owl:versionInfo "2021-11-05"^^xsd:date.
 
 
 #
@@ -88,6 +88,7 @@ archiving:AdditionalContent
 	a rdfs:Class;
 	rdfs:label "Additional content"@en, "Zusatzinformation"@de;
 	rdfs:comment """Some further information about a record or record part. Can be of any kind."""@en.
+
 
 archiving:Identifier
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#Identifier>;
@@ -278,7 +279,7 @@ archiving:recordIsIdentifiedByIdentifierLiteral
 	rdfs:range rdfs:Literal;
 	rdfs:subPropertyOf rico:identifier.
 
-
+#Scope-ID
 archiving:recordPartIsIdentifiedByIdentifier 
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartIsIdentifiedByIdentifier>;
 	a owl:ObjectProperty;
@@ -387,14 +388,6 @@ archiving:referenceHasLiteral
 	rdfs:comment """Relating a reference to its literal."""@en;
 	rdfs:domain archiving:Reference;
 	rdfs:range rdfs:Literal.
-
-archiving:recordPartHasReference
-	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasReference>;
-	a owl:ObjectProperty;
-	rdfs:label "record part has reference"@en, "Archivverzeichniseinheit-Teil hat Referenz";
-	rdfs:comment """Relating a record part to a reference it has."""@en;
-	rdfs:domain archiving:RecordPart;
-	rdfs:range archiving:Reference.
 
 archiving:recordPartHasReferenceLiteral
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordPartHasReferenceLiteral>;
@@ -512,6 +505,8 @@ archiving:isRepresentedByRecordPart
 	rdfs:domain rdfs:Resource;
 	rdfs:range archiving:RecordPart;
 	owl:inverseOf archiving:recordPartRepresents.
+
+#und dann repräsentiert es einen Eheeintrag im Kirchgemeindebuch. Das wird dann Klasse in Marriage-Konzept. 
 
 archiving:recordRepresents
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#recordRepresents>;

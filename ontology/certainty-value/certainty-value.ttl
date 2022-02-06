@@ -15,7 +15,7 @@
 	a owl:Ontology;
 	dct:license <http://creativecommons.org/licenses/by/3.0/>;
 	dct:title "An ontology about certainty value"@en;
-	dct:description """Formal description of certainty value, general subclasses, related classes and properties. This ontology adopts the majority of the concepts of the unpublished ontology belief-value created in the project NIE-INE by Hans Cools and Roberta Padlina: https://github.com/nie-ine/Ontologies/blob/master/Nie-ontologies/Generic-ontologies/belief-value.ttl"""@en;
+	dct:description """Formal description of certainty value, general subclasses, related classes and properties. This ontology adopts the majority of the concepts of the ontology belief-value created in the project NIE-INE by Hans Cools and Roberta Padlina: https://e-editiones.ch/ontology/belief-value."""@en;
 	dct:creator "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en;
 	dct:publisher "States Archive canton of Zürich"@en;
 	owl:versionInfo "2021-11-26"^^xsd:date.
