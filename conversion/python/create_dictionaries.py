@@ -9,7 +9,7 @@ import sys
 inFile = sys.argv[1]
 input_file = csv.DictReader(open(inFile), delimiter=';')
 
-#2. Intitallisiere alle Dictionaries und weiteren Variablen:
+#2. Initallisiere alle Dictionaries und weiteren Variablen:
 data_prefix = "https://github.com/stazh/sw-ehedaten/tree/main/data#"
 input_file_list = list(input_file)
 herkunfst_ort_counter = 0
@@ -58,7 +58,7 @@ def insert_item_in_dict_by_name(item, dictionary,placeHolder):
 		dictionary[item] = data_prefix + placeHolder + item_name
 	return dictionary
 
-#3. Iteriere durch jeden Ehedaten-Datensatz bzw. Linie in Input-File. Rufe dazu entweder Methode 
+#3. Iteriere durch alle Ehedaten-Datensätze bzw. Linien im Input-File. Rufe dazu entweder Methode 
 # insert_item_in_dict_by_counter (3a) oder insert_item_in_dict_by_name (3b) auf.
 for row in input_file_list:
 	row = dict(row)
