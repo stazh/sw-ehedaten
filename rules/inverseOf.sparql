@@ -1,5 +1,5 @@
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
-INSERT {?P owl:inverseOf ?Q. ?S ?P ?O} WHERE {?O ?Q ?S}.
-INSERT {?P owl:inverseOf ?Q. ?S ?Q ?O} WHERE {?O ?P ?S}.
-INSERT {?P owl:inverseOf ?Q} WHERE {?Q owl:inverseOf ?P}
+INSERT {?O ?Q ?S} WHERE  {?P owl:inverseOf ?Q. ?S ?P ?O}
+INSERT {?O ?P ?S} WHERE  {?P owl:inverseOf ?Q. ?S ?Q ?O} 
+INSERT {?Q owl:inverseOf ?P} WHERE  {?P owl:inverseOf ?Q} 
