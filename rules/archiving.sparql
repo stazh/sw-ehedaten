@@ -1,6 +1,7 @@
 PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
-
-INSERT {?Record archiving:recordHasTitle [].[] a archiving:Title. [] archiving:titleHasLiteral ?Literal} WHERE {?Record archiving:recordHasTitleLiteral ?Literal}. #Regel angewendet 06.02.2022
+ #Regel angewendet 06.02.2022 --> Rückgängig machen und diese in zwei Schritten anwenden:
+INSERT {?Record archiving:recordHasTitle []} WHERE {?Record archiving:recordHasTitleLiteral ?Literal}. 
+INSERT {?Title a archiving:Title. ?Title archiving:titleHasLiteral ?Literal} WHERE {?Record archiving:recordHasTitle ?Title. ?Record archiving:recordHasTitleLiteral ?Literal}  
 INSERT {?RecordPart archiving:recordPartHasTitle [].[] a archiving:Title. [] archiving:titleHasLiteral ?Literal} WHERE {?RecordPart archiving:recordPartHasTitleLiteral ?Literal}. #Regel angewendet 06.02.2022
 
 INSERT {?Record archiving:recordHasAdditionalContent [].[] a archiving:AdditionalContent. [] archiving:additionalContentHasLiteral ?Literal} WHERE {?Record archiving:recordHasAdditionalContentLiteral ?Literal}. 
