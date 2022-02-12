@@ -162,7 +162,7 @@ for row in input_file:
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingURI), ontology_date.dateHasWeekday, URIRef(weekdayURI)))
                 output_graph.add((URIRef(DatingURI),ontology_date.dateIsInGregorianYear,Literal(gregDate.year,datatype=XSD.gYear)))
-            if weekday == 'Sunday' and gregDate > date(1620,6,26) or row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut in ') >= 0:
+            if weekday == 'Sunday' and gregDate > date(1620,6,26) or row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or (row['Zusatzinfo_Mann'].lower().find('prom') >= 0 and not(row['Zusatzinfo_Mann'].lower().find('nicht prom'))) or row['Zusatzinfo_Mann'].lower().find('prokl') >= 0:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsMarriageProclamationWithCertaintyValue,ontology_certainty_value.VeryLikely))
             else:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsWeddingWithCertaintyValue,ontology_certainty_value.Likely))
@@ -201,7 +201,7 @@ for row in input_file:
                 weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#' + weekday
                 output_graph.add((URIRef(DatingEURI), ontology_date.dateHasWeekday, URIRef(weekdayURI)))
                 output_graph.add((URIRef(DatingEURI),ontology_date.dateIsInGregorianYear,Literal(gregDate.year,datatype=XSD.gYear)))
-            if row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut in ') >= 0:
+            if row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or (row['Zusatzinfo_Mann'].lower().find('prom') >= 0 and not(row['Zusatzinfo_Mann'].lower().find('nicht prom'))) or row['Zusatzinfo_Mann'].lower().find('prokl') >= 0:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsMarriageProclamationWithCertaintyValue,ontology_certainty_value.VeryLikely))
             else:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_marriage.marriageEntryDocumentsWeddingWithCertaintyValue,ontology_certainty_value.Likely))
