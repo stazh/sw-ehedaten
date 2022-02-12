@@ -96,7 +96,8 @@ marriage:marriageEntryRegistersWoman
 	rdfs:label "marriage entry registers woman"@en, "Eheeintrag registriert Frau"@de;
 	rdfs:comment """Relating a marriage entry to the woman it registers."""@en;
 	rdfs:domain marriage:MarriageEntry;
-	rdfs:range person:Woman.
+	rdfs:range person:Woman;
+	rdfs:subPropertyOf marriage:marriageEntryRegistersPerson.
 
 marriage:marriageEntryRegistersMan
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersMan>;
@@ -104,7 +105,16 @@ marriage:marriageEntryRegistersMan
 	rdfs:label "marriage entry registers man"@en, "Eheeintrag registriert Mann"@de;
 	rdfs:comment """Relating a marriage entry to the man it registers."""@en;
 	rdfs:domain marriage:MarriageEntry;
-	rdfs:range person:Man.
+	rdfs:range person:Man;
+	rdfs:subPropertyOf marriage:marriageEntryRegistersPerson.
+
+marriage:marriageEntryRegistersPerson
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersPerson>;
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry registers person"@en, "Eheeintrag registriert Person"@de;
+	rdfs:comment """Relating a marriage entry to the person it registers."""@en;
+	rdfs:domain marriage:MarriageEntry;
+	rdfs:range person:Person.
 
 marriage:marriageEntryHasDatingOnDate
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryHasDatingOnDate>;

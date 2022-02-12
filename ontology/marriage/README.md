@@ -15,7 +15,6 @@
 | [dct:creator](http://purl.org/dc/terms/creator) | "Rebekka Plüss, research assistant and software developer, States Archive canton of Zürich"@en; |
 | [dct:publisher](http://purl.org/dc/terms/publisher) | "States Archive canton of Zürich"@en; |
 | [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2021-11-26"^^xsd:date. |
-
 # CLASSES
 ## Wedding
 | Predicate | Object |
@@ -92,7 +91,8 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "marriage entry registers woman"@en, "Eheeintrag registriert Frau"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a marriage entry to the woman it registers."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [marriage:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:Woman](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Woman). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:Woman](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Woman); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [marriage:marriageEntryRegistersPerson](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersPerson). |
 ## marriageEntryRegistersMan
 | Predicate | Object |
 |:-------- |:-------- |
@@ -101,7 +101,17 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "marriage entry registers man"@en, "Eheeintrag registriert Mann"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a marriage entry to the man it registers."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [marriage:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry); |
-| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:Man](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Man). |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:Man](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Man); |
+| [rdfs:subPropertyOf](http://www.w3.org/2000/01/rdf-schema#subPropertyOf) | [marriage:marriageEntryRegistersPerson](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersPerson). |
+## marriageEntryRegistersPerson
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#marriageEntryRegistersPerson>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "marriage entry registers person"@en, "Eheeintrag registriert Person"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a marriage entry to the person it registers."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [marriage:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#MarriageEntry); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person). |
 ## marriageEntryHasDatingOnDate
 | Predicate | Object |
 |:-------- |:-------- |
