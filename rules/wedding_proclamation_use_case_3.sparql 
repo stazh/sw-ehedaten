@@ -1,5 +1,0 @@
-PREFIX marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>
-PREFIX certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>
-
-INSERT {?me marriageEntryDocumentsMarriageProclamationWithCertaintyValue certainty-value:Unlikely} WHERE {?me marriageEntryDocumentsWeddingWithCertaintyValue certainty-value:Likely}. 
-INSERT {?me marriageEntryDocumentsWeddingWithCertaintyValue certainty-value:VeryUnlikely} WHERE {?me marriageEntryDocumentsMarriageProclamationWithCertaintyValue certainty-value:VeryLikely}. 
