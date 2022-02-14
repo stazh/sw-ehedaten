@@ -1,7 +1,6 @@
 PREFIX archiving: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/archiving#>
 
 INSERT {?Record archiving:recordHasTitle [].} WHERE {?Record archiving:recordHasTitleLiteral ?Literal}. 
-
 INSERT {?Title a archiving:Title. ?Title archiving:titleHasLiteral ?Literal} WHERE {?Record archiving:recordHasTitle ?Title. ?Record archiving:recordHasTitleLiteral ?Literal}  
 
 INSERT {?RecordPart archiving:recordPartHasTitle []} WHERE {?RecordPart archiving:recordPartHasTitleLiteral ?Literal}. 
@@ -15,19 +14,22 @@ INSERT {?AdC a archiving:AdditionalContent. ?AdC archiving:additionalContentHasL
 
 INSERT {?Record archiving:recordIsIdentifiedByIdentifier [].} WHERE {?Record  archiving:recordIsIdentifiedByIdentifierLiteral ?Literal}. 
 #TODO [] a archiving:Identifier. [] archiving:identifierHasLiteral ?Literal
+
 INSERT {?RecordPart archiving:recordPartIsIdentifiedByIdentifier [].} WHERE {?RecordPart archiving:recordPartIsIdentifiedByIdentifierLiteral ?Literal}. 
 #TODO [] a archiving:Identifier. [] archiving:identifierHasLiteral ?Literal
+
 INSERT {?Manifestation archiving:manifestationIsIdentifiedByIdentifier [].} WHERE {?Manifestation archiving:manifestationIsIdentifiedByIdentifierLiteral ?Literal}. 
 #TODO [] a archiving:Identifier. [] archiving:identifierHasLiteral ?Literal
 
-
 INSERT {?Record archiving:recordHasDateOfOrigin [].} WHERE {?Record  archiving:recordHasDateOfOriginLiteral ?Literal}. 
 #TODO [] a archiving:DateOfOrigin. [] archiving:dateOfOriginHasLiteral ?Literal
+
 INSERT {?RecordPart archiving:recordPartHasDateOfOrigin [].} WHERE {?RecordPart archiving:recordPartHasDateOfOriginLiteral ?Literal}.
 #TODO [] a archiving:DateOfOrigin. [] archiving:dateOfOriginHasLiteral ?Literal
 
 INSERT {?Record archiving:recordHasWebpage [].} WHERE {?Record archiving:recordHasWebpageURI ?URI}.
 #TODO [] a archiving:Webpage. [] archiving:webpageHasURL ?URI
+
 INSERT {?RecordPart archiving:recordPartHasWebpage [].} WHERE {?RecordPart archiving:recordPartHasWebpageURI ?URI}. 
 #TODO [] a archiving:Webpage. [] archiving:webpageHasURL ?URI
 
