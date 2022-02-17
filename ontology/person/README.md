@@ -1,11 +1,11 @@
 # Ontology person
 
 ## Modell
-<div align="center"><img src="person_model.jpg" width="800"></div>
+<div align="center"><img src="person_model.jpg" width="700"></div>
 
 ## Beispiel
 
-<div align="center"><img src="person_bsp.png" width="800"></div>
+<div align="center"><img src="person_bsp.png" width="1000"></div>
 
 ## Definition der Klassen und Beziehungen
 
