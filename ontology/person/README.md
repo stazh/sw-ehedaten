@@ -1,10 +1,11 @@
 # Ontology person
+
 ## Modell
 <div align="center"><img src="person_model.jpg" width="800"></div>
 
-[//]: <> (## Beispiel)
+## Beispiel
 
-[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
+<div align="center"><img src="person_bsp.png" width="800"></div>
 
 ## Definition der Klassen und Beziehungen
 
@@ -63,6 +64,13 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Place of origin spezification"@en, "Herkunftssangabe"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The spezification someone made about a persons place of origin."""@en. |
+## EncyclopediaArticle
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#EncyclopediaArticle>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Encyclopedia article"@en, "Lexikonartikel"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A encyclopedia article about a person."""@en. |
 # PROPERTIES
 ## personHasFirstNameLiteral
 | Predicate | Object |
@@ -172,3 +180,21 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a place of origin spezification to a person to the certainty value of the spezification. For example it would relate to the certainty value Uncertain in case of unclear reading of the place of origin."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:PlaceOfOriginSpezification](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#PlaceOfOriginSpezification); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [certainty-value:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue). |
+## personHasEncyclopediaArticle
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasEncyclopediaArticle>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "person has encyclopedia article"@en, "Person hat Lexikonartikel"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a person to a encyclopedia article about the person."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:Person](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#Person); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [person:EncyclopediaArticle](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#EncyclopediaArticle). |
+## encyclopediaArticleHasURL
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#encyclopediaArticleHasURL>; |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:DatatypeProperty](http://www.w3.org/2002/07/owl#DatatypeProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "encyclopedia article has URL"@en, "Lexikonartikel hat URL"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating encyclopedia article about a person to its URL."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [person:EncyclopediaArticle](https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#EncyclopediaArticle); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [xsd:anyURI](http://www.w3.org/2001/XMLSchema#anyURI). |

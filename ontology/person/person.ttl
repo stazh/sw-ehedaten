@@ -64,7 +64,12 @@ person:PlaceOfOriginSpezification
 	a rdfs:Class;
 	rdfs:label "Place of origin spezification"@en, "Herkunftssangabe"@de;
 	rdfs:comment """The spezification someone made about a persons place of origin."""@en.
-
+	
+person:EncyclopediaArticle
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#EncyclopediaArticle>;
+	a rdfs:Class;
+	rdfs:label "Encyclopedia article"@en, "Lexikonartikel"@de;
+	rdfs:comment """A encyclopedia article about a person."""@en.
 
 #
 # PROPERTIES
@@ -165,3 +170,19 @@ person:placeOfOriginSpezificationHasCertaintyValue
 	rdfs:comment """Relating a place of origin spezification to a person to the certainty value of the spezification. For example it would relate to the certainty value Uncertain in case of unclear reading of the place of origin."""@en;
 	rdfs:domain person:PlaceOfOriginSpezification;
 	rdfs:range certainty-value:CertaintyValue.
+
+person:personHasEncyclopediaArticle
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#personHasEncyclopediaArticle>;
+	a owl:ObjectProperty;
+	rdfs:label "person has encyclopedia article"@en, "Person hat Lexikonartikel"@de;
+	rdfs:comment """Relating a person to a encyclopedia article about the person."""@en;
+	rdfs:domain person:Person;
+	rdfs:range person:EncyclopediaArticle.
+
+person:encyclopediaArticleHasURL
+	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/person#encyclopediaArticleHasURL>;
+	a owl:DatatypeProperty;
+	rdfs:label "encyclopedia article has URL"@en, "Lexikonartikel hat URL"@de;
+	rdfs:comment """Relating encyclopedia article about a person to its URL."""@en;
+	rdfs:domain person:EncyclopediaArticle;
+	rdfs:range xsd:anyURI.
