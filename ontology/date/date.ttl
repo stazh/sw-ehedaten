@@ -76,7 +76,7 @@ date:dateIsInGregorianYear
 date:dateHasWeekday
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateHasWeekday>;
 	a owl:ObjectProperty;
-	rdfs:label "date has weekday."@en, "Datum hat Wochentag"@de;
+	rdfs:label "date has weekday"@en, "Datum hat Wochentag"@de;
 	rdfs:comment """Relating a date object the weekday."""@en;
 	rdfs:domain date:Date;
 	rdfs:range date:Weekday.

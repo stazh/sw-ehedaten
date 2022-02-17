@@ -2,8 +2,9 @@
 ## Modell
 <div align="center"><img src="date_model.jpg" width="500"></div>
 
-[//]: <> (## Beispiel)
-[//]: <> (<div align="center"><img src="xxx.png" width="800"></div>)
+## Beispiel
+
+<div align="center"><img src="date_bsp.png" width="1200"></div>
 
 ## Definition der Klassen, Beziehungen und Instanzen
 
@@ -40,7 +41,7 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Weekday"@en, "Wochentag"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The class instances are the seven days of the week."""@en; |
-| [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | [date:Monday date:Tuesday date:Wednesday date:Thursday date:Friday date:Saturday date:Sunday](https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Monday dat). |
+| [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | date:Monday date:Tuesday date:Wednesday date:Thursday date:Friday date:Saturday date:Sunday. |
 # PROPERTIES
 ## julianDating
 | Predicate | Object |
@@ -74,7 +75,7 @@
 |:-------- |:-------- |
 | [rdfs:isDefinedBy](http://www.w3.org/2000/01/rdf-schema#isDefinedBy) | <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#dateHasWeekday>; |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date has weekday."@en, "Datum hat Wochentag"@de; |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "date has weekday"@en, "Datum hat Wochentag"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a date object the weekday."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [date:Date](https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Date); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [date:Weekday](https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Weekday). |
