@@ -5,7 +5,7 @@ import csv
 class HLS_Scraper():
     """
     Dieses Script extrahiert Daten von HLS-Webseiten, welche für den Abgleich mit den Ehedaten relevant sind. 
-    Die URLs der abzufragenden Webseite werden in der Funktion import_articles - filename mitgegeben. 
+    Die URLs der abzufragenden Webseite und weitere Metadaten werden in der Funktion import_articles - filename mitgegeben. 
     Ausgabe ist eine HLS-Checklist, mit den Feldern in fieldnames (Zeile 15).
     """
     def __init__(self):
