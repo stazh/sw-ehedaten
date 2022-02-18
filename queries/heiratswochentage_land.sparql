@@ -1,0 +1,18 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX certainty-value: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#>
+PREFIX marriage: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/marriage#>
+PREFIX date: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#>
+PREFIX organisation: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/organisation#>
+PREFIX data: <https://github.com/stazh/sw-ehedaten/tree/main/data#>
+
+SELECT ?weekdayLabel ?year WHERE{
+?me marriage:marriageEntryDocumentsWeddingWithCertaintyValue certainty-value:Likely.
+?me marriage:marriageEntryHasDatingOnDate ?date.
+?date date:dateHasWeekday ?weekday.
+?weekday rdfs:label ?weekdayLabel.
+filter(lang(?weekdayLabel) = 'de')
+?date date:dateIsInGregorianYear ?year.
+?me marriage:marriageEntryIsInParishBook ?pb.
+?pb marriage:parishBookIsKeptByParish ?kirchgemeinde.
+MINUS{{?kirchgemeinde organisation:parishHasSeatAtPlace data:PlaceName_Zuerich} UNION {?kirchgemeinde organisation:parishHasSeatAtPlace data:PlaceName_Winterthur}}.
+}
