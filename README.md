@@ -10,4 +10,4 @@ Diese Ehedaten, die bereits über eine [Thematische Suche beim Staatsarchiv Zür
 
 Die [Ontologien](/ontology/) bilden den Kern dieses Wissensnetzes. In ihnen ist das Vokabular bzw. Datenmodell repräsentiert. Die Aufbereitung geschieht in einem modularen Prozess mit folgenden Schritten:
 
-<div align="center"><img src="/images/aufbereitungsprozess.jpg" width="800"></div>
+<div align="center"><img src="/images/aufbereitungsprozess.jpg" width="500"></div>
