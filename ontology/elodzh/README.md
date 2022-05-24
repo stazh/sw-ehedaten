@@ -23,19 +23,6 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Marriage entry"@en, "Eheeintrag"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day or that the marriage of two persons is proclaimed on a certain day."""@en. |
-## Wedding
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Wedding"@en, "Heirat"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Wedding as the event of the union of two people."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-event:Event](http://e-editiones.ch/ontology/event#Event). |
-## MarriageProclamation
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Marriage proclamation"@en, "Heiratsverkündung"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Marriage proclamation as the event of the proclamation of the union of two people in future."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [nie-ine-event:Event](http://e-editiones.ch/ontology/event#Event). |
 ## ParishBook
 | Predicate | Object |
