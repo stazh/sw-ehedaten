@@ -3,8 +3,6 @@
 
 <div align="center"><img src="elodzh_modell.jpg" width="1000"></div>
 
-## Beispiel
-
 
 ## Definition der Klassen und Beziehungen
 | Predicate | Object |
