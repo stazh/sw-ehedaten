@@ -1,6 +1,6 @@
 # Ontology elodzh
 ## Modell
-
+<div align="center"><img src="elodzh_modell.jpg" width="800"></div>
 
 ## Beispiel
 
@@ -64,75 +64,15 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Place"@en, "Ort"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """A place with political boundaries. It's f.e. a village, town or city."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [rico:Place](https://www.ica.org/standards/RiC/ontology#Place). |
-## CertaintyValue
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Certainty value"@en, "Sicherheitswert"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Value of a certainty in a proposition by a certain agent in a certain time."""@en; |
-| [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [cidoc-inf:I2_Belief](http://www.ics.forth.gr/isl/CRMinf/I2_Belief); |
-| [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | elodzh:Certain elodzh:Uncertain elodzh:VeryLikely elodzh:Likely elodzh:LessLikely elodzh:Neutral elodzh:LessUnlikely elodzh:Unlikely elodzh:VeryUnlikely elodzh:Impossible. |
+
 # INSTANCES
-## Certain
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "certain"@en, "sicher"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing being 'true'."""@en. |
-## Uncertain
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "uncertain"@en, "unsicher"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing that being 'true' can not be assured."""@en. |
-## VeryLikely
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "very likely"@en, "sehr warscheinlich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a high probability of being true."""@en. |
 ## Likely
 | Predicate | Object |
 |:-------- |:-------- |
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "likely"@en, "warscheinlich"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a moderate probability of being true."""@en. |
-## LessLikely
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "less likely"@en, "wenig warscheinlich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a low probability of being true."""@en. |
-## Neutral
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "neutral"@en, "neutral"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing being neither true nor false."""@en. |
-## LessUnlikely
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "less unlikely"@en, "wenig unwarscheinlich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a low probability of being false."""@en. |
-## Unlikely
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "unlikely"@en, "unwarscheinlich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a moderate probability of being false."""@en. |
-## VeryUnlikely
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "very unlikely"@en, "sehr unwarscheinlich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a high probability of being false."""@en. |
-## Impossible
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "impossible"@en, "unmöglich"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing being 'false'."""@en. |
+
 # PROPERTIES
 ## marriageEntryIsInParishBook
 | Predicate | Object |
