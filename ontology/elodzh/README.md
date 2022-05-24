@@ -1,6 +1,7 @@
 # Ontology elodzh
 ## Modell
-<div align="center"><img src="elodzh_modell.jpg" width="800"></div>
+
+<div align="center"><img src="elodzh_modell.jpg" width="1000"></div>
 
 ## Beispiel
 
@@ -69,7 +70,7 @@
 ## Likely
 | Predicate | Object |
 |:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [certainty-value:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/certainty-value#CertaintyValue); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "likely"@en, "warscheinlich"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a moderate probability of being true."""@en. |
 
