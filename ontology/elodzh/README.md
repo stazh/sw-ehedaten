@@ -17,6 +17,12 @@
 | [owl:versionInfo](http://www.w3.org/2002/07/owl#versionInfo) | "2022-05-23"^^xsd:date. |
 
 # CLASSES
+## MarriageEntry
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Marriage entry"@en, "Eheeintrag"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day or that the marriage of two persons is proclaimed on a certain day."""@en. |
 ## Wedding
 | Predicate | Object |
 |:-------- |:-------- |
@@ -37,12 +43,6 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Parish book"@en, "Pfarrbuch"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """The book in which a wedding or marriage proclamation is registered resp. the marriage entry is written."""@en. |
-## MarriageEntry
-| Predicate | Object |
-|:-------- |:-------- |
-| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [rdfs:Class](http://www.w3.org/2000/01/rdf-schema#Class); |
-| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Marriage entry"@en, "Eheeintrag"@de; |
-| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Marriage entry as a note by the parish priest in a parish book stating that two persons were married on a certain day or that the marriage of two persons is proclaimed on a certain day."""@en. |
 ## Parish
 | Predicate | Object |
 |:-------- |:-------- |
@@ -84,7 +84,7 @@
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "Certainty value"@en, "Sicherheitswert"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Value of a certainty in a proposition by a certain agent in a certain time."""@en; |
 | [rdfs:subClassOf](http://www.w3.org/2000/01/rdf-schema#subClassOf) | [cidoc-inf:I2_Belief](http://www.ics.forth.gr/isl/CRMinf/I2_Belief); |
-| [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | [elodzh:Certain elodzh:Uncertain elodzh:VeryLikely elodzh:Likely elodzh:LessLikely elodzh:Neutral elodzh:LessUnlikely elodzh:Unlikely elodzh:VeryUnlikely elodzh:Impossible](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#Certain elodz). |
+| [owl:oneOf](http://www.w3.org/2002/07/owl#oneOf) | elodzh:Certain elodzh:Uncertain elodzh:VeryLikely elodzh:Likely elodzh:LessLikely elodzh:Neutral elodzh:LessUnlikely elodzh:Unlikely elodzh:VeryUnlikely elodzh:Impossible. |
 # INSTANCES
 ## Certain
 | Predicate | Object |
