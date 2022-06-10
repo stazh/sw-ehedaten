@@ -1,7 +1,7 @@
 # Ontology elodzh
 
 ## Modell
-<div align="center"><img src="elodzh_modell.jpg" width="1000"></div>
+<div align="center"><img src="elodzh_modell_1.jpg" width="1000"></div>
 
 ## Definition der Klassen und Beziehungen
 | Predicate | Object |
