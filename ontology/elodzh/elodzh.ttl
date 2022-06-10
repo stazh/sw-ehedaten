@@ -36,7 +36,7 @@ elodzh:ParishBook
 	rdfs:label "Parish book"@en, "Pfarrbuch"@de;
 	rdfs:comment """The book in which a wedding or marriage proclamation is registered resp. the marriage entry is written."""@en.
 
-elodzh::Parish
+elodzh:Parish
 	a rdfs:Class;
 	rdfs:label "Parish"@en, "Kirchgemeinde"@de;
 	rdfs:comment """Parish as a religious organization that conducts preaching and usually has an associated church."""@en.
@@ -247,7 +247,7 @@ elodzh:marriageEntryHasRecordWebpage
 	rdfs:domain elodzh:MarriageEntry;
 	rdfs:range xsd:anyURI.
 
-elodzh:parishBodkHasRecordWebpage
+elodzh:parishBookHasRecordWebpage
 	a owl:DatatypeProperty;
 	rdfs:label "parish book has record webpage"@en, "Pfarrbuch hat Archivkatalogeintrag";
 	rdfs:comment """Relating a parish book to the record webpage url of the entry in an archive information system."""@en;
