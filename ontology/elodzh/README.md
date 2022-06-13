@@ -175,6 +175,18 @@
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a marriage entry to its registered gregorian date (julian datings were converted into gregorian dating)."""@en; |
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [elodzh:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#MarriageEntry); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [xsd:date](http://www.w3.org/2001/XMLSchema#date). |
+
+## marriageEntryHasDatingOnWeekday
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [owl:ObjectProperty](http://www.w3.org/2002/07/owl#ObjectProperty); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "marriage entry has dating on weekday"@en, "Eheeintrag hat Datierung an Wochentag"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Relating a marriage entry to its weekday."""@en; |
+| [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [elodzh:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#MarriageEntry); |
+| [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [elodzh:Weekday](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#Weekday). |
+
+
+	rdfs:range elodzh:Weekday.
 ## marriageEntryHasDatePeriodStartDate
 | Predicate | Object |
 |:-------- |:-------- |
