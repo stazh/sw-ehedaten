@@ -170,6 +170,14 @@ elodzh:marriageEntryHasDatingOnDate
 	rdfs:domain elodzh:MarriageEntry;
 	rdfs:range xsd:date.
 
+elodzh:marriageEntryHasDatingOnWeekday
+	a owl:ObjectProperty;
+	rdfs:label "marriage entry has dating on weekday"@en, "Eheeintrag hat Datierung an Wochentag"@de;
+	rdfs:comment """Relating a marriage entry to the weekday."""@en;
+	rdfs:domain elodzh:MarriageEntry;
+	rdfs:range elodzh:Weekday.
+
+
 elodzh:marriageEntryHasDatePeriodStartDate
 	a owl:DatatypeProperty;
 	rdfs:label "marriage entry has date period start date"@en, "Eheeintrag hat Datumsperiode-Startdatum"@de;
