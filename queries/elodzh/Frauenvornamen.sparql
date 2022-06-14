@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#>
+
+# Alle Vornamen der Frauen
+SELECT * WHERE {
+  ?woman a elodzh:Woman .
+  ?woman elodzh:personHasFirstName ?vornameFrau .
+} ORDER BY (?vornameFrau)
