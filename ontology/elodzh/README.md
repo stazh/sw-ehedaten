@@ -190,8 +190,6 @@
 | [rdfs:domain](http://www.w3.org/2000/01/rdf-schema#domain) | [elodzh:MarriageEntry](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#MarriageEntry); |
 | [rdfs:range](http://www.w3.org/2000/01/rdf-schema#range) | [elodzh:Weekday](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#Weekday). |
 
-
-	rdfs:range elodzh:Weekday.
 ## marriageEntryHasDatePeriodStartDate
 | Predicate | Object |
 |:-------- |:-------- |
