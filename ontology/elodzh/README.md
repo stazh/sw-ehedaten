@@ -6,7 +6,7 @@
 ## Beispiel
 <div align="center"><img src="elodzh_beispiel.png" width="1000"></div>
 
-## [Beispielabfragen](https://github.com/stazh/sw-ehedaten/tree/main/queries/elodzh)
+## [--> Beispielabfragen](https://github.com/stazh/sw-ehedaten/tree/main/queries/elodzh)
 
 ## Definition der Klassen und Beziehungen
 | Predicate | Object |
