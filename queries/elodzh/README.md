@@ -1,5 +1,7 @@
 # [--> SPARQL-Endpoint](https://int.lindas.admin.ch/sparql/)
 
+[--> Alle Tripel](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/alle_tripel.sparql)
+
 [--> Alle Frauenvornamen](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/Frauenvornamen.sparql)
 
 [--> Entwicklung der Heiratswochentage auf dem Land](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/wochentage_land.sparql)
