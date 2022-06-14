@@ -1,1 +1,5 @@
-
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#>
+SELECT * FROM <https://lindas.admin.ch/sw-ehedaten> WHERE {
+?s ?p ?o.
+} LIMIT 100
