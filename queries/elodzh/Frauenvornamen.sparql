@@ -5,5 +5,5 @@ PREFIX elodzh: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#>
 # Alle Vornamen der Frauen
 SELECT * WHERE {
   ?woman a elodzh:Woman .
-  ?woman elodzh:personHasFirstName ?vornameFrau .
-} ORDER BY (?vornameFrau)
+  ?woman elodzh:personHasFirstName ?firstname .
+} ORDER BY (?firstname)
