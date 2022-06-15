@@ -1,7 +1,7 @@
 # Ontology elodzh
 
 ## Modell
-<div align="center"><img src="elodzh_modell.jpg" width="1000"></div>
+<div align="center"><img src="elodzh_model.jpg" width="1000"></div>
 
 ## Beispiel
 <div align="center"><img src="elodzh_beispiel.png" width="1000"></div>
