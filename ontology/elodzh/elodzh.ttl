@@ -81,6 +81,11 @@ elodzh:Likely
 	rdfs:label "likely"@en, "warscheinlich"@de;
 	rdfs:comment """Certainty value representing a moderate probability of being true."""@en.
 
+elodzh:VeryLikely
+	a elodzh:CertaintyValue;
+	rdfs:label "very likely"@en, "sehr warscheinlich"@de;
+	rdfs:comment """Certainty value representing a high probability of being true."""@en.
+
 elodzh:Monday
 	rdfs:isDefinedBy <https://github.com/stazh/sw-ehedaten/tree/main/ontology/date#Monday>;
 	a elodzh:Weekday;
