@@ -1,1 +1,13 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#>
 
+SELECT ?comment ?weekdayLabel ?year WHERE{
+?me elodzh:marriageEntryDocumentsWeddingWithCertaintyValue elodzh:Likely.
+?me elodzh:marriageEntryHasCommentToWoman ?comment.
+filter(contains(?comment,'Jf.') || contains(?comment,'Jungfrau'))
+?me elodzh:marriageEntryHasDatingOnDate ?date.
+BIND(year(?date) AS ?year)
+?me elodzh:marriageEntryHasDatingOnWeekday ?weekday.
+?weekday rdfs:label ?weekdayLabel.
+filter(lang(?weekdayLabel) = 'de')
+} 
