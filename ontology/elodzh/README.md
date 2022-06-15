@@ -81,6 +81,12 @@
 | [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
 | [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "likely"@en, "warscheinlich"@de; |
 | [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a moderate probability of being true."""@en. |
+## VeryLikely
+| Predicate | Object |
+|:-------- |:-------- |
+| [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | [elodzh:CertaintyValue](https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#CertaintyValue); |
+| [rdfs:label](http://www.w3.org/2000/01/rdf-schema#label) | "very likely"@en, "sehr warscheinlich"@de; |
+| [rdfs:comment](http://www.w3.org/2000/01/rdf-schema#comment) | """Certainty value representing a high probability of being true."""@en. |
 ## Monday
 | Predicate | Object |
 |:-------- |:-------- |
