@@ -15,7 +15,7 @@ inFileBaende = sys.argv[2]
 input_file_baende = csv.DictReader(open(inFileBaende), delimiter=';')
 
 ontology_elodzh = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#")
-data = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/data#")
+data = Namespace("https://culture.ld.admin.ch/elodzh#")
 
 #Erstelle Kirchgemeinden-Dictionary aus kirchgemeinden.csv (erstellt durch create_dictionaries.py-Skript)
 kirchgemeinden = csv.DictReader(open('kirchgemeinden.csv'), delimiter=',')
@@ -33,7 +33,7 @@ for entry in kirchgemeinden_dict:
         if entry == "Fraumünster" or entry == "Grossmünster" or entry == "St. Peter" or entry == "Predigern" or entry == "Spitalpfarramt":
             pass
         else:
-            orte_dict[entry] = 'https://github.com/stazh/sw-ehedaten/tree/main/data#PlaceName_' + entry.replace('ü','ue')
+            orte_dict[entry] = 'https://culture.ld.admin.ch/elodzh#PlaceName_' + entry.replace('ü','ue')
 
 #Erstelle Dictionary um Metadaten zu Kirchband eines bestimmten Eheeintrags nachschlagen zu können (über Signatur)
 band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
@@ -63,11 +63,6 @@ output_graph.bind('data', data)
 counter = 0
 record_dict = {}
 
-#Erstelle Tripple auf Stufe Ort
-for entry in orte_dict:
-    output_graph.add((URIRef(orte_dict[entry]), RDF.type, ontology_elodzh.Place))    
-    output_graph.add((URIRef(orte_dict[entry]), RDFS.label, Literal(entry, lang='de')))
-    output_graph.add((URIRef(orte_dict[entry]), ontology_elodzh.placeHasNameLiteral, Literal(entry, lang='de')))
 
 #Erstelle Tripple auf Stufe Record (Kirchbuch)
 for entry in band_dict:
@@ -75,23 +70,23 @@ for entry in band_dict:
     counter_str = str(counter)
     while len(counter_str) < 5:
         counter_str  = '0' + counter_str 
-    parishBookURI = "https://github.com/stazh/sw-ehedaten/tree/main/data#ParishBook_" + counter_str
+    parishBookURI = "https://culture.ld.admin.ch/elodzh#ParishBook_" + counter_str
     record_dict[entry] = parishBookURI
     output_graph.add((URIRef(parishBookURI),RDF.type, ontology_elodzh.ParishBook))
-    output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBodkHasRecordWebpageURI, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
+    output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBodkHasRecordWebpage, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
     output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBookIsKeptByParish, URIRef(kirchgemeinden_dict[band_dict[entry]['Provenienz'].replace('Kirchgemeinde ','')])))
 
 #Erstelle Tripple auf Stufe Kirchgemeinde
 for entry in kirchgemeinden_dict:
     output_graph.add((URIRef(kirchgemeinden_dict[entry]),RDF.type, ontology_elodzh.Parish))
-    output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasNameLiteral, Literal("Kirchgemeinde " + entry)))
-    if entry == "Grossmünster" or entry == "St. Peter" or entry == "Fraumünster" or entry == "Predigern" or entry == "Spitalpfarramt":      
-        output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasSeatAtPlace, URIRef(orte_dict['Zürich'])))
+    output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasName, Literal("Kirchgemeinde " + entry)))
+    if entry == "Grossmünster" or entry == " St. Peter" or entry == "Fraumünster" or entry == "Predigern" or entry == "Spitalpfarramt":      
+        output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasSeatAtPlace, Literal("Zürich")))
     else:
-        output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasSeatAtPlace, URIRef(orte_dict[entry])))
+        output_graph.add((URIRef(kirchgemeinden_dict[entry]),ontology_elodzh.parishHasSeatAtPlace, Literal(entry)))
 
 
-fileName = 'data_triples_parish_parish_book' + '.ttl'
+fileName = 'data_triples_parish_parishBook' + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
 print(fileName)
 
@@ -117,12 +112,12 @@ for row in input_file:
         k = row['Signatur'].rfind(",")
         band_signatur_string = row['Signatur'][:k]
         parishBookURI = record_dict[band_signatur_string]
-        MarriageEntryURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#MarriageEntry_' + rowCountString
-        ManURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Man_' + rowCountString
-        WomanURI = 'https://github.com/stazh/sw-ehedaten/tree/main/data#Woman_' + rowCountString
+        MarriageEntryURI = 'https://culture.ld.admin.ch/elodzh#MarriageEntry_' + rowCountString
+        ManURI = 'https://culture.ld.admin.ch/elodzh#Man_' + rowCountString
+        WomanURI = 'https://culture.ld.admin.ch/elodzh#Woman_' + rowCountString
         
         output_graph.add((URIRef(MarriageEntryURI), RDF.type, ontology_elodzh.MarriageEntry))
-        output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasRecordWebpageURI, Literal(row['Webseite'], datatype=XSD.anyURI)))
+        output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasRecordWebpage, Literal(row['Webseite'], datatype=XSD.anyURI)))
 
         output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryIsInParishBook, URIRef(parishBookURI)))
         output_graph.add((URIRef(ManURI), RDF.type, ontology_elodzh.Man))
@@ -133,25 +128,19 @@ for row in input_file:
             output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasCommentToWoman, Literal(row['Zusatzinfo_Frau'])))
         if row['Zusatzinfo_Mann'] != '' and row['Zusatzinfo_Mann'] != '-':
             output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasGeneralCommentOrCommentToMan, Literal(row['Zusatzinfo_Mann'])))
-        output_graph.add((URIRef(ManURI), ontology_elodzh.personHasFirstNameLiteral, Literal(row['Vorname_Mann'])))
-        output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasFirstNameLiteral, Literal(row['Vorname_Frau'])))
-        output_graph.add((URIRef(ManURI), ontology_elodzh.personHasLastNameLiteral, Literal(row['Nachname_Mann'])))
-        output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasLastNameLiteral, Literal(row['Nachname_Frau'])))
+        output_graph.add((URIRef(ManURI), ontology_elodzh.personHasFirstName, Literal(row['Vorname_Mann'])))
+        output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasFirstName, Literal(row['Vorname_Frau'])))
+        output_graph.add((URIRef(ManURI), ontology_elodzh.personHasLastName, Literal(row['Nachname_Mann'])))
+        output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasLastName, Literal(row['Nachname_Frau'])))
 
         #Trippel Herkunft
         if row['Herkunft_Mann'] != "":
             herkunft_mann = row['Herkunft_Mann']
-            herkunft_mann = herkunft_mann.replace(' ?','')
-            herkunft_mann = herkunft_mann.replace(' (?)','')
-            herkunft_mann = herkunft_mann.replace('?','')
-            output_graph.add((URIRef(ManURI), ontology_elodzh.personHasPlaceOfOrigin, URIRef(orte_dict[herkunft_mann])))
+            output_graph.add((URIRef(ManURI), ontology_elodzh.personHasPlaceOfOrigin, Literal(herkunft_mann)))
         
         if row['Herkunft_Frau'] != "":
             herkunft_frau = row['Herkunft_Frau']         
-            herkunft_frau = herkunft_frau.replace(' ?','')
-            herkunft_frau = herkunft_frau.replace(' (?)','')
-            herkunft_frau = herkunft_frau.replace('?','')
-            output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasPlaceOfOrigin, URIRef(orte_dict[herkunft_frau])))
+            output_graph.add((URIRef(WomanURI), ontology_elodzh.personHasPlaceOfOrigin, Literal(herkunft_frau)))
 
         
         #Trippel Date
@@ -167,7 +156,9 @@ for row in input_file:
                 gregDate = date(int(gregDateList[0]),int(gregDateList[1]),int(gregDateList[2]))
                 weekday = calendar.day_name[gregDate.weekday()]
                 output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasDatingOnDate, Literal(gregDate,datatype=XSD.date)))
-
+            
+            weekdayURI = 'https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#' + weekday
+            output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasDatingOnWeekday, URIRef(weekdayURI)))
             if weekday == 'Sunday' and gregDate > date(1620,6,26) or row['Zusatzinfo_Mann'].find('Verkünddatum') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut zu ') >= 0 or row['Zusatzinfo_Mann'].lower().find('getraut im ') >= 0 or (row['Zusatzinfo_Mann'].lower().find('prom') >= 0 and not(row['Zusatzinfo_Mann'].lower().find('nicht prom'))) or row['Zusatzinfo_Mann'].lower().find('prokl') >= 0:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_elodzh.marriageEntryDocumentsMarriageProclamationWithCertaintyValue,ontology_elodzh.VeryLikely))
             else:
@@ -194,9 +185,9 @@ for row in input_file:
                 output_graph.add((URIRef(MarriageEntryURI),ontology_elodzh.marriageEntryDocumentsWeddingWithCertaintyValue,ontology_elodzh.Likely))
 
 
-    if rowCounter % 20000 == 0:
+    if rowCounter % 1000000 == 0:
         fileCounter += 1
-        fileName = 'data_triples_archiving_recordpart_' + str(fileCounter) + '.ttl'
+        fileName = 'data_triples_elodzh_' + str(fileCounter) + '.ttl'
         output_graph.serialize(destination=fileName, format='turtle')
         output_graph = Graph()
         output_graph.bind('elodzh', ontology_elodzh)
@@ -204,7 +195,7 @@ for row in input_file:
         print(fileName)
 
 fileCounter += 1
-fileName = 'data_triples_archiving_recordpart_' + str(fileCounter) + '.ttl'
+fileName = 'data_triples_elodzh_' + str(fileCounter) + '.ttl'
 output_graph.serialize(destination=fileName, format='turtle')
 print(fileName)
 
