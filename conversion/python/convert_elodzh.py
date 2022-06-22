@@ -14,8 +14,8 @@ input_file = csv.DictReader(open(inFile), delimiter=';')
 inFileBaende = sys.argv[2]
 input_file_baende = csv.DictReader(open(inFileBaende), delimiter=';')
 
-ontology_elodzh = Namespace("https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#")
-data = Namespace("https://culture.ld.admin.ch/elodzh#")
+ontology_elodzh = Namespace("https://ld.zh.ch/elodzh-ontology/")
+data = Namespace("https://ld.zh.ch/elodzh/")
 
 #Erstelle Kirchgemeinden-Dictionary aus kirchgemeinden.csv (erstellt durch create_dictionaries.py-Skript)
 kirchgemeinden = csv.DictReader(open('kirchgemeinden.csv'), delimiter=',')
@@ -33,7 +33,7 @@ for entry in kirchgemeinden_dict:
         if entry == "Fraumünster" or entry == "Grossmünster" or entry == "St. Peter" or entry == "Predigern" or entry == "Spitalpfarramt":
             pass
         else:
-            orte_dict[entry] = 'https://culture.ld.admin.ch/elodzh#PlaceName_' + entry.replace('ü','ue')
+            orte_dict[entry] = 'https://ld.zh.ch/elodzh/PlaceName_' + entry.replace('ü','ue')
 
 #Erstelle Dictionary um Metadaten zu Kirchband eines bestimmten Eheeintrags nachschlagen zu können (über Signatur)
 band_signaturen = csv.DictReader(open('Bandsignaturen.csv'), delimiter=',')
@@ -70,7 +70,7 @@ for entry in band_dict:
     counter_str = str(counter)
     while len(counter_str) < 5:
         counter_str  = '0' + counter_str 
-    parishBookURI = "https://culture.ld.admin.ch/elodzh#ParishBook_" + counter_str
+    parishBookURI = "https://ld.zh.ch/elodzh/ParishBook_" + counter_str
     record_dict[entry] = parishBookURI
     output_graph.add((URIRef(parishBookURI),RDF.type, ontology_elodzh.ParishBook))
     output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBodkHasRecordWebpage, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
@@ -112,9 +112,9 @@ for row in input_file:
         k = row['Signatur'].rfind(",")
         band_signatur_string = row['Signatur'][:k]
         parishBookURI = record_dict[band_signatur_string]
-        MarriageEntryURI = 'https://culture.ld.admin.ch/elodzh#MarriageEntry_' + rowCountString
-        ManURI = 'https://culture.ld.admin.ch/elodzh#Man_' + rowCountString
-        WomanURI = 'https://culture.ld.admin.ch/elodzh#Woman_' + rowCountString
+        MarriageEntryURI = 'https://ld.zh.ch/elodzh/MarriageEntry_' + rowCountString
+        ManURI = 'https://ld.zh.ch/elodzh/Man_' + rowCountString
+        WomanURI = 'https://ld.zh.ch/elodzh/Woman_' + rowCountString
         
         output_graph.add((URIRef(MarriageEntryURI), RDF.type, ontology_elodzh.MarriageEntry))
         output_graph.add((URIRef(MarriageEntryURI), ontology_elodzh.marriageEntryHasRecordWebpage, Literal(row['Webseite'], datatype=XSD.anyURI)))

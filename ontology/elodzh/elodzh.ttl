@@ -10,10 +10,10 @@
 @prefix nie-ine-human: <http://e-editiones.ch/ontology/human#>.
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 
-@base <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh>.
-@prefix elodzh: <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh#>.
+@base <https://ld.zh.ch/elodzh-ontology>.
+@prefix elodzh: <https://ld.zh.ch/elodzh-ontology/>.
 
-<https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh>
+<https://ld.zh.ch/elodzh-ontology>
 	a owl:Ontology;
 	dct:license <http://creativecommons.org/licenses/by/3.0/>;
 	dct:title "An ontology about marriage entries from the 16th to 18th century in Zürich"@en;
