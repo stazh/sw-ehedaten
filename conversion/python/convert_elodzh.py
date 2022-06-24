@@ -73,7 +73,7 @@ for entry in band_dict:
     parishBookURI = "https://ld.zh.ch/elodzh/ParishBook_" + counter_str
     record_dict[entry] = parishBookURI
     output_graph.add((URIRef(parishBookURI),RDF.type, ontology_elodzh.ParishBook))
-    output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBodkHasRecordWebpage, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
+    output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBookHasRecordWebpage, Literal(band_dict[entry]['Weblink_AIS'], datatype=XSD.anyURI)))
     output_graph.add((URIRef(parishBookURI), ontology_elodzh.parishBookIsKeptByParish, URIRef(kirchgemeinden_dict[band_dict[entry]['Provenienz'].replace('Kirchgemeinde ','')])))
 
 #Erstelle Tripple auf Stufe Kirchgemeinde
