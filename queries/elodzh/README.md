@@ -4,6 +4,8 @@
 
 [Beipsielabfrage: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
 
+[Beipsielabfrage: Alle Frauenvornamen nach Anzahl Vorkommen geordnet](https://s.zazuko.com/ce6bZB)
+
 [Beipsielabfrage: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/6tcxv3)
 
 [Beispielabfrage: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
