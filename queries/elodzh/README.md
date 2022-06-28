@@ -1,17 +1,16 @@
-# [SPARQL-Endpoint](https://lindas.admin.ch/sparql/){target="_blank"}
+# [SPARQL-Endpoint](https://lindas.admin.ch/sparql/)
 
-[Beispielsabfrage: Alle Tripel](https://s.zazuko.com/4gxhpY){target="_blank"}
+[Beispielsabfrage: Alle Tripel](https://s.zazuko.com/4gxhpY)
 
-[--> Alle Frauenvornamen](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/Frauenvornamen.sparql)
+[Beipsielabfrage: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ))
 
-[--> Entwicklung der Heiratswochentage auf dem Land](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/wochentage_land.sparql)
+[Beipsielabfrage: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/6tcxv3)
 
-[--> Entwicklung der Heiratswochentage in den Städten](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/wochentage_stadt.sparql)
+[Beispielabfrage: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
 
-[--> Heiratswochentage wenn Vermerk Jungfrau](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/heiratswochentage_mit_vermerk_jungfrau.sparql)
+[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/heiratswochentage_mit_vermerk_jungfrau.sparql)
 
-<div align="center"><img src="bsp_abfrage.jpg" width="1200"></div>
 
-# [--> Graph-Explorer](https://int.lindas.admin.ch/graph-explorer/)
+# [Graph-Explorer](https://lindas.admin.ch/graph-explorer/)
 
-<div align="center"><img src="elodzh_beispiel.png" width="1200"></div>
+
