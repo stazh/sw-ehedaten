@@ -13,4 +13,4 @@
 
 # [Graph-Explorer](https://lindas.admin.ch/graph-explorer/)
 
---> Einfacher Einstige über Suche in "Classes" nach Marriage entry
+--> Einfacher Einstieg über Suche in "Classes" nach Marriage entry
