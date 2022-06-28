@@ -8,9 +8,9 @@
 
 [Beispielabfrage: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
 
-[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/ddauBD)
+[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/cvSwBW)
 
 
 # [Graph-Explorer](https://lindas.admin.ch/graph-explorer/)
 
-
+--> Einfacher Einstige über Suche in "Classes" nach Marriage entry
