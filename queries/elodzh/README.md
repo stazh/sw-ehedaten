@@ -1,4 +1,4 @@
-# [--> SPARQL-Endpoint](https://int.lindas.admin.ch/sparql/)
+# [--> SPARQL-Endpoint](https://lindas.admin.ch/sparql/)
 
 [--> Alle Tripel](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/alle_tripel.sparql)
 
