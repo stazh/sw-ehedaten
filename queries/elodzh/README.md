@@ -1,6 +1,6 @@
 # [--> SPARQL-Endpoint](https://lindas.admin.ch/sparql/)
 
-[--> Alle Tripel](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/alle_tripel.sparql)
+[--> Alle Tripel](https://s.zazuko.com/8qDSeT))
 
 [--> Alle Frauenvornamen](https://github.com/stazh/sw-ehedaten/blob/main/queries/elodzh/Frauenvornamen.sparql)
 
