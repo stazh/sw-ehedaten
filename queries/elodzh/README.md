@@ -8,7 +8,7 @@
 
 [Beispielabfrage: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
 
-[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/dMbXwj)
+[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/ddauBD)
 
 
 # [Graph-Explorer](https://lindas.admin.ch/graph-explorer/)
