@@ -2,19 +2,19 @@
 
 ## Mögliche SPARQL-Abfragen
 
-[Beispielsabfrage: Alle Tripel](https://s.zazuko.com/4gxhpY)
+[Beispielsabfrage 1: Alle Tripel](https://s.zazuko.com/4gxhpY)
 
-[Beipsielabfrage: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
+[Beispielabfrage 2: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
 
-[Beipsielabfrage: Alle Frauenvornamen nach Anzahl Vorkommen geordnet](https://s.zazuko.com/ce6bZB)
+[Beispielabfrage 3: Alle Frauenvornamen nach Anzahl Vorkommen geordnet](https://s.zazuko.com/ce6bZB)
 
-[Beipsielabfrage: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/6tcxv3)
+[Beispielabfrage 4: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/6tcxv3)
 
-[Beispielabfrage: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
+[Beispielabfrage 5: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
 
-[Beispielabfrage: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/cvSwBW)
+[Beispielabfrage 6: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/cvSwBW)
 
-[Graph-Explorer](https://lindas.admin.ch/graph-explorer/) --> Einfacher Einstieg über Suche in "Classes" nach "Marriage entry"
+[Erkunden der Ehedaten über den Graph-Explorer](https://lindas.admin.ch/graph-explorer/) --> Einfacher Einstieg über Suche in "Classes" nach "Marriage entry"
 
 ## Modell
 <div align="center"><img src="elodzh_model.jpg" width="1000"></div>
