@@ -1,6 +1,6 @@
 # [SPARQL-Endpoint](https://lindas.admin.ch/sparql/)
 
-[Beispielsabfrage 1: Alle Tripel](https://s.zazuko.com/4gxhpY)
+[Beispielabfrage 1: Alle Tripel](https://s.zazuko.com/4gxhpY)
 
 [Beispielabfrage 2: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
 
