@@ -2,17 +2,17 @@
 
 ## Mögliche SPARQL-Abfragen
 
-[Beispielabfrage 1: Alle Tripel](https://s.zazuko.com/4gxhpY)
+[SPARQL-Abfrage Beispiel 1: Alle Tripel](https://s.zazuko.com/4gxhpY)
 
-[Beispielabfrage 2: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
+[SPARQL-Abfrage Beispiel 2: Alle Klassen, Beziehungen und Instanzen der elodzh-Ontologie](https://s.zazuko.com/com4vZ)
 
-[Beispielabfrage 3: Alle Frauenvornamen nach Anzahl Vorkommen geordnet](https://s.zazuko.com/5NCQ1R)
+[SPARQL-Abfrage Beispiel 3: Alle Frauenvornamen nach Anzahl Vorkommen geordnet](https://s.zazuko.com/5NCQ1R)
 
-[Beispielabfrage 4: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/6tcxv3)
+[SPARQL-Abfrage Beispiel 4: Entwicklung der Heiratswochentage auf dem Land](https://s.zazuko.com/e9nZHf)
 
-[Beispielabfrage 5: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/aPbCTt)
+[SPARQL-Abfrage Beispiel 5: Entwicklung der Heiratswochentage in den Städten](https://s.zazuko.com/g3zmhv)
 
-[Beispielabfrage 6: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/f9P8gG)
+[SPARQL-Abfrage Beispiel 6: Alle Eheeinträge, in welchen der Pfarrer das Wort 'Ehegericht' vermerkte](https://s.zazuko.com/f9P8gG)
 
 [Erkunden der Ehedaten über den Graph-Explorer](https://lindas.admin.ch/graph-explorer/) --> Einfacher Einstieg über Suche in "Classes" nach "Marriage entry"
 
