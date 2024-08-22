@@ -1,0 +1,10 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://ld.zh.ch/elodzh-ontology/>
+SELECT ?eheeintrag ?anmerkung ?datum ?startdatum ?enddatum ?kirchgemeindeName WHERE{
+{?eheeintrag elodzh:marriageEntryHasGeneralCommentOrCommentToMan ?anmerkung} UNION {?eheeintrag elodzh:marriageEntryHasCommentToWoman ?anmerkung}
+filter(contains(?anmerkung,'Ehegericht') || contains(?anmerkung,'Eherichter'))
+{?eheeintrag elodzh:marriageEntryHasDatingOnDate ?datum} UNION {?eheeintrag elodzh:marriageEntryHasDatePeriodStartDate ?startdatum. ?eheeintrag elodzh:marriageEntryHasDatePeriodEndDate ?enddatum}
+?eheeintrag elodzh:marriageEntryIsInParishBook ?pfarrbuch.
+?pfarrbuch elodzh:parishBookIsKeptByParish ?kirchgemeinde.
+ ?kirchgemeinde elodzh:parishHasName ?kirchgemeindeName.
+} 
