@@ -1,0 +1,14 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://ld.zh.ch/elodzh-ontology/>
+SELECT ?jahr ?wochentag WHERE{
+?eheeintrag elodzh:marriageEntryDocumentsWeddingWithCertaintyValue elodzh:Likely.
+?eheeintrag elodzh:marriageEntryHasDatingOnDate ?datum.
+BIND(year(?datum) AS ?jahr)
+?eheeintrag elodzh:marriageEntryHasDatingOnWeekday ?wt.
+?wt rdfs:label ?wochentag.
+filter(lang(?wochentag) = 'de')
+?eheeintrag elodzh:marriageEntryIsInParishBook ?pfarrbuch.
+?pfarrbuch elodzh:parishBookIsKeptByParish ?kirchgemeinde.
+?kirchgemeinde elodzh:parishHasSeatAtPlace ?ort.
+filter(?ort != 'Zürich' && ?ort != 'Winterthur')
+}
