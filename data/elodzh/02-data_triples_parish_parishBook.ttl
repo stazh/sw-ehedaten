@@ -1,0 +1,2100 @@
+@prefix data: <https://ld.zh.ch/elodzh/> .
+@prefix elodzh: <https://ld.zh.ch/elodzh-ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+data:ParishBook_00001 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935033"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Predigern .
+
+data:ParishBook_00002 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319670"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Regensdorf .
+
+data:ParishBook_00003 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319669"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Regensdorf .
+
+data:ParishBook_00004 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315376"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Truellikon .
+
+data:ParishBook_00005 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935190"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seebach .
+
+data:ParishBook_00006 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320033"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Richterswil .
+
+data:ParishBook_00007 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320037"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Richterswil .
+
+data:ParishBook_00008 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320038"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Richterswil .
+
+data:ParishBook_00009 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360675"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Andelfingen .
+
+data:ParishBook_00010 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320208"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rifferswil .
+
+data:ParishBook_00011 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318949"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oetwil_am_See .
+
+data:ParishBook_00012 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318948"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oetwil_am_See .
+
+data:ParishBook_00013 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313532"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schoefflisdorf .
+
+data:ParishBook_00014 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1937000"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bichelsee .
+
+data:ParishBook_00015 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935227"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seen .
+
+data:ParishBook_00016 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319503"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rafz .
+
+data:ParishBook_00017 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319513"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rafz .
+
+data:ParishBook_00018 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934973"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00019 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935226"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seen .
+
+data:ParishBook_00020 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318172"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberglatt .
+
+data:ParishBook_00021 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318169"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberglatt .
+
+data:ParishBook_00022 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320344"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ruemlang .
+
+data:ParishBook_00023 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320345"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ruemlang .
+
+data:ParishBook_00024 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319088"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Otelfingen .
+
+data:ParishBook_00025 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319090"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Otelfingen .
+
+data:ParishBook_00026 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319089"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Otelfingen .
+
+data:ParishBook_00027 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317469"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Moenchaltorf .
+
+data:ParishBook_00028 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319406"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfaeffikon .
+
+data:ParishBook_00029 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319405"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfaeffikon .
+
+data:ParishBook_00030 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319404"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfaeffikon .
+
+data:ParishBook_00031 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319401"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfaeffikon .
+
+data:ParishBook_00032 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317040"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buch_am_Irchel .
+
+data:ParishBook_00033 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314550"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kuesnacht .
+
+data:ParishBook_00034 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314552"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kuesnacht .
+
+data:ParishBook_00035 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316679"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maschwanden .
+
+data:ParishBook_00036 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316680"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maschwanden .
+
+data:ParishBook_00037 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316681"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maschwanden .
+
+data:ParishBook_00038 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317042"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buch_am_Irchel .
+
+data:ParishBook_00039 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316282"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maennedorf .
+
+data:ParishBook_00040 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316283"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maennedorf .
+
+data:ParishBook_00041 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316271"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maennedorf .
+
+data:ParishBook_00042 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316284"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maennedorf .
+
+data:ParishBook_00043 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315588"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Laufen .
+
+data:ParishBook_00044 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315589"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Laufen .
+
+data:ParishBook_00045 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934967"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00046 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936694"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Aawangen .
+
+data:ParishBook_00047 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314372"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kappel_am_Albis .
+
+data:ParishBook_00048 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318887"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wangen .
+
+data:ParishBook_00049 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314418"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kloten .
+
+data:ParishBook_00050 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314417"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kloten .
+
+data:ParishBook_00051 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314416"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kloten .
+
+data:ParishBook_00052 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314415"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kloten .
+
+data:ParishBook_00053 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314414"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kloten .
+
+data:ParishBook_00054 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318666"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Glattfelden .
+
+data:ParishBook_00055 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315809"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uetikon_am_See .
+
+data:ParishBook_00056 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318668"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Glattfelden .
+
+data:ParishBook_00057 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318667"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Glattfelden .
+
+data:ParishBook_00058 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934971"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00059 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1927422"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_St_Peter .
+
+data:ParishBook_00060 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314757"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Steinmaur .
+
+data:ParishBook_00061 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313501"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Huetten .
+
+data:ParishBook_00062 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320366"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zumikon .
+
+data:ParishBook_00063 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=321170"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zumikon .
+
+data:ParishBook_00064 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313456"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schlatt .
+
+data:ParishBook_00065 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318430"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fischenthal .
+
+data:ParishBook_00066 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317946"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Niederhasli .
+
+data:ParishBook_00067 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317942"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Niederhasli .
+
+data:ParishBook_00068 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315239"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Thalheim_an_der_Thur .
+
+data:ParishBook_00069 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317947"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Niederhasli .
+
+data:ParishBook_00070 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312611"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hausen_am_Albis .
+
+data:ParishBook_00071 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312613"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hausen_am_Albis .
+
+data:ParishBook_00072 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319735"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Greifensee .
+
+data:ParishBook_00073 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319734"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Greifensee .
+
+data:ParishBook_00074 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319733"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Greifensee .
+
+data:ParishBook_00075 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319730"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Greifensee .
+
+data:ParishBook_00076 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317889"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Duebendorf .
+
+data:ParishBook_00077 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319647"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weisslingen .
+
+data:ParishBook_00078 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319554"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weisslingen .
+
+data:ParishBook_00079 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934976"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00080 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318409"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Waedenswil .
+
+data:ParishBook_00081 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318411"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Waedenswil .
+
+data:ParishBook_00082 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318410"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Waedenswil .
+
+data:ParishBook_00083 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315765"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Lindau .
+
+data:ParishBook_00084 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318412"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Waedenswil .
+
+data:ParishBook_00085 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315768"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Lindau .
+
+data:ParishBook_00086 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936069"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberwinterthur .
+
+data:ParishBook_00087 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316997"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Meilen .
+
+data:ParishBook_00088 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318902"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weiach .
+
+data:ParishBook_00089 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316996"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Meilen .
+
+data:ParishBook_00090 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316961"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Meilen .
+
+data:ParishBook_00091 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936070"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberwinterthur .
+
+data:ParishBook_00092 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313787"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seuzach .
+
+data:ParishBook_00093 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313073"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hettlingen .
+
+data:ParishBook_00094 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935234"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Veltheim .
+
+data:ParishBook_00095 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313198"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hirzel .
+
+data:ParishBook_00096 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313192"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hirzel .
+
+data:ParishBook_00097 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935105"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wipkingen .
+
+data:ParishBook_00098 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935036"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Predigern .
+
+data:ParishBook_00099 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317041"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buch_am_Irchel .
+
+data:ParishBook_00100 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320164"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zollikon .
+
+data:ParishBook_00101 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313851"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stadel .
+
+data:ParishBook_00102 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314008"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stadel .
+
+data:ParishBook_00103 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314007"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stadel .
+
+data:ParishBook_00104 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318600"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wallisellen .
+
+data:ParishBook_00105 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314252"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stallikon .
+
+data:ParishBook_00106 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314251"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stallikon .
+
+data:ParishBook_00107 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314072"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stallikon .
+
+data:ParishBook_00108 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314253"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stallikon .
+
+data:ParishBook_00109 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935247"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wuelflingen .
+
+data:ParishBook_00110 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316745"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bruetten .
+
+data:ParishBook_00111 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319864"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wila .
+
+data:ParishBook_00112 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319874"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wila .
+
+data:ParishBook_00113 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319875"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wila .
+
+data:ParishBook_00114 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934987"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fraumuenster .
+
+data:ParishBook_00115 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312571"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bassersdorf .
+
+data:ParishBook_00116 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312573"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bassersdorf .
+
+data:ParishBook_00117 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319798"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wiesendangen .
+
+data:ParishBook_00118 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313352"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hombrechtikon .
+
+data:ParishBook_00119 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313350"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hombrechtikon .
+
+data:ParishBook_00120 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313351"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hombrechtikon .
+
+data:ParishBook_00121 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313349"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hombrechtikon .
+
+data:ParishBook_00122 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313777"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seegraeben .
+
+data:ParishBook_00123 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935029"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Predigern .
+
+data:ParishBook_00124 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318117"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Erlenbach .
+
+data:ParishBook_00125 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314798"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Benken .
+
+data:ParishBook_00126 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314797"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Benken .
+
+data:ParishBook_00127 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935164"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Altstetten .
+
+data:ParishBook_00128 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318084"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elsau .
+
+data:ParishBook_00129 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312796"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Henggart .
+
+data:ParishBook_00130 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935185"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schwamendingen-Oerlikon .
+
+data:ParishBook_00131 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314755"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Steinmaur .
+
+data:ParishBook_00132 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315808"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uetikon_am_See .
+
+data:ParishBook_00133 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315333"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Birmensdorf .
+
+data:ParishBook_00134 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315334"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Birmensdorf .
+
+data:ParishBook_00135 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315335"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Birmensdorf .
+
+data:ParishBook_00136 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318431"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fischenthal .
+
+data:ParishBook_00137 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315238"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Thalheim_an_der_Thur .
+
+data:ParishBook_00138 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318405"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fischenthal .
+
+data:ParishBook_00139 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318435"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fischenthal .
+
+data:ParishBook_00140 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318433"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fischenthal .
+
+data:ParishBook_00141 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320453"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rueschlikon .
+
+data:ParishBook_00142 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318050"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elgg .
+
+data:ParishBook_00143 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318051"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elgg .
+
+data:ParishBook_00144 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935179"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hoengg .
+
+data:ParishBook_00145 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317720"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dielsdorf .
+
+data:ParishBook_00146 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317944"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elgg .
+
+data:ParishBook_00147 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318048"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elgg .
+
+data:ParishBook_00148 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318049"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Elgg .
+
+data:ParishBook_00149 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313757"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schwerzenbach .
+
+data:ParishBook_00150 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317908"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Egg .
+
+data:ParishBook_00151 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317906"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Egg .
+
+data:ParishBook_00152 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313609"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schoenenberg .
+
+data:ParishBook_00153 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313663"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schoenenberg .
+
+data:ParishBook_00154 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360605"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Affoltern_am_Albis .
+
+data:ParishBook_00155 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360606"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Affoltern_am_Albis .
+
+data:ParishBook_00156 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360602"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Affoltern_am_Albis .
+
+data:ParishBook_00157 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318358"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fehraltorf .
+
+data:ParishBook_00158 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318357"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fehraltorf .
+
+data:ParishBook_00159 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317826"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dinhard .
+
+data:ParishBook_00160 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317825"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dinhard .
+
+data:ParishBook_00161 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317783"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dinhard .
+
+data:ParishBook_00162 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316880"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buelach .
+
+data:ParishBook_00163 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316889"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buelach .
+
+data:ParishBook_00164 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316888"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buelach .
+
+data:ParishBook_00165 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935060"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Spitalpfarramt .
+
+data:ParishBook_00166 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316892"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buelach .
+
+data:ParishBook_00167 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935165"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Altstetten .
+
+data:ParishBook_00168 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317118"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daellikon .
+
+data:ParishBook_00169 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313523"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schlieren .
+
+data:ParishBook_00170 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313472"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schlieren .
+
+data:ParishBook_00171 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320595"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Russikon .
+
+data:ParishBook_00172 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320615"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Russikon .
+
+data:ParishBook_00173 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935235"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Veltheim .
+
+data:ParishBook_00174 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315833"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Urdorf-Dietikon .
+
+data:ParishBook_00175 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315858"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Urdorf-Dietikon .
+
+data:ParishBook_00176 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315838"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Urdorf-Dietikon .
+
+data:ParishBook_00177 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1937062"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uesslingen .
+
+data:ParishBook_00178 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318228"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberrieden .
+
+data:ParishBook_00179 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318030"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Niederweningen .
+
+data:ParishBook_00180 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318009"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Niederweningen .
+
+data:ParishBook_00181 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312549"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bachs .
+
+data:ParishBook_00182 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312550"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bachs .
+
+data:ParishBook_00183 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935246"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wuelflingen .
+
+data:ParishBook_00184 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319027"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ossingen .
+
+data:ParishBook_00185 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319028"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ossingen .
+
+data:ParishBook_00186 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319029"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ossingen .
+
+data:ParishBook_00187 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319338"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ottenbach .
+
+data:ParishBook_00188 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319339"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ottenbach .
+
+data:ParishBook_00189 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319337"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ottenbach .
+
+data:ParishBook_00190 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319340"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ottenbach .
+
+data:ParishBook_00191 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319341"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ottenbach .
+
+data:ParishBook_00192 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934970"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00193 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319588"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Regensberg .
+
+data:ParishBook_00194 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319587"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Regensberg .
+
+data:ParishBook_00195 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314522"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Knonau .
+
+data:ParishBook_00196 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314536"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Knonau .
+
+data:ParishBook_00197 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936686"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Aadorf .
+
+data:ParishBook_00198 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934988"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Fraumuenster .
+
+data:ParishBook_00199 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313522"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Illnau .
+
+data:ParishBook_00200 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313535"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Illnau .
+
+data:ParishBook_00201 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320103"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rickenbach .
+
+data:ParishBook_00202 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320097"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rickenbach .
+
+data:ParishBook_00203 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314384"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kilchberg .
+
+data:ParishBook_00204 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314385"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kilchberg .
+
+data:ParishBook_00205 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314383"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kilchberg .
+
+data:ParishBook_00206 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314386"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kilchberg .
+
+data:ParishBook_00207 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314387"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kilchberg .
+
+data:ParishBook_00208 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935106"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wipkingen .
+
+data:ParishBook_00209 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318478"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Flaach .
+
+data:ParishBook_00210 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935157"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Affoltern .
+
+data:ParishBook_00211 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318457"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Flaach .
+
+data:ParishBook_00212 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318476"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Flaach .
+
+data:ParishBook_00213 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318477"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Flaach .
+
+data:ParishBook_00214 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320141"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zell .
+
+data:ParishBook_00215 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936693"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Aawangen .
+
+data:ParishBook_00216 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313397"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Horgen .
+
+data:ParishBook_00217 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1937064"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uesslingen .
+
+data:ParishBook_00218 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935238"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Winterthur .
+
+data:ParishBook_00219 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320242"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rorbas .
+
+data:ParishBook_00220 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320244"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rorbas .
+
+data:ParishBook_00221 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935245"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wuelflingen .
+
+data:ParishBook_00222 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935031"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Predigern .
+
+data:ParishBook_00223 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317106"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Mettmenstetten .
+
+data:ParishBook_00224 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317119"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Mettmenstetten .
+
+data:ParishBook_00225 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934963"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00226 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935223"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Oberwinterthur .
+
+data:ParishBook_00227 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319816"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grueningen .
+
+data:ParishBook_00228 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316995"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Meilen .
+
+data:ParishBook_00229 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317973"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Eglisau .
+
+data:ParishBook_00230 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935173"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hoengg .
+
+data:ParishBook_00231 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319750"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Gossau .
+
+data:ParishBook_00232 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319752"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Gossau .
+
+data:ParishBook_00233 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360666"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Andelfingen .
+
+data:ParishBook_00234 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319504"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weiach .
+
+data:ParishBook_00235 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935133"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wollishofen .
+
+data:ParishBook_00236 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315565"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Laufen .
+
+data:ParishBook_00237 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935232"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Toess .
+
+data:ParishBook_00238 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317844"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dorf .
+
+data:ParishBook_00239 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1936685"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Winterthur .
+
+data:ParishBook_00240 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319479"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfungen .
+
+data:ParishBook_00241 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316662"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Marthalen .
+
+data:ParishBook_00242 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316665"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Marthalen .
+
+data:ParishBook_00243 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319481"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Pfungen .
+
+data:ParishBook_00244 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313074"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hettlingen .
+
+data:ParishBook_00245 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316226"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Lufingen .
+
+data:ParishBook_00246 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1937048"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Neunforn .
+
+data:ParishBook_00247 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1937041"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Gachnang .
+
+data:ParishBook_00248 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934968"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00249 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935161"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Albisrieden .
+
+data:ParishBook_00250 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315472"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Kyburg .
+
+data:ParishBook_00251 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319894"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wildberg .
+
+data:ParishBook_00252 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319965"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wildberg .
+
+data:ParishBook_00253 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319964"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wildberg .
+
+data:ParishBook_00254 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319854"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wil .
+
+data:ParishBook_00255 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319832"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wil .
+
+data:ParishBook_00256 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935194"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Witikon .
+
+data:ParishBook_00257 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313400"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Horgen .
+
+data:ParishBook_00258 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313399"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Horgen .
+
+data:ParishBook_00259 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320101"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zell .
+
+data:ParishBook_00260 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313398"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Horgen .
+
+data:ParishBook_00261 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320138"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zell .
+
+data:ParishBook_00262 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935239"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Winterthur .
+
+data:ParishBook_00263 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315403"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Turbenthal .
+
+data:ParishBook_00264 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315732"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Turbenthal .
+
+data:ParishBook_00265 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315713"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Turbenthal .
+
+data:ParishBook_00266 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315733"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Turbenthal .
+
+data:ParishBook_00267 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935242"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Winterthur .
+
+data:ParishBook_00268 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315820"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uitikon .
+
+data:ParishBook_00269 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315816"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uitikon .
+
+data:ParishBook_00270 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312752"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hedingen .
+
+data:ParishBook_00271 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934966"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00272 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312751"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hedingen .
+
+data:ParishBook_00273 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315272"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Thalwil .
+
+data:ParishBook_00274 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315273"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Thalwil .
+
+data:ParishBook_00275 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315253"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Thalwil .
+
+data:ParishBook_00276 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935132"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wollishofen .
+
+data:ParishBook_00277 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317785"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Neftenbach .
+
+data:ParishBook_00278 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317784"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Neftenbach .
+
+data:ParishBook_00279 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320546"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rueti .
+
+data:ParishBook_00280 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317711"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daettlikon .
+
+data:ParishBook_00281 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317714"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daettlikon .
+
+data:ParishBook_00282 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360726"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Altikon .
+
+data:ParishBook_00283 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934974"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00284 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318578"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wald .
+
+data:ParishBook_00285 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317750"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Dietlikon .
+
+data:ParishBook_00286 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318549"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wald .
+
+data:ParishBook_00287 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318576"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wald .
+
+data:ParishBook_00288 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318577"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wald .
+
+data:ParishBook_00289 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315380"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Truellikon .
+
+data:ParishBook_00290 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318245"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Volketswil .
+
+data:ParishBook_00291 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315378"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Truellikon .
+
+data:ParishBook_00292 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315377"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Truellikon .
+
+data:ParishBook_00293 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318110"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Volketswil .
+
+data:ParishBook_00294 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319512"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weiningen .
+
+data:ParishBook_00295 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316702"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Maur .
+
+data:ParishBook_00296 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319536"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weiningen .
+
+data:ParishBook_00297 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360635"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Aeugst_am_Albis .
+
+data:ParishBook_00298 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935189"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Seebach .
+
+data:ParishBook_00299 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312810"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Baeretswil .
+
+data:ParishBook_00300 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312851"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Herrliberg .
+
+data:ParishBook_00301 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317048"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buchs .
+
+data:ParishBook_00302 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317050"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Buchs .
+
+data:ParishBook_00303 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315534"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Langnau_am_Albis .
+
+data:ParishBook_00304 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316939"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bubikon .
+
+data:ParishBook_00305 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317687"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daegerlen .
+
+data:ParishBook_00306 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316941"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bubikon .
+
+data:ParishBook_00307 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317685"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daegerlen .
+
+data:ParishBook_00308 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317686"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daegerlen .
+
+data:ParishBook_00309 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317684"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Daegerlen .
+
+data:ParishBook_00310 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318886"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wangen .
+
+data:ParishBook_00311 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318374"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Feuerthalen .
+
+data:ParishBook_00312 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318884"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wangen .
+
+data:ParishBook_00313 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314037"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Staefa .
+
+data:ParishBook_00314 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314038"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Staefa .
+
+data:ParishBook_00315 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313392"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Schlatt .
+
+data:ParishBook_00316 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314035"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Staefa .
+
+data:ParishBook_00317 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314036"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Staefa .
+
+data:ParishBook_00318 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314029"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Staefa .
+
+data:ParishBook_00319 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318372"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Feuerthalen .
+
+data:ParishBook_00320 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313138"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hinwil .
+
+data:ParishBook_00321 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313136"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hinwil .
+
+data:ParishBook_00322 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316778"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bonstetten .
+
+data:ParishBook_00323 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=313232"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Hittnau .
+
+data:ParishBook_00324 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312806"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Baeretswil .
+
+data:ParishBook_00325 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935004"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_St_Peter .
+
+data:ParishBook_00326 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312809"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Baeretswil .
+
+data:ParishBook_00327 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320570"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Rueti .
+
+data:ParishBook_00328 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314340"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stammheim .
+
+data:ParishBook_00329 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314338"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stammheim .
+
+data:ParishBook_00330 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317782"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Neftenbach .
+
+data:ParishBook_00331 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314336"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Stammheim .
+
+data:ParishBook_00332 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316242"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uster .
+
+data:ParishBook_00333 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315875"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uster .
+
+data:ParishBook_00334 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316241"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uster .
+
+data:ParishBook_00335 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=316240"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Uster .
+
+data:ParishBook_00336 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314640"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bauma .
+
+data:ParishBook_00337 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314639"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bauma .
+
+data:ParishBook_00338 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314638"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bauma .
+
+data:ParishBook_00339 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318187"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Embrach .
+
+data:ParishBook_00340 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318188"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Embrach .
+
+data:ParishBook_00341 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315183"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Sternenberg .
+
+data:ParishBook_00342 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=314791"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Sternenberg .
+
+data:ParishBook_00343 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320364"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zuerich .
+
+data:ParishBook_00344 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=320172"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Zollikon .
+
+data:ParishBook_00345 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1935231"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Toess .
+
+data:ParishBook_00346 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315193"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Berg_am_Irchel .
+
+data:ParishBook_00347 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=1934964"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Grossmuenster .
+
+data:ParishBook_00348 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=315194"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Berg_am_Irchel .
+
+data:ParishBook_00349 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317998"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ellikon_an_der_Thur .
+
+data:ParishBook_00350 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317997"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ellikon_an_der_Thur .
+
+data:ParishBook_00351 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317996"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Ellikon_an_der_Thur .
+
+data:ParishBook_00352 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319535"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Weiningen .
+
+data:ParishBook_00353 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317970"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Eglisau .
+
+data:ParishBook_00354 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360672"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Andelfingen .
+
+data:ParishBook_00355 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317972"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Eglisau .
+
+data:ParishBook_00356 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317975"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Eglisau .
+
+data:ParishBook_00357 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317974"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Eglisau .
+
+data:ParishBook_00358 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360674"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Andelfingen .
+
+data:ParishBook_00359 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=360673"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Andelfingen .
+
+data:ParishBook_00360 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317866"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Duernten .
+
+data:ParishBook_00361 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=317865"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Duernten .
+
+data:ParishBook_00362 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318342"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Faellanden .
+
+data:ParishBook_00363 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=318341"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Faellanden .
+
+data:ParishBook_00364 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=312576"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Bassersdorf .
+
+data:ParishBook_00365 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319778"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wetzikon .
+
+data:ParishBook_00366 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319779"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wetzikon .
+
+data:ParishBook_00367 a elodzh:ParishBook ;
+    elodzh:parishBookHasRecordWebpage "https://suche.staatsarchiv.djiktzh.ch/detail.aspx?ID=319729"^^xsd:anyURI ;
+    elodzh:parishBookIsKeptByParish data:Parish_Wetzikon .
+
+data:Parish_Aadorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Aadorf" ;
+    elodzh:parishHasSeatAtPlace "Aadorf" .
+
+data:Parish_Aeugst_am_Albis a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Aeugst am Albis" ;
+    elodzh:parishHasSeatAtPlace "Aeugst am Albis" .
+
+data:Parish_Affoltern a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Affoltern" ;
+    elodzh:parishHasSeatAtPlace "Affoltern" .
+
+data:Parish_Albisrieden a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Albisrieden" ;
+    elodzh:parishHasSeatAtPlace "Albisrieden" .
+
+data:Parish_Altikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Altikon" ;
+    elodzh:parishHasSeatAtPlace "Altikon" .
+
+data:Parish_Bichelsee a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bichelsee" ;
+    elodzh:parishHasSeatAtPlace "Bichelsee" .
+
+data:Parish_Bonstetten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bonstetten" ;
+    elodzh:parishHasSeatAtPlace "Bonstetten" .
+
+data:Parish_Bruetten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Brütten" ;
+    elodzh:parishHasSeatAtPlace "Brütten" .
+
+data:Parish_Daellikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dällikon" ;
+    elodzh:parishHasSeatAtPlace "Dällikon" .
+
+data:Parish_Dielsdorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dielsdorf" ;
+    elodzh:parishHasSeatAtPlace "Dielsdorf" .
+
+data:Parish_Dietlikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dietlikon" ;
+    elodzh:parishHasSeatAtPlace "Dietlikon" .
+
+data:Parish_Dorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dorf" ;
+    elodzh:parishHasSeatAtPlace "Dorf" .
+
+data:Parish_Duebendorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dübendorf" ;
+    elodzh:parishHasSeatAtPlace "Dübendorf" .
+
+data:Parish_Elsau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Elsau" ;
+    elodzh:parishHasSeatAtPlace "Elsau" .
+
+data:Parish_Erlenbach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Erlenbach" ;
+    elodzh:parishHasSeatAtPlace "Erlenbach" .
+
+data:Parish_Gachnang a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Gachnang" ;
+    elodzh:parishHasSeatAtPlace "Gachnang" .
+
+data:Parish_Grueningen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Grüningen" ;
+    elodzh:parishHasSeatAtPlace "Grüningen" .
+
+data:Parish_Henggart a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Henggart" ;
+    elodzh:parishHasSeatAtPlace "Henggart" .
+
+data:Parish_Herrliberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Herrliberg" ;
+    elodzh:parishHasSeatAtPlace "Herrliberg" .
+
+data:Parish_Hittnau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hittnau" ;
+    elodzh:parishHasSeatAtPlace "Hittnau" .
+
+data:Parish_Huetten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hütten" ;
+    elodzh:parishHasSeatAtPlace "Hütten" .
+
+data:Parish_Kappel_am_Albis a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Kappel am Albis" ;
+    elodzh:parishHasSeatAtPlace "Kappel am Albis" .
+
+data:Parish_Kyburg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Kyburg" ;
+    elodzh:parishHasSeatAtPlace "Kyburg" .
+
+data:Parish_Langnau_am_Albis a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Langnau am Albis" ;
+    elodzh:parishHasSeatAtPlace "Langnau am Albis" .
+
+data:Parish_Lufingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Lufingen" ;
+    elodzh:parishHasSeatAtPlace "Lufingen" .
+
+data:Parish_Maur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Maur" ;
+    elodzh:parishHasSeatAtPlace "Maur" .
+
+data:Parish_Moenchaltorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Mönchaltorf" ;
+    elodzh:parishHasSeatAtPlace "Mönchaltorf" .
+
+data:Parish_Neunforn a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Neunforn" ;
+    elodzh:parishHasSeatAtPlace "Neunforn" .
+
+data:Parish_Oberrieden a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Oberrieden" ;
+    elodzh:parishHasSeatAtPlace "Oberrieden" .
+
+data:Parish_Rifferswil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rifferswil" ;
+    elodzh:parishHasSeatAtPlace "Rifferswil" .
+
+data:Parish_Rueschlikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rüschlikon" ;
+    elodzh:parishHasSeatAtPlace "Rüschlikon" .
+
+data:Parish_Schoefflisdorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schöfflisdorf" ;
+    elodzh:parishHasSeatAtPlace "Schöfflisdorf" .
+
+data:Parish_Schwamendingen-Oerlikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schwamendingen-Oerlikon" ;
+    elodzh:parishHasSeatAtPlace "Schwamendingen-Oerlikon" .
+
+data:Parish_Schwerzenbach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schwerzenbach" ;
+    elodzh:parishHasSeatAtPlace "Schwerzenbach" .
+
+data:Parish_Seegraeben a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Seegräben" ;
+    elodzh:parishHasSeatAtPlace "Seegräben" .
+
+data:Parish_Seuzach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Seuzach" ;
+    elodzh:parishHasSeatAtPlace "Seuzach" .
+
+data:Parish_Spitalpfarramt a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Spitalpfarramt" ;
+    elodzh:parishHasSeatAtPlace "Zürich" .
+
+data:Parish_Wallisellen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wallisellen" ;
+    elodzh:parishHasSeatAtPlace "Wallisellen" .
+
+data:Parish_Wiesendangen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wiesendangen" ;
+    elodzh:parishHasSeatAtPlace "Wiesendangen" .
+
+data:Parish_Witikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Witikon" ;
+    elodzh:parishHasSeatAtPlace "Witikon" .
+
+data:Parish_Zuerich a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Zürich" ;
+    elodzh:parishHasSeatAtPlace "Zürich" .
+
+data:Parish_Aawangen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Aawangen" ;
+    elodzh:parishHasSeatAtPlace "Aawangen" .
+
+data:Parish_Altstetten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Altstetten" ;
+    elodzh:parishHasSeatAtPlace "Altstetten" .
+
+data:Parish_Bachs a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bachs" ;
+    elodzh:parishHasSeatAtPlace "Bachs" .
+
+data:Parish_Benken a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Benken" ;
+    elodzh:parishHasSeatAtPlace "Benken" .
+
+data:Parish_Berg_am_Irchel a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Berg am Irchel" ;
+    elodzh:parishHasSeatAtPlace "Berg am Irchel" .
+
+data:Parish_Bubikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bubikon" ;
+    elodzh:parishHasSeatAtPlace "Bubikon" .
+
+data:Parish_Buchs a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Buchs" ;
+    elodzh:parishHasSeatAtPlace "Buchs" .
+
+data:Parish_Daettlikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dättlikon" ;
+    elodzh:parishHasSeatAtPlace "Dättlikon" .
+
+data:Parish_Duernten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dürnten" ;
+    elodzh:parishHasSeatAtPlace "Dürnten" .
+
+data:Parish_Egg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Egg" ;
+    elodzh:parishHasSeatAtPlace "Egg" .
+
+data:Parish_Embrach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Embrach" ;
+    elodzh:parishHasSeatAtPlace "Embrach" .
+
+data:Parish_Faellanden a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Fällanden" ;
+    elodzh:parishHasSeatAtPlace "Fällanden" .
+
+data:Parish_Fehraltorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Fehraltorf" ;
+    elodzh:parishHasSeatAtPlace "Fehraltorf" .
+
+data:Parish_Feuerthalen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Feuerthalen" ;
+    elodzh:parishHasSeatAtPlace "Feuerthalen" .
+
+data:Parish_Fraumuenster a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Fraumünster" ;
+    elodzh:parishHasSeatAtPlace "Zürich" .
+
+data:Parish_Gossau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Gossau" ;
+    elodzh:parishHasSeatAtPlace "Gossau" .
+
+data:Parish_Hausen_am_Albis a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hausen am Albis" ;
+    elodzh:parishHasSeatAtPlace "Hausen am Albis" .
+
+data:Parish_Hedingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hedingen" ;
+    elodzh:parishHasSeatAtPlace "Hedingen" .
+
+data:Parish_Hettlingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hettlingen" ;
+    elodzh:parishHasSeatAtPlace "Hettlingen" .
+
+data:Parish_Hinwil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hinwil" ;
+    elodzh:parishHasSeatAtPlace "Hinwil" .
+
+data:Parish_Hirzel a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hirzel" ;
+    elodzh:parishHasSeatAtPlace "Hirzel" .
+
+data:Parish_Hoengg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Höngg" ;
+    elodzh:parishHasSeatAtPlace "Höngg" .
+
+data:Parish_Illnau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Illnau" ;
+    elodzh:parishHasSeatAtPlace "Illnau" .
+
+data:Parish_Knonau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Knonau" ;
+    elodzh:parishHasSeatAtPlace "Knonau" .
+
+data:Parish_Kuesnacht a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Küsnacht" ;
+    elodzh:parishHasSeatAtPlace "Küsnacht" .
+
+data:Parish_Lindau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Lindau" ;
+    elodzh:parishHasSeatAtPlace "Lindau" .
+
+data:Parish_Marthalen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Marthalen" ;
+    elodzh:parishHasSeatAtPlace "Marthalen" .
+
+data:Parish_Mettmenstetten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Mettmenstetten" ;
+    elodzh:parishHasSeatAtPlace "Mettmenstetten" .
+
+data:Parish_Niederweningen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Niederweningen" ;
+    elodzh:parishHasSeatAtPlace "Niederweningen" .
+
+data:Parish_Oberglatt a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Oberglatt" ;
+    elodzh:parishHasSeatAtPlace "Oberglatt" .
+
+data:Parish_Oetwil_am_See a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Oetwil am See" ;
+    elodzh:parishHasSeatAtPlace "Oetwil am See" .
+
+data:Parish_Pfungen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Pfungen" ;
+    elodzh:parishHasSeatAtPlace "Pfungen" .
+
+data:Parish_Rafz a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rafz" ;
+    elodzh:parishHasSeatAtPlace "Rafz" .
+
+data:Parish_Regensberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Regensberg" ;
+    elodzh:parishHasSeatAtPlace "Regensberg" .
+
+data:Parish_Regensdorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Regensdorf" ;
+    elodzh:parishHasSeatAtPlace "Regensdorf" .
+
+data:Parish_Rickenbach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rickenbach" ;
+    elodzh:parishHasSeatAtPlace "Rickenbach" .
+
+data:Parish_Rorbas a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rorbas" ;
+    elodzh:parishHasSeatAtPlace "Rorbas" .
+
+data:Parish_Ruemlang a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rümlang" ;
+    elodzh:parishHasSeatAtPlace "Rümlang" .
+
+data:Parish_Rueti a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Rüti" ;
+    elodzh:parishHasSeatAtPlace "Rüti" .
+
+data:Parish_Russikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Russikon" ;
+    elodzh:parishHasSeatAtPlace "Russikon" .
+
+data:Parish_Schlatt a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schlatt" ;
+    elodzh:parishHasSeatAtPlace "Schlatt" .
+
+data:Parish_Schlieren a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schlieren" ;
+    elodzh:parishHasSeatAtPlace "Schlieren" .
+
+data:Parish_Schoenenberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Schönenberg" ;
+    elodzh:parishHasSeatAtPlace "Schönenberg" .
+
+data:Parish_Seebach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Seebach" ;
+    elodzh:parishHasSeatAtPlace "Seebach" .
+
+data:Parish_Seen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Seen" ;
+    elodzh:parishHasSeatAtPlace "Seen" .
+
+data:Parish_St_Peter a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde St. Peter" ;
+    elodzh:parishHasSeatAtPlace "St. Peter" .
+
+data:Parish_Steinmaur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Steinmaur" ;
+    elodzh:parishHasSeatAtPlace "Steinmaur" .
+
+data:Parish_Sternenberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Sternenberg" ;
+    elodzh:parishHasSeatAtPlace "Sternenberg" .
+
+data:Parish_Thalheim_an_der_Thur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Thalheim an der Thur" ;
+    elodzh:parishHasSeatAtPlace "Thalheim an der Thur" .
+
+data:Parish_Toess a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Töss" ;
+    elodzh:parishHasSeatAtPlace "Töss" .
+
+data:Parish_Uesslingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Uesslingen" ;
+    elodzh:parishHasSeatAtPlace "Uesslingen" .
+
+data:Parish_Uetikon_am_See a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Uetikon am See" ;
+    elodzh:parishHasSeatAtPlace "Uetikon am See" .
+
+data:Parish_Uitikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Uitikon" ;
+    elodzh:parishHasSeatAtPlace "Uitikon" .
+
+data:Parish_Veltheim a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Veltheim" ;
+    elodzh:parishHasSeatAtPlace "Veltheim" .
+
+data:Parish_Volketswil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Volketswil" ;
+    elodzh:parishHasSeatAtPlace "Volketswil" .
+
+data:Parish_Weiach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Weiach" ;
+    elodzh:parishHasSeatAtPlace "Weiach" .
+
+data:Parish_Weisslingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Weisslingen" ;
+    elodzh:parishHasSeatAtPlace "Weisslingen" .
+
+data:Parish_Wil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wil" ;
+    elodzh:parishHasSeatAtPlace "Wil" .
+
+data:Parish_Wipkingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wipkingen" ;
+    elodzh:parishHasSeatAtPlace "Wipkingen" .
+
+data:Parish_Wollishofen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wollishofen" ;
+    elodzh:parishHasSeatAtPlace "Wollishofen" .
+
+data:Parish_Zollikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Zollikon" ;
+    elodzh:parishHasSeatAtPlace "Zollikon" .
+
+data:Parish_Zumikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Zumikon" ;
+    elodzh:parishHasSeatAtPlace "Zumikon" .
+
+data:Parish_Affoltern_am_Albis a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Affoltern am Albis" ;
+    elodzh:parishHasSeatAtPlace "Affoltern am Albis" .
+
+data:Parish_Baeretswil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bäretswil" ;
+    elodzh:parishHasSeatAtPlace "Bäretswil" .
+
+data:Parish_Bassersdorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bassersdorf" ;
+    elodzh:parishHasSeatAtPlace "Bassersdorf" .
+
+data:Parish_Bauma a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bauma" ;
+    elodzh:parishHasSeatAtPlace "Bauma" .
+
+data:Parish_Birmensdorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Birmensdorf" ;
+    elodzh:parishHasSeatAtPlace "Birmensdorf" .
+
+data:Parish_Buch_am_Irchel a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Buch am Irchel" ;
+    elodzh:parishHasSeatAtPlace "Buch am Irchel" .
+
+data:Parish_Dinhard a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dinhard" ;
+    elodzh:parishHasSeatAtPlace "Dinhard" .
+
+data:Parish_Ellikon_an_der_Thur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Ellikon an der Thur" ;
+    elodzh:parishHasSeatAtPlace "Ellikon an der Thur" .
+
+data:Parish_Glattfelden a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Glattfelden" ;
+    elodzh:parishHasSeatAtPlace "Glattfelden" .
+
+data:Parish_Laufen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Laufen" ;
+    elodzh:parishHasSeatAtPlace "Laufen" .
+
+data:Parish_Maschwanden a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Maschwanden" ;
+    elodzh:parishHasSeatAtPlace "Maschwanden" .
+
+data:Parish_Neftenbach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Neftenbach" ;
+    elodzh:parishHasSeatAtPlace "Neftenbach" .
+
+data:Parish_Niederhasli a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Niederhasli" ;
+    elodzh:parishHasSeatAtPlace "Niederhasli" .
+
+data:Parish_Oberwinterthur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Oberwinterthur" ;
+    elodzh:parishHasSeatAtPlace "Oberwinterthur" .
+
+data:Parish_Ossingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Ossingen" ;
+    elodzh:parishHasSeatAtPlace "Ossingen" .
+
+data:Parish_Otelfingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Otelfingen" ;
+    elodzh:parishHasSeatAtPlace "Otelfingen" .
+
+data:Parish_Richterswil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Richterswil" ;
+    elodzh:parishHasSeatAtPlace "Richterswil" .
+
+data:Parish_Stadel a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Stadel" ;
+    elodzh:parishHasSeatAtPlace "Stadel" .
+
+data:Parish_Stammheim a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Stammheim" ;
+    elodzh:parishHasSeatAtPlace "Stammheim" .
+
+data:Parish_Thalwil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Thalwil" ;
+    elodzh:parishHasSeatAtPlace "Thalwil" .
+
+data:Parish_Urdorf-Dietikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Urdorf-Dietikon" ;
+    elodzh:parishHasSeatAtPlace "Urdorf-Dietikon" .
+
+data:Parish_Wangen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wangen" ;
+    elodzh:parishHasSeatAtPlace "Wangen" .
+
+data:Parish_Weiningen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Weiningen" ;
+    elodzh:parishHasSeatAtPlace "Weiningen" .
+
+data:Parish_Wetzikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wetzikon" ;
+    elodzh:parishHasSeatAtPlace "Wetzikon" .
+
+data:Parish_Wila a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wila" ;
+    elodzh:parishHasSeatAtPlace "Wila" .
+
+data:Parish_Wildberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wildberg" ;
+    elodzh:parishHasSeatAtPlace "Wildberg" .
+
+data:Parish_Wuelflingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wülflingen" ;
+    elodzh:parishHasSeatAtPlace "Wülflingen" .
+
+data:Parish_Zell a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Zell" ;
+    elodzh:parishHasSeatAtPlace "Zell" .
+
+data:Parish_Buelach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Bülach" ;
+    elodzh:parishHasSeatAtPlace "Bülach" .
+
+data:Parish_Daegerlen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Dägerlen" ;
+    elodzh:parishHasSeatAtPlace "Dägerlen" .
+
+data:Parish_Flaach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Flaach" ;
+    elodzh:parishHasSeatAtPlace "Flaach" .
+
+data:Parish_Greifensee a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Greifensee" ;
+    elodzh:parishHasSeatAtPlace "Greifensee" .
+
+data:Parish_Hombrechtikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Hombrechtikon" ;
+    elodzh:parishHasSeatAtPlace "Hombrechtikon" .
+
+data:Parish_Horgen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Horgen" ;
+    elodzh:parishHasSeatAtPlace "Horgen" .
+
+data:Parish_Maennedorf a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Männedorf" ;
+    elodzh:parishHasSeatAtPlace "Männedorf" .
+
+data:Parish_Meilen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Meilen" ;
+    elodzh:parishHasSeatAtPlace "Meilen" .
+
+data:Parish_Pfaeffikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Pfäffikon" ;
+    elodzh:parishHasSeatAtPlace "Pfäffikon" .
+
+data:Parish_Predigern a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Predigern" ;
+    elodzh:parishHasSeatAtPlace "Zürich" .
+
+data:Parish_Stallikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Stallikon" ;
+    elodzh:parishHasSeatAtPlace "Stallikon" .
+
+data:Parish_Truellikon a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Trüllikon" ;
+    elodzh:parishHasSeatAtPlace "Trüllikon" .
+
+data:Parish_Turbenthal a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Turbenthal" ;
+    elodzh:parishHasSeatAtPlace "Turbenthal" .
+
+data:Parish_Uster a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Uster" ;
+    elodzh:parishHasSeatAtPlace "Uster" .
+
+data:Parish_Waedenswil a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wädenswil" ;
+    elodzh:parishHasSeatAtPlace "Wädenswil" .
+
+data:Parish_Wald a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Wald" ;
+    elodzh:parishHasSeatAtPlace "Wald" .
+
+data:Parish_Winterthur a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Winterthur" ;
+    elodzh:parishHasSeatAtPlace "Winterthur" .
+
+data:Parish_Andelfingen a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Andelfingen" ;
+    elodzh:parishHasSeatAtPlace "Andelfingen" .
+
+data:Parish_Eglisau a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Eglisau" ;
+    elodzh:parishHasSeatAtPlace "Eglisau" .
+
+data:Parish_Elgg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Elgg" ;
+    elodzh:parishHasSeatAtPlace "Elgg" .
+
+data:Parish_Fischenthal a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Fischenthal" ;
+    elodzh:parishHasSeatAtPlace "Fischenthal" .
+
+data:Parish_Kilchberg a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Kilchberg" ;
+    elodzh:parishHasSeatAtPlace "Kilchberg" .
+
+data:Parish_Kloten a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Kloten" ;
+    elodzh:parishHasSeatAtPlace "Kloten" .
+
+data:Parish_Ottenbach a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Ottenbach" ;
+    elodzh:parishHasSeatAtPlace "Ottenbach" .
+
+data:Parish_Staefa a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Stäfa" ;
+    elodzh:parishHasSeatAtPlace "Stäfa" .
+
+data:Parish_Grossmuenster a elodzh:Parish ;
+    elodzh:parishHasName "Kirchgemeinde Grossmünster" ;
+    elodzh:parishHasSeatAtPlace "Zürich" .
+

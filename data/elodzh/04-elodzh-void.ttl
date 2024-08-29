@@ -1,0 +1,18 @@
+<https://ld.zh.ch/.well-known/dataset/elodzh> a <http://rdfs.org/ns/void#Dataset> , <http://www.w3.org/ns/dcat#Dataset> , <http://schema.org/Dataset> , <https://schema.ld.admin.ch/LindasDataset> ;
+   <http://rdfs.org/ns/void#sparqlEndpoint> <https://ld.zh.ch/query/> ;
+   <http://rdfs.org/ns/void#exampleResource> <https://ld.zh.ch/elodzh/Parish_Regensdorf> ;
+   <http://schema.org/name> "Zürcher Ehedaten des 16.–18. Jahrhunderts"@de , "Données de mariage à Zurich du 16e au 18e siècle"@fr , "Dati di matrimoni a Zurigo dal 16 al 18 secolo "@it , "Zurich marriage data 16th-18th century"@en ;
+   <http://schema.org/url> <https://ld.zh.ch/elodzh/> ;
+   <http://schema.org/dateCreated> "2022-06-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+   <http://schema.org/dateModified> "2022-06-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+   <http://schema.org/description> "Enthält in standardisierter Form alle Eheeinträge, die in den überlieferten Kirchenbüchern der Kirchgemeinden des heutigen Kantons Zürich von der Reformation bis zum Jahr 1800 verzeichnet sind."@de , "Contient, sous forme standardisée, toutes les inscriptions de mariage qui ont été enregistrées dans les registres paroissiaux des paroisses de l'actuel canton de Zurich depuis la Réforme jusqu'à l'année 1800."@fr , "Contiene, in forma standardizzata, tutti gli atti di matrimonio registrati nei registri ecclesiastici superstiti delle parrocchie dell'attuale cantone di Zurigo dalla Riforma al 1800."@it , "Contains, in standardized form, all marriage entries recorded in the surviving church records of the parishes of what is now the Canton of Zurich from the Reformation to the year 1800."@en ;
+   <http://schema.org/creator> <https://register.ld.admin.ch/opendataswiss/org/staatsarchiv-kanton-zuerich> ;
+   <http://schema.org/contributor> <https://register.ld.admin.ch/zefix/company/1198554> ;
+   <http://schema.org/publisher> <https://register.ld.admin.ch/opendataswiss/org/staatsarchiv-kanton-zuerich> ;
+   <http://schema.org/contactPoint> <https://www.zh.ch/de/direktion-der-justiz-und-des-innern/staatsarchiv.html#main_contact> ;
+   <http://schema.org/datePublished> "2022-06-21"^^<http://www.w3.org/2001/XMLSchema#date> ;
+   <http://www.w3.org/ns/dcat#landingPage> <https://github.com/stazh/sw-ehedaten/tree/main/ontology/elodzh> ;
+   <http://schema.org/workExample> <https://ld.admin.ch/application/opendataswiss> ;
+   <http://www.w3.org/ns/dcat#accessURL> <https://ld.zh.ch/sparql/> ;
+   <http://purl.org/dc/terms/identifier> "468@staatsarchiv-kanton-zuerich" ;
+   <http://purl.org/dc/terms/rights> <https://ld.admin.ch/definedTerm/TermsOfUse/Open-Use> .
