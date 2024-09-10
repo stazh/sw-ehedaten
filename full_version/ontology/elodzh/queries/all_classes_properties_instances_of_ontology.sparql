@@ -1,0 +1,5 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX elodzh: <https://ld.zh.ch/elodzh-ontology/>
+SELECT * FROM <https://lindas.admin.ch/zhch/elodzh> WHERE {
+?s rdfs:isDefinedBy <https://ld.zh.ch/elodzh-ontology/>.
+}
