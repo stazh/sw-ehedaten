@@ -1,8 +1,0 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX elodzh: <https://ld.zh.ch/elodzh-ontology/>
-SELECT * WHERE{
-SELECT ?vornameFrau (COUNT(?vornameFrau) as ?anzahl) WHERE {
-  	?eheeintrag elodzh:marriageEntryRegistersWoman ?frau.
-    ?frau elodzh:personHasFirstName ?vornameFrau .
-	} GROUP BY ?vornameFrau
-} ORDER BY DESC (?anzahl)
